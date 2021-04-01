@@ -27,6 +27,7 @@
     "url": "https://github.com/firehydrant/design-system"
   },
   "publishConfig": {
+    "cache": "~/.npm",
     "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
