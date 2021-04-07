@@ -1,9 +1,9 @@
 import { Icon } from '@chakra-ui/react';
 
-export const ArrowRightIcon = (props) => (
+export const ArrowLeftIcon = (props) => (
   <Icon boxSize="24px" viewBox="0 0 24 24" {...props}>
     <path
-      d="M4 12.9941L4 11.0059H16.1183L10.5799 5.42012L12 4L20 12L12 20L10.5799 18.5799L16.1183 12.9941H4Z"
+      d="M20 11.0059V12.9941H7.88166L13.4201 18.5799L12 20L4 12L12 4L13.4201 5.42012L7.88166 11.0059H20Z"
       fill="currentColor"
     />
   </Icon>
