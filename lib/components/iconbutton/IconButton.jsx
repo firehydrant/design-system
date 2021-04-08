@@ -6,6 +6,7 @@ export function IconButton({ children, name, ...props }) {
   return (
     <ChakraIconButton
       alignItems="center"
+      m="mg0"
       icon={<Icon name={name} />}
       {...props}>
       {children}
