@@ -13,10 +13,12 @@ import { CloseIcon } from './CloseIcon';
 import { DeleteIcon } from './DeleteIcon';
 import { EditIcon } from './EditIcon';
 import { ErrorIcon } from './ErrorIcon';
+import { FileIcon } from './FileIcon';
 import { ExternalLinkIcon } from './ExternalLinkIcon';
 import { HelpIcon } from './HelpIcon';
 import { InfoIcon } from './InfoIcon';
 import { MinusIcon } from './MinusIcon';
+import { MailIcon } from './MailIcon';
 import { PlusIcon } from './PlusIcon';
 import { SearchIcon } from './SearchIcon';
 import { SettingsIcon } from './SettingsIcon';
@@ -72,11 +74,17 @@ export const Icon = ({ name, ...props }) => {
     case 'externalLink':
       return <ExternalLinkIcon {...props} />;
       break;
+    case 'file':
+      return <FileIcon {...props} />;
+      break;
     case 'help':
       return <HelpIcon {...props} />;
       break;
     case 'info':
       return <InfoIcon {...props} />;
+      break;
+    case 'mail':
+      return <MailIcon {...props} />;
       break;
     case 'plus':
       return <PlusIcon {...props} />;
