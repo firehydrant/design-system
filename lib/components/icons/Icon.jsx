@@ -14,6 +14,7 @@ import { DeleteIcon } from './DeleteIcon';
 import { EditIcon } from './EditIcon';
 import { ErrorIcon } from './ErrorIcon';
 import { FileIcon } from './FileIcon';
+import { FilterIcon } from './FilterIcon';
 import { ExternalLinkIcon } from './ExternalLinkIcon';
 import { HelpIcon } from './HelpIcon';
 import { InfoIcon } from './InfoIcon';
@@ -76,6 +77,9 @@ export const Icon = ({ name, ...props }) => {
       break;
     case 'file':
       return <FileIcon {...props} />;
+      break;
+    case 'filter':
+      return <FilterIcon {...props} />;
       break;
     case 'help':
       return <HelpIcon {...props} />;
