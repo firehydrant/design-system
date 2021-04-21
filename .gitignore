@@ -5,3 +5,6 @@ dist-ssr
 *.local
 .npmrc
 coverage
+*.log
+.envrc
+storybook-static/
