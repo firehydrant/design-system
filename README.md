@@ -1,28 +1,19 @@
 🔥 Fire Hydrant Design System
 =============================
+Deploying to Chromatic
+--------------------------------
+Hosting for Storybook is provided by [Chromatic](https://www.chromatic.com/apps). 
 
-## Deploying storybook to Chromatic
-Hosting for Storybook is provided by [Chromatic](https://www.chromatic.com/apps); permissions for the project are mirrored from those on [Github](https://github.com/firehydrant/design-system/settings/access).
+By default, **automatic deployment** is enabled using [a Github workflow](.github/workflows/chromatic.yml) occuring on **push** for **every branch**. 
 
-In other words- whatever access you have on Github, you should also have on Chromatic.
+### Automatic Deployment (CI)
+1. Push to remote branch
+2. Profit 
 
-Deploying to Chromatic requires the following:
+NOTE: It is recommended to familiarize yourself with the [UI Review process for Chromatic](https://www.chromatic.com/docs/review) in order to take full advantage of the regression and review features. 
 
-1. Set ```CHROMATIC_PROJECT_TOKEN``` environment variable to [project token provided by Chromatic](https://www.chromatic.com/docs/cli#required-options)
-
-2. Run deploy script
-    ```shell 
-    npm run chromatic
-    ```
----
-
-Alternatively, you may pass the project token manually using the ```--project-token``` option
-```shell
-npm run chromatic --project-token <your-project-token>
+> UI Review creates a changeset of the exact visual changes introduced by a PR. You assign reviewers who can comment and request tweaks on changes that aren’t quite right. Think of it like a code review, but for your UI.
+### Manual Deployment (CLI)
+```bash
+npx chromatic --project-token=<CHROMATIC_PROJECT_TOKEN> --exit-zero-on-changes
 ```
-
-### Easy environment variables with ```direnv```
-Though it is not required, using [```direnv```](https://direnv.net/) may simplify your life. 
-
-From the website:
-> Before each prompt, direnv checks for the existence of a .envrc file in the current and parent directories. If the file exists (and is authorized), it is loaded into a bash sub-shell and all exported variables are then captured by direnv and then made available to the current shell.

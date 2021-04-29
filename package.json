@@ -20,8 +20,7 @@
     "build-storybook": "build-storybook",
     "test": "jest --watch",
     "coverage": "jest --collectCoverage",
-    "lint": "eslint src",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "lint": "eslint src"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.4.2",
@@ -52,7 +51,6 @@
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
-    "chromatic": "^5.8.0",
     "eslint": "^7.23.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-loader": "^4.0.2",
