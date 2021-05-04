@@ -4,12 +4,13 @@ import {
   useFormControlContext,
 } from '@chakra-ui/react';
 
-export function FormLabel({ children, ...props }) {
+export function FormLabel({ children, isOptional, ...props }) {
   const field = useFormControlContext();
 
   return (
     <ChakraFormLabel {...props}>
-      {children} {field.isReadOnly && `(Read-only)`}
+      {children} {field.isReadOnly && `(Read-only)`}{' '}
+      {isOptional && `(Optional)`}
     </ChakraFormLabel>
   );
 }
