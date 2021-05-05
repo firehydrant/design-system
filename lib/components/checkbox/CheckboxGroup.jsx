@@ -9,7 +9,7 @@ export function CheckboxGroup({ children, horizontal, ...props }) {
         sx={
           horizontal
             ? {
-                '.chakra-checkbox': { mr: 5 },
+                '.chakra-checkbox': { mr: 1 },
                 '.chakra-checkbox:last-of-type': {
                   mr: '0px',
                 },

@@ -18,10 +18,12 @@ export function Checkbox({ children, ...props }) {
 
   return (
     <ChakraCheckbox
+      role="group"
       sx={
         (props.isReadOnly || fieldProps.isReadOnly) && {
           '.chakra-checkbox__label': {
             color: 'grey.70',
+            cursor: 'not-allowed',
           },
         }
       }
