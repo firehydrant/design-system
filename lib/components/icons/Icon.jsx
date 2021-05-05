@@ -28,88 +28,65 @@ import { StarOutlineIcon } from './StarOutlineIcon';
 import { SuccessIcon } from './SuccessIcon';
 import { WarningIcon } from './WarningIcon';
 
-export const Icon = ({ name, ...props }) => {
+export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
   switch (name) {
     case 'arrowDown':
       return <ArrowDownIcon {...props} />;
-      break;
     case 'arrowLeft':
       return <ArrowLeftIcon {...props} />;
-      break;
     case 'arrowRight':
       return <ArrowRightIcon {...props} />;
-      break;
     case 'arrowUp':
       return <ArrowUpIcon {...props} />;
-      break;
     case 'brokenLink':
       return <BrokenLinkIcon {...props} />;
-      break;
     case 'check':
       return <CheckIcon {...props} />;
-      break;
     case 'chevronDown':
       return <ChevronDownIcon {...props} />;
-      break;
     case 'chevronLeft':
       return <ChevronLeftIcon {...props} />;
-      break;
     case 'chevronRight':
       return <ChevronRightIcon {...props} />;
-      break;
     case 'chevronUp':
       return <ChevronUpIcon {...props} />;
-      break;
     case 'close':
       return <CloseIcon {...props} />;
-      break;
     case 'delete':
       return <DeleteIcon {...props} />;
-      break;
     case 'edit':
       return <EditIcon {...props} />;
-      break;
     case 'error':
       return <ErrorIcon {...props} />;
-      break;
     case 'externalLink':
       return <ExternalLinkIcon {...props} />;
-      break;
     case 'file':
       return <FileIcon {...props} />;
-      break;
     case 'filter':
       return <FilterIcon {...props} />;
-      break;
     case 'help':
       return <HelpIcon {...props} />;
-      break;
     case 'info':
       return <InfoIcon {...props} />;
-      break;
     case 'mail':
       return <MailIcon {...props} />;
-      break;
+    case 'minus':
+      return <MinusIcon {...props} />;
     case 'plus':
       return <PlusIcon {...props} />;
-      break;
     case 'settings':
       return <SettingsIcon {...props} />;
-      break;
     case 'starFilled':
       return <StarFilledIcon {...props} />;
-      break;
     case 'starOutline':
       return <StarOutlineIcon {...props} />;
-      break;
     case 'success':
       return <SuccessIcon {...props} />;
-      break;
+    case 'search':
+      return <SearchIcon {...props} />;
     case 'warning':
       return <WarningIcon {...props} />;
-      break;
     default:
       return null;
-      break;
   }
 };
