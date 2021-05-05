@@ -19,10 +19,12 @@ export function Radio({ children, ...props }) {
   return (
     <Box
       className="chakra-radio"
+      role="group"
       sx={
         (props.isReadOnly || fieldProps.isReadOnly) && {
           '.chakra-radio__label': {
             color: 'grey.70',
+            cursor: 'not-allowed',
           },
         }
       }>

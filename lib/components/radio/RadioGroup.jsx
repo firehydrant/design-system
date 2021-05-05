@@ -9,7 +9,7 @@ export function RadioGroup({ children, horizontal, ...props }) {
         sx={
           horizontal
             ? {
-                '.chakra-radio': { mr: 5 },
+                '.chakra-radio': { mr: 1 },
                 '.chakra-radio:last-of-type': {
                   mr: '0px',
                 },
