@@ -15,7 +15,7 @@ export function RadioGroup({ children, horizontal, ...props }) {
                 },
               }
             : {
-                '.chakra-radio': { mt: 1 },
+                '.chakra-radio': { mt: 'mg0' },
                 '.chakra-radio:first-of-type': {
                   mt: '0px',
                 },

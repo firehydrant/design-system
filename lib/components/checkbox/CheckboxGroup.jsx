@@ -15,7 +15,7 @@ export function CheckboxGroup({ children, horizontal, ...props }) {
                 },
               }
             : {
-                '.chakra-checkbox': { mt: 1 },
+                '.chakra-checkbox': { mt: 'mg0' },
                 '.chakra-checkbox:first-of-type': {
                   mt: '0px',
                 },
