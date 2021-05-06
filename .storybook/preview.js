@@ -1,18 +1,24 @@
-import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import theme from '../lib/theme';
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "../lib/theme";
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  options: {
+    storySort: {
+      method: "alphabetical",
+      order: ["Components", ["Forms"], "Recipes"],
+    },
+  },
+  actions: { argTypesRegex: "^on[A-Z].*" },
   backgrounds: {
     values: [
       {
-        name: 'light',
-        value: '#ffffff',
+        name: "light",
+        value: "#ffffff",
       },
       {
-        name: 'dark',
-        value: '#182042',
+        name: "dark",
+        value: "#182042",
       },
     ],
   },
