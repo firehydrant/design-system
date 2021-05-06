@@ -18,6 +18,7 @@ export function Radio({ children, ...props }) {
 
   return (
     <Box
+      display="inline-block"
       className="chakra-radio"
       role="group"
       sx={
