@@ -33,7 +33,11 @@ export function CardTitle({ children, ...rest }) {
 export function CardActions({ children, ...rest }) {
   // We don't want to put a ButtonGroup around a single element
   if (Children.count(children) === 1) {
-    return <Box mb="1">{children}</Box>;
+    return (
+      <Box mb="1" {...rest}>
+        {children}
+      </Box>
+    );
   }
 
   return (
