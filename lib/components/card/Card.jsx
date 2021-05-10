@@ -16,7 +16,7 @@ export function CardHeader({ variant, size, children, ...rest }) {
   const styles = useStyleConfig('CardHeader', { variant, size });
 
   return (
-    <Box __css={styles} {...rest}>
+    <Box __css={styles} {...rest} sx={{ button: { mb: 1 } }}>
       {children}
     </Box>
   );
@@ -24,7 +24,7 @@ export function CardHeader({ variant, size, children, ...rest }) {
 
 export function CardTitle({ children, ...rest }) {
   return (
-    <Text as="h3" size="3" mr="2" {...rest}>
+    <Text as="h3" size="3" mr="2" mb="1" {...rest}>
       {children}
     </Text>
   );
