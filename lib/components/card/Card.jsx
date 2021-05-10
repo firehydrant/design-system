@@ -24,7 +24,7 @@ export function CardHeader({ variant, size, children, ...rest }) {
 
 export function CardTitle({ children, ...rest }) {
   return (
-    <Text size="3" mr="2" {...rest}>
+    <Text as="h3" size="3" mr="2" {...rest}>
       {children}
     </Text>
   );
