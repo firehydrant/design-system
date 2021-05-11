@@ -5,7 +5,7 @@ import { Link as ChakraLink } from '@chakra-ui/react';
 
 export function Link({ children, isExternal, size, variant, ...props }) {
   return (
-    <ChakraLink {...props} role="group">
+    <ChakraLink fontSize={size} {...props} role="group">
       <LinkText size={size} variant={variant}>
         {children}
       </LinkText>
@@ -14,8 +14,10 @@ export function Link({ children, isExternal, size, variant, ...props }) {
           sx={{
             color: variant === 'reverse' ? 'grey.0' : 'purple.70',
             ml: '4px',
-            width: size === 'xs' ? '20px' : '24px',
-            height: size === 'xs' ? '20px' : '24px',
+            width: '1.5em',
+            height: '1.5em',
+            minWidth: '20px',
+            minHeight: '20px',
           }}
           name="externalLink"
         />
