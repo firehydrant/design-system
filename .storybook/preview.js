@@ -6,7 +6,7 @@ export const parameters = {
   options: {
     storySort: {
       method: 'alphabetical',
-      order: ['Components', ['Forms'], 'Recipes'],
+      order: ['Components', ['Actions', 'Forms', 'Layout'], 'Recipes'],
     },
   },
   actions: { argTypesRegex: '^on[A-Z].*' },
