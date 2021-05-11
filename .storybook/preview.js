@@ -3,6 +3,12 @@ import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../lib/theme';
 
 export const parameters = {
+  options: {
+    storySort: {
+      method: 'alphabetical',
+      order: ['Components', ['Actions', 'Forms', 'Layout'], 'Recipes'],
+    },
+  },
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
     values: [
