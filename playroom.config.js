@@ -1,6 +1,6 @@
 module.exports = {
   components: './lib/main',
-  outputPath: './playroom',
+  outputPath: './docs',
 
   //   Optional configuration
   title: 'FireHydrant Design System',
