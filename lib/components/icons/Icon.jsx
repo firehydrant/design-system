@@ -12,7 +12,7 @@ import { ChevronUpIcon } from './ChevronUpIcon';
 import { CloseIcon } from './CloseIcon';
 import { DeleteIcon } from './DeleteIcon';
 import { EditIcon } from './EditIcon';
-import { ErrorIcon } from './ErrorIcon';
+import { AlertIcon } from './AlertIcon';
 import { FileIcon } from './FileIcon';
 import { FilterIcon } from './FilterIcon';
 import { ExternalLinkIcon } from './ExternalLinkIcon';
@@ -35,6 +35,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
   switch (name) {
     case 'account':
       return <AccountIcon {...props} />;
+    case 'alert':
+      return <AlertIcon {...props} />;
     case 'arrowDown':
       return <ArrowDownIcon {...props} />;
     case 'arrowLeft':
@@ -59,8 +61,6 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <DeleteIcon {...props} />;
     case 'edit':
       return <EditIcon {...props} />;
-    case 'error':
-      return <ErrorIcon {...props} />;
     case 'externalLink':
       return <ExternalLinkIcon {...props} />;
     case 'file':
@@ -99,7 +99,3 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return null;
   }
 };
-
-// Refresh
-// Search
-// Minus
