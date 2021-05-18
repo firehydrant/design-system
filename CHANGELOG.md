@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.0.0] - 2021-05-17
+
+### Added
+
+- New components added
+  - Card
+  - [Container](https://chakra-ui.com/docs/layout/container)
+  - [Tabs](https://chakra-ui.com/docs/disclosure/tabs)
+  - [Divider](https://chakra-ui.com/docs/data-display/divider)
+  - [Tag](https://chakra-ui.com/docs/data-display/tag)
+- [Responsive breakpoints](https://chakra-ui.com/docs/features/responsive-styles)
+  - sm: 375px
+  - md: 768px
+  - lg: 1024px
+
 ## [0.1.0] - 2021-05-07
 
 ### Added
