@@ -15,9 +15,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
   - [Divider](https://chakra-ui.com/docs/data-display/divider)
   - [Tag](https://chakra-ui.com/docs/data-display/tag)
 - [Responsive breakpoints](https://chakra-ui.com/docs/features/responsive-styles)
+  - base: 0px
   - sm: 375px
   - md: 768px
   - lg: 1024px
+  - xl: 1100px
+  - 2xl: 1400px
 
 ## [0.1.0] - 2021-05-07
 
