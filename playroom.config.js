@@ -5,6 +5,6 @@ module.exports = {
   //   Optional configuration
   title: 'FireHydrant Design System',
   frameComponent: './.playroom/FrameComponent.js',
-  widths: [320, 1100, 1400],
+  widths: [375, 768, 1024, 1100, 1400],
   snippets: './.playroom/snippets.js',
 };
