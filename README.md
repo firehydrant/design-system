@@ -1,4 +1,4 @@
-🔥 Fire Hydrant Design System
+🔥 FireHydrant Design System
 =============================
 Deploying to Chromatic
 --------------------------------
