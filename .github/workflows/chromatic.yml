@@ -14,6 +14,8 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v1
+        with:
+          node-version: '16.x'
       - name: Install dependencies
         run: npm install
         # 👇 Adds Chromatic as a step in the workflow
@@ -21,6 +23,7 @@ jobs:
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
         with:
+          node-version: '16.x'
           token: ${{ secrets.GITHUB_TOKEN }}
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
