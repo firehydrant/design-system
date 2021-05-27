@@ -27,5 +27,5 @@ Make sure to bump the version.
 
 ```
 npm run build
-npm publish
+npm publish --tag latest
 ```
