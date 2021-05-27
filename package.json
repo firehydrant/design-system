@@ -17,7 +17,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "yarn add react@16.13.1 react-dom@16.13.1 && build-storybook",
+    "build-storybook": "build-storybook",
     "playroom:start": "NODE_ENV=development playroom start",
     "playroom:build": "NODE_ENV=production playroom build",
     "test": "jest --watch",
