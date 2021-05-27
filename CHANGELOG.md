@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.0.3] - 2021-05-27
+
+### Fixed
+
+- Table border in safari is now a border bottom
+
+## [1.0.2] - 2021-05-25
+
+### Added
+
+- New Components Added
+  - Table
+  - Switch
+
+## [1.0.1] - 2021-05-18
+
+### Added
+
+- Updated changelog
+
 ## [1.0.0] - 2021-05-17
 
 ### Added
