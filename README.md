@@ -6,6 +6,13 @@ Hosting for Storybook is provided by [Chromatic](https://www.chromatic.com/apps)
 
 By default, **automatic deployment** is enabled using [a Github workflow](.github/workflows/chromatic.yml) occuring on **push** for **every branch**.
 
+### Getting Started
+
+Make sure that you are using NPM version 7.0 or higher
+
+1. `npm install`
+2. `npm run storybook`
+
 ### Automatic Deployment (CI)
 
 1. Push to remote branch
