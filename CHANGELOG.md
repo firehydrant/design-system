@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [1.0.5] - 2021-06-01
+
+### Fixed
+
+- Uses a span for the Text inside of the Link component
+
+## [1.0.4] - 2021-05-28
+
+### Fixed
+
+- Removed React as a internal dependency
+
 ## [1.0.3] - 2021-05-27
 
 ### Fixed
