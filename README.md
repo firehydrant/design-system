@@ -1,10 +1,40 @@
-# 🔥 FireHydrant Design System
+# 🌈 FireHydrant Design System
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/firehydrant/design-system)](https://github.com/firehydrant/design-system/releases)
+[![Latest Storybook version](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)]()
+
+Need more info? Slack us at #team-design-system | Team Hub in Notion | Project board in Clubhouse
+
+---
+
+> **FireHydrant flavored** React component library, built using [Chakra UI](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
+
+- Playroom
+- Storybook
+- Chromatic
+
+more project information available in [Notion (Design System)](https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417)
+
+---
+
+## acknowledgements
+
+🙇 Thank you to the following projects, upon which this Design System is built:
+
+- [Chromatic](https://www.chromatic.com/) - Storybook hosting; component feedback & regression testing
+- [`chakra-ui`](https://github.com/chakra-ui/chakra-ui) - React component library
+- [`storybook`](https://github.com/storybookjs/storybook) - Component visualization & documentation tool
+- [`seek-oss/playroom`](https://github.com/seek-oss/playroom) - Component sandbox
+
+---
+
+# Contributing
 
 ## Deploying to Chromatic
 
 Hosting for Storybook is provided by [Chromatic](https://www.chromatic.com/apps).
 
-By default, **automatic deployment** is enabled using [a Github workflow](.github/workflows/chromatic.yml) occuring on **push** for **every branch**.
+By default, **automatic deployment** is enabled using [a GitHub workflow](.GitHub/workflows/chromatic.yml) occuring on **push** for **every branch**.
 
 ### Getting Started
 
