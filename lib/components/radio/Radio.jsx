@@ -21,14 +21,15 @@ export function Radio({ children, ...props }) {
       display="inline-block"
       className="chakra-radio"
       role="group"
-      sx={
+      __css={
         (props.isReadOnly || fieldProps.isReadOnly) && {
           '.chakra-radio__label': {
             color: 'grey.70',
             cursor: 'not-allowed',
           },
         }
-      }>
+      }
+    >
       <ChakraRadio {...fieldProps} {...props}>
         {children}
       </ChakraRadio>

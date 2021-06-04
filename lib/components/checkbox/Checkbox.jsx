@@ -19,7 +19,7 @@ export function Checkbox({ children, ...props }) {
   return (
     <ChakraCheckbox
       role="group"
-      sx={
+      __css={
         (props.isReadOnly || fieldProps.isReadOnly) && {
           '.chakra-checkbox__label': {
             color: 'grey.70',
@@ -31,7 +31,8 @@ export function Checkbox({ children, ...props }) {
         props.isIndeterminate ? <Icon name="minus" /> : <Icon name="check" />
       }
       {...fieldProps}
-      {...props}>
+      {...props}
+    >
       {children}
     </ChakraCheckbox>
   );
