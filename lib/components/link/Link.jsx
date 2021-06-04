@@ -5,7 +5,7 @@ import { Link as ChakraLink } from '@chakra-ui/react';
 
 export function Link({ children, isExternal, size, variant, ...props }) {
   return (
-    <ChakraLink fontSize={size} {...props} role="group">
+    <ChakraLink fontSize={size} isExternal={isExternal} role="group" {...props}>
       <LinkText size={size} variant={variant}>
         {children}
       </LinkText>
