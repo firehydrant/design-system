@@ -11,7 +11,7 @@ export function Link({ children, isExternal, size, variant, ...props }) {
       </LinkText>
       {isExternal && (
         <Icon
-          sx={{
+          __css={{
             color: variant === 'reverse' ? 'grey.0' : 'purple.70',
             ml: '4px',
             width: '1.5em',
