@@ -6,10 +6,10 @@ export function RadioGroup({ children, horizontal, ...props }) {
     <ChakraRadioGroup {...props}>
       <Flex
         flexDir={horizontal ? 'row' : 'column'}
-        __css={
+        sx={
           horizontal
             ? {
-                '.chakra-radio': { mr: 3 },
+                '.chakra-radio': { mr: '3' },
                 '.chakra-radio:last-of-type': {
                   mr: '0px',
                 },
@@ -20,8 +20,7 @@ export function RadioGroup({ children, horizontal, ...props }) {
                   mt: '0px',
                 },
               }
-        }
-      >
+        }>
         {children}
       </Flex>
     </ChakraRadioGroup>

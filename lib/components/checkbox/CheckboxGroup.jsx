@@ -6,7 +6,7 @@ export function CheckboxGroup({ children, horizontal, ...props }) {
     <ChakraCheckboxGroup {...props}>
       <Flex
         flexDir={horizontal ? 'row' : 'column'}
-        __css={
+        sx={
           horizontal
             ? {
                 '.chakra-checkbox': { mr: 3 },
