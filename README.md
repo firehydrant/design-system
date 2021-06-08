@@ -1,68 +1,106 @@
-# 🌈 FireHydrant Design System
+<h1 align="center">🌈 FireHydrant Design System 🦄</h1>
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/firehydrant/design-system)](https://github.com/firehydrant/design-system/releases)
-[![Latest Storybook version](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)]()
+<div align="center">
+    <a href="https://github.com/firehydrant/design-system/releases">
+        <img alt="Latest release" src="https://img.shields.io/github/v/release/firehydrant/design-system" />
+    </a>
+    <a href="https://firehydrant.github.io/design-system/">
+        <img alt="Playroom" src="https://img.shields.io/badge/playroom-live-000" />
+    </a>
+    <a href="https://main--607731addb01d30021caeac2.chromatic.com">
+        <img alt="Storybook" src="https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg" />
+    </a>
+</div>
 
-Need more info? Slack us at #team-design-system | Team Hub in Notion | Project board in Clubhouse
+<br/>
+
+Design System is a **FireHydrant flavored** React component library, built using [Chakra UI](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
+
+## need more information? ℹ️
+
+- Slack us at [#team-design-system](https://firehydrant.slack.com/archives/C01GRKLDRB9)
+- Team Hub in [Notion](https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417)
+- Project board in [Clubhouse](https://app.clubhouse.io/firehydrant/project/18818/design-system)
+
+## installation 💾
+
+The package is registered on GitHub's package registry, added via `.npmrc`
+
+Access to this registry requires authentication with GitHub tokens. These tokens are private and should not be committed to any project, accessed instead via environment variable.
+
+**GitHub token environment variable**
+
+1. Go to https://github.com/settings/tokens and create a token with at least `read:package` access
+
+2. Set the token
+
+   ```bash
+   # paste this into either ~/.zshrc OR ~/.bashrc
+
+   export GITHUB_TOKEN=<your token>
+   ```
+
+3. Open a new terminal window (or `source` the edited `.*rc` file)
+
+**GitHub package registry**
+
+```bash
+# add .npmrc file to your project
+
+cd path/to/your/project && touch .npmrc
+
+
+# (do not edit) paste the following into your .npmrc
+
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+@firehydrant:registry=https://npm.pkg.github.com
+```
+
+**Add to your project**
+
+```bash
+yarn add @firehydrant/design-system
+
+# or
+
+npm i @firehydrant/design-system --save
+```
 
 ---
 
-> **FireHydrant flavored** React component library, built using [Chakra UI](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
+## usage 🏎
 
-- Playroom
-- Storybook
-- Chromatic
+Our components require a `ThemeProvider` to wrap your application. By default the FireHydrant theme is included with our provider.
 
-more project information available in [Notion (Design System)](https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417)
+```jsx
+// import themeprovider from our package
+import { ThemeProvider } from '@firehydrant/design-system';
+
+// wrap your application
+<ThemeProvider>
+  <App />
+</ThemeProvider>;
+```
+
+For a list of all components & properties, refer to [Storybook](https://main--607731addb01d30021caeac2.chromatic.com)
+
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://main--607731addb01d30021caeac2.chromatic.com/)
 
 ---
 
-## acknowledgements
+## contributing 🔨
 
-🙇 Thank you to the following projects, upon which this Design System is built:
+We welcome all additions and modifications, check out our [Contribution Guidelines](./CONTRIBUTING.md) to get started.
+
+## changelog 👛
+
+Interested in what changed lately? Check out the [CHANGELOG](./CHANGELOG.md)
+
+## acknowledgements 📡
+
+Thank you to the following projects, upon which this Design System is built:
 
 - [Chromatic](https://www.chromatic.com/) - Storybook hosting; component feedback & regression testing
 - [`chakra-ui`](https://github.com/chakra-ui/chakra-ui) - React component library
 - [`storybook`](https://github.com/storybookjs/storybook) - Component visualization & documentation tool
-- [`seek-oss/playroom`](https://github.com/seek-oss/playroom) - Component sandbox
-
----
-
-# Contributing
-
-## Deploying to Chromatic
-
-Hosting for Storybook is provided by [Chromatic](https://www.chromatic.com/apps).
-
-By default, **automatic deployment** is enabled using [a GitHub workflow](.GitHub/workflows/chromatic.yml) occuring on **push** for **every branch**.
-
-### Getting Started
-
-Make sure that you are using NPM version 7.0 or higher
-
-1. `npm install`
-2. `npm run storybook`
-
-### Automatic Deployment (CI)
-
-1. Push to remote branch
-2. Profit
-
-NOTE: It is recommended to familiarize yourself with the [UI Review process for Chromatic](https://www.chromatic.com/docs/review) in order to take full advantage of the regression and review features.
-
-> UI Review creates a changeset of the exact visual changes introduced by a PR. You assign reviewers who can comment and request tweaks on changes that aren’t quite right. Think of it like a code review, but for your UI.
-
-### Manual Deployment (CLI)
-
-```bash
-npx chromatic --project-token=<CHROMATIC_PROJECT_TOKEN> --exit-zero-on-changes
-```
-
-### Manual Publish
-
-Make sure to bump the version.
-
-```
-npm run build
-npm publish --tag latest
-```
+- [`seek-oss/playroom`](https://github.com/seek-oss/playroom) - Component live sandbox
