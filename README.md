@@ -27,7 +27,7 @@ Design System is a **FireHydrant flavored** React component library, built using
 
 ---
 
-**need more information? ℹ️** Slack us at [#team-design-system ↗️](https://firehydrant.slack.com/archives/C01GRKLDRB9) | Team Hub in [Notion ↗️](https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417) | Project board in [Clubhouse ↗️](https://app.clubhouse.io/firehydrant/project/18818/design-system)
+**need info?** Slack us at [#team-design-system ↗️](https://firehydrant.slack.com/archives/C01GRKLDRB9) · Team Hub in [Notion ↗️](https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417) · Project board in [Clubhouse ↗️](https://app.clubhouse.io/firehydrant/project/18818/design-system)
 
 ---
 
