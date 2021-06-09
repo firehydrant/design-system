@@ -11,7 +11,7 @@ export function CheckboxGroup({ children, horizontal, ...props }) {
             ? {
                 display: 'flex',
                 flexDirection: 'row',
-                '.chakra-checkbox': { mr: 3 },
+                '.chakra-checkbox': { mr: 4 },
                 '.chakra-checkbox:last-of-type': {
                   mr: '0px',
                 },
