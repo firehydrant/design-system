@@ -6,10 +6,11 @@ export function FormHelperText({ children, ...props }) {
     <ChakraFormHelperText
       fontSize="7"
       lineHeight="7"
-      mt="0"
+      mt="1"
       color="grey.70"
       display="inline-block"
-      {...props}>
+      {...props}
+    >
       {children}
     </ChakraFormHelperText>
   );

@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## Unreleased
+
+### Changed
+
+- [BREAKING] Space scale now starts with `space[0] = 0px`
+  - prior to this change (`space[0] = 4px`) caused undesired layout changes in `Stack, VStack, HStack` Chakra components.
+- Internally, components now use `__css` instead of `sx` for styling which has the same API but lower style priority, ensuring proper overrides via style props
+
+### Fixed
+
+- `isExternal` property on `Link` will now properly add a `rel` and `target` attribute to rendered `<a>`
 
 ## [1.0.5] - 2021-06-01
 

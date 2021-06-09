@@ -7,10 +7,11 @@ export function FormErrorMessage({ children, ...props }) {
     <ChakraFormErrorMessage
       fontSize="7"
       lineHeight="7"
-      mt="0"
+      mt="1"
       color="red.70"
-      {...props}>
-      <Icon name="error" width="20px" height="20px" mr="0" />
+      {...props}
+    >
+      <Icon name="error" width="20px" height="20px" mr="1" />
       {children}
     </ChakraFormErrorMessage>
   );

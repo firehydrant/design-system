@@ -20,7 +20,7 @@ export function TagLabel({ children, ...props }) {
 
 export function TagRightIcon({ children, ...props }) {
   return (
-    <ChakraTagRightIcon boxSize="16px" mr="0" {...props}>
+    <ChakraTagRightIcon boxSize="16px" mr="1" {...props}>
       {children}
     </ChakraTagRightIcon>
   );
@@ -28,7 +28,7 @@ export function TagRightIcon({ children, ...props }) {
 
 export function TagLeftIcon({ children, ...props }) {
   return (
-    <ChakraTagLeftIcon boxSize="16px" mr="0" {...props}>
+    <ChakraTagLeftIcon boxSize="16px" mr="1" {...props}>
       {children}
     </ChakraTagLeftIcon>
   );

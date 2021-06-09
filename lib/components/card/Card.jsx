@@ -24,7 +24,7 @@ export function CardHeader({ variant, size, children, ...rest }) {
 
 export function CardTitle({ children, ...rest }) {
   return (
-    <Text as="h3" size="3" mr="2" mb="1" {...rest}>
+    <Text as="h3" size="3" mr="3" mb="2" {...rest}>
       {children}
     </Text>
   );
@@ -34,14 +34,14 @@ export function CardActions({ children, ...rest }) {
   // We don't want to put a ButtonGroup around a single element
   if (Children.count(children) === 1) {
     return (
-      <Box mb="1" {...rest}>
+      <Box mb="2" {...rest}>
         {children}
       </Box>
     );
   }
 
   return (
-    <ButtonGroup mb="1" {...rest}>
+    <ButtonGroup mb="2" {...rest}>
       {children}
     </ButtonGroup>
   );

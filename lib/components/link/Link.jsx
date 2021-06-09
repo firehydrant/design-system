@@ -13,7 +13,7 @@ export function Link({ children, isExternal, size, variant, ...props }) {
         <Icon
           __css={{
             color: variant === 'reverse' ? 'grey.0' : 'purple.70',
-            ml: '4px',
+            ml: '1',
             width: '1.5em',
             height: '1.5em',
             minWidth: '20px',
