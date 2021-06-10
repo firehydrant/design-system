@@ -32,3 +32,5 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           # 👇 Option to prevent the workflow from failing
           exitZeroOnChanges: true
+          # 👇 Required for TurboSnaps feature
+          onlyChanged: true
