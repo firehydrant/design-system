@@ -1,0 +1,28 @@
+
+# 
+# 🤠 Howdy!
+# 
+# This project abides by the Conventional Commit standard to determine the 
+# correct semver bump and generate a CHANGELOG at release. We ask that at least
+# the first commit in your PR follow the correct pattern 👇 below: 
+#
+#   👉  [type](optional scope): [title of commit]
+#       (e.g. `feat(button): secondary outline button variant`)
+# 
+#   --------------------------------------------------------------------------
+#   type:   feat, fix, chore, docs, style, refactor, perf, test
+#           ('feat:' and 'fix:' appear in CHANGELOG)
+#   scope:  a noun describing any section of the codebase (e.g. button, config) 
+#           surrounded by parenthesis
+#   title:  brief description; 50 characters or less
+#   --------------------------------------------------------------------------
+# 
+# 💡 Including "BREAKING CHANGE:" in the commit message triggers a major release 
+# in the example below. 
+#
+#   fix(scale): adjusts scale by 1 to start at 0px
+#
+#   BREAKING CHANGE: Scale shift affects all uses of scale in style props.
+#
+# 👋 Thanks for contributing!
+# 

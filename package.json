@@ -24,7 +24,8 @@
     "coverage": "jest --collectCoverage",
     "lint": "eslint src",
     "prerelease": "npm run build",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postinstall": "git config --local commit.template ./.gitmessage"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.0",
