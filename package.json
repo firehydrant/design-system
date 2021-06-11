@@ -22,7 +22,9 @@
     "playroom:build": "NODE_ENV=production playroom build",
     "test": "jest --watch",
     "coverage": "jest --collectCoverage",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "prerelease": "npm run build",
+    "release": "standard-version"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.0",
@@ -33,6 +35,9 @@
   },
   "repository": {
     "url": "https://github.com/firehydrant/design-system"
+  },
+  "standard-version": {
+    "issueUrlFormat": "https://app.clubhouse.io/firehydrant/story/{{id}}"
   },
   "publishConfig": {
     "cache": "~/.npm",
