@@ -4,9 +4,9 @@ _👈 back to [README.md](./README.md)_
 
 🙏 Thank you for your interest in contribution!
 
-We ask that you please review these guidelines prior to making a PR. Otherwise there are no restrictions on who may contribute to the System.
+We ask that you review these guidelines prior to making a Pull Request (PR). Otherwise, there are no restrictions on who may contribute to the System.
 
-Long term, Design System is intended to be maintained collaboratively by every engineer and designer at FireHydrant.
+Design System is intended to be maintained collaboratively by every engineer and designer at FireHydrant.
 
 ---
 
@@ -20,9 +20,9 @@ Long term, Design System is intended to be maintained collaboratively by every e
     - [3.3.2. minor](#332-minor)
     - [3.3.3. patch](#333-patch)
 - [4. Release process](#4-release-process)
-  - [4.1. run release](#41-run-release)
-  - [4.2. Misc.](#42-misc)
-- [5. Deploy](#5-deploy)
+  - [4.1. release](#41-release)
+  - [4.2. push & publish](#42-push--publish)
+- [5. Deploy secondary apps](#5-deploy-secondary-apps)
   - [5.1. Storybook](#51-storybook)
   - [5.2. Playroom](#52-playroom)
 
@@ -61,7 +61,7 @@ _NOTE: single line commit messages (`git commit -m <message>`) will bypass this 
 
 In order to generate a CHANGELOG, commit history on the `main` branch needs to be formatted in a specific pattern.
 
-The commit message squash-merged to `main` **must follow this pattern**, every other commit on the PR however, does not though we do recommend it as best practice.
+The commit message squash-merged to `main` **must follow this pattern**. Any other commit on the Pull Request does not need to comply, though we recommend it as best practice.
 
 ```bash
 [type](optional scope): [title of commit]
@@ -118,27 +118,33 @@ chore: update out of date npm dependencies
 
 Bumping the version according to [semver ↗️](https://semver.org/) and updating the CHANGELOG is handled by [`conventional-changelog/standard-version` ↗️](https://github.com/conventional-changelog/standard-version).
 
-## 4.1. run release
+💡 Release should only be conducted from an up-to-date `main` branch. (Squash-merge PRs with correctly formatted [commit messages](#31-commit-messages))
 
-Assuming you have practiced [healthy commit history](#31-commit-messages), start the process with:
+## 4.1. release
 
 ```bash
 npm run release
 ```
 
-This task will build production assets, bump `version` in `package.json`, update `CHANGELOG`, add a `chore: release` commit, and `git tag` the commit with the version.
+💡 Builds production assets, bumps version in `package.json`, updates CHANGELOG, adds a `chore: release` commit, and adds a `git tag` with the (new) current version.
 
-## 4.2. Misc.
+**dry-run**
 
-1. bump the version in `package.json`
-2. update [CHANGELOG.md](./CHANGELOG.md)
+Running `release` with the --dry-run flag allows you to see what runs, see a preview of CHANGELOG changes, without committing to git or updating files.
 
 ```bash
-npm run build
-npm publish --tag latest
+npm run release -- --dry-run
 ```
 
-# 5. Deploy
+## 4.2. push & publish
+
+After [`release`](#41-run-release) has finished without error, push to remote & publish the package.
+
+```bash
+git push --follow-tags origin main && npm publish
+```
+
+# 5. Deploy secondary apps
 
 In addition to a semantic versioned package, this project also deploys two web applications automatically:
 
