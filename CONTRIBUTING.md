@@ -4,18 +4,27 @@ _👈 back to [README.md](./README.md)_
 
 🙏 Thank you for your interest in contribution!
 
-We ask that you please review these guidelines prior to making a PR. Otherwise there are no restrictions on who may contribute to the System.
+We ask that you review these guidelines prior to making a Pull Request (PR). Otherwise, there are no restrictions on who may contribute to the System.
 
-Long term, Design System is intended to be maintained collaboratively by every engineer and designer at FireHydrant.
+Design System is intended to be maintained collaboratively by every engineer and designer at FireHydrant.
 
 ---
 
 - [1. Branches](#1-branches)
 - [2. Pull Requests](#2-pull-requests)
-- [3. Publish](#3-publish)
-- [4. Deploy](#4-deploy)
-  - [4.1. Storybook](#41-storybook)
-  - [4.2. Playroom](#42-playroom)
+- [3. Conventional Commit](#3-conventional-commit)
+  - [3.1. Commit messages](#31-commit-messages)
+  - [3.2. CHANGELOG](#32-changelog)
+  - [3.3. semver](#33-semver)
+    - [3.3.1. major](#331-major)
+    - [3.3.2. minor](#332-minor)
+    - [3.3.3. patch](#333-patch)
+- [4. Release process](#4-release-process)
+  - [4.1. release](#41-release)
+  - [4.2. push & publish](#42-push--publish)
+- [5. Deploy secondary apps](#5-deploy-secondary-apps)
+  - [5.1. Storybook](#51-storybook)
+  - [5.2. Playroom](#52-playroom)
 
 ---
 
@@ -40,28 +49,113 @@ Pull Requests should target `main` and be squash-merged.
 5. Obtain necessary review(s)
 6. Squash & Merge to `main`
 
-# 3. Publish
+# 3. Conventional Commit
 
-1. bump the version in `package.json`
-2. update [CHANGELOG.md](./CHANGELOG.md)
+This project abides by the [Conventional Commit ↗](https://www.conventionalcommits.org/) standard. These commit messages are then used by [`conventional-changelog/standard-version` ↗️](https://github.com/conventional-changelog/standard-version) to generate a well-formed CHANGELOG and determine the appropriate [semver ↗️](https://semver.org/) version bump automatically on [`release`](#41-run-release).
+
+An `npm` postinstall script will automatically add a `.gitmessage` template to your `gitconfig --local` which will provide conventional commit documentation for every `git commit`.
+
+_NOTE: single line commit messages (`git commit -m <message>`) will bypass this template_
+
+## 3.1. Commit messages
+
+In order to generate a CHANGELOG, commit history on the `main` branch needs to be formatted in a specific pattern.
+
+The commit message squash-merged to `main` **must follow this pattern**. Any other commit on the Pull Request does not need to comply, though we recommend it as best practice.
 
 ```bash
-npm run build
-npm publish --tag latest
+[type](optional scope): [title of commit]
+
+# example
+feat(button): secondary outline button variant
 ```
 
-# 4. Deploy
+- `type`: feat, fix, chore, docs, style, refactor, perf, test
+- `scope`: (optional) a noun describing any section of the codebase _(e.g. button, config)_ surrounded by parenthesis
+- `title`: brief description; 50 characters or less
+
+## 3.2. CHANGELOG
+
+CHANGELOG gets generated on `release` according to git history. Only `feat:` and `fix:` commits (and their commit messages) appear in the CHANGELOG; other types do not not.
+
+💡 Commit types added to CHANGELOG [can be configured ↗️](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.1.0/README.md#types) by altering the `standard-version` stanza in `package.json`.
+
+## 3.3. semver
+
+The appropriate version to bump according to the [semver ↗️](https://semver.org/) spec is automatically determined as part of [`release`](#41-run-release) based on git commit message history.
+
+- [major](#331-major) (`x.0.0`) - including `BREAKING CHANGE:` in your commit message
+- [minor](#332-minor) (`0.x.0`) - `fix:` & `feat:` types
+- [patch](#333-patch) (`0.0.x`) - `chore:` and other types
+
+### 3.3.1. major
+
+Including `BREAKING CHANGE:` anywhere in the commit message triggers major (`x.0.0`) version bumps during [`release`](#41-run-release).
+
+```
+fix(scale): adjusts scale by 1 to start at 0px
+
+BREAKING CHANGE: Scale shift affects all uses of scale in style props.
+```
+
+### 3.3.2. minor
+
+`fix:` or `feat:` commit message types trigger minor (`0.x.0`) version bumps during [`release`](#41-run-release).
+
+```
+feat(button): secondary outline button variant
+```
+
+### 3.3.3. patch
+
+All other commit types such as `chore:` trigger patch (`0.0.x`) version bumps during [`release`](#41-run-release).
+
+```
+chore: update out of date npm dependencies
+```
+
+# 4. Release process
+
+Bumping the version according to [semver ↗️](https://semver.org/) and updating the CHANGELOG is handled by [`conventional-changelog/standard-version` ↗️](https://github.com/conventional-changelog/standard-version).
+
+💡 Release should only be conducted from an up-to-date `main` branch. (Squash-merge PRs with correctly formatted [commit messages](#31-commit-messages))
+
+## 4.1. release
+
+```bash
+npm run release
+```
+
+💡 Builds production assets, bumps version in `package.json`, updates CHANGELOG, adds a `chore: release` commit, and adds a `git tag` with the (new) current version.
+
+**dry-run**
+
+Running `release` with the --dry-run flag allows you to see what runs, see a preview of CHANGELOG changes, without committing to git or updating files.
+
+```bash
+npm run release -- --dry-run
+```
+
+## 4.2. push & publish
+
+After [`release`](#41-run-release) has finished without error, push to remote & publish the package.
+
+```bash
+git push --follow-tags origin main && npm publish
+```
+
+# 5. Deploy secondary apps
 
 In addition to a semantic versioned package, this project also deploys two web applications automatically:
 
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)][storybook]
 [![Playroom](https://img.shields.io/badge/playroom-live-000)][playroom]
 
-## 4.1. [Storybook][storybook]
+## 5.1. [Storybook][storybook]
 
 On push, every branch is configured to automatically build & deploy to [Chromatic ↗️][chromatic] via ["Chromatic" GitHub Workflow](./.github/workflows/chromatic.yml).
 
-## 4.2. [Playroom][playroom]
+## 5.2. [Playroom][playroom]
 
 On push to `main`, Playroom is automatically built to `docs/`, pushed to branch: `gh-pages`, and deployed to GitHub Pages via ["Build & Deploy Playroom" GitHub Workflow](./.github/workflows/playroom.yml).
 

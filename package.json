@@ -22,7 +22,10 @@
     "playroom:build": "NODE_ENV=production playroom build",
     "test": "jest --watch",
     "coverage": "jest --collectCoverage",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "prerelease": "npm run build",
+    "release": "standard-version",
+    "postinstall": "git config --local commit.template ./.gitmessage"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.0",
@@ -33,6 +36,9 @@
   },
   "repository": {
     "url": "https://github.com/firehydrant/design-system"
+  },
+  "standard-version": {
+    "issueUrlFormat": "https://app.clubhouse.io/firehydrant/story/{{id}}"
   },
   "publishConfig": {
     "cache": "~/.npm",
@@ -68,6 +74,7 @@
     "jest": "^26.6.3",
     "playroom": "^0.23.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "standard-version": "^9.3.0",
     "vite": "^2.3.4"
   }
 }

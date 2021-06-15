@@ -1,20 +1,13 @@
-<h1 align="center">🌈 FireHydrant Design System 🦄</h1>
+🌈 FireHydrant Design System 🦄  
+![Latest release](https://img.shields.io/github/v/release/firehydrant/design-system)
+![Chromatic workflow](https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg)
+![Playroom workflow](https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg)<!-- omit in toc -->
+===============================
 
-<div align="center">
-    <a href="https://github.com/firehydrant/design-system/releases">
-        <img alt="Latest release" src="https://img.shields.io/github/v/release/firehydrant/design-system" />
-    </a>
-    <a href="https://firehydrant.github.io/design-system/">
-       <img alt="Playroom" src="https://img.shields.io/badge/playroom-live-000" />
-    </a>
-    <a href="https://main--607731addb01d30021caeac2.chromatic.com">
-       <img alt="Storybook" src="https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg" />
-    </a>
-</div>
+> **FireHydrant flavored** React component library, built using [Chakra UI ↗️](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
 
-<br/>
-
-Design System is a **FireHydrant flavored** React component library, built using [Chakra UI ↗️](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)][storybook]
+[![Playroom](https://img.shields.io/badge/playroom-live-614ab6)][playroom]
 
 - [installation](#installation)
     - [GitHub token as environment variable](#github-token-as-environment-variable)
@@ -27,7 +20,7 @@ Design System is a **FireHydrant flavored** React component library, built using
 
 ---
 
-**need info?** Slack us at [#team-design-system ↗️](https://firehydrant.slack.com/archives/C01GRKLDRB9) · Team Hub in [Notion ↗️](https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417) · Project board in [Clubhouse ↗️](https://app.clubhouse.io/firehydrant/project/18818/design-system)
+**need info?** Slack us at [#team-design-system ↗️][slack] ⎮ [Notion ↗️][notion] team page ⎮ [Clubhouse ↗️][clubhouse] board
 
 ---
 
@@ -91,9 +84,9 @@ import { ThemeProvider } from '@firehydrant/design-system';
 </ThemeProvider>;
 ```
 
-For a list of all components & properties, refer to [Storybook ↗️](https://main--607731addb01d30021caeac2.chromatic.com)
+For a list of all components & properties, refer to [Storybook ↗️][storybook]
 
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://main--607731addb01d30021caeac2.chromatic.com/)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)][storybook]
 
 ---
 
@@ -115,3 +108,11 @@ Thank you to the following projects, upon which this Design System is built:
 - [`chakra-ui` ↗️](https://github.com/chakra-ui/chakra-ui) - React component library
 - [`storybook` ↗️](https://github.com/storybookjs/storybook) - Component visualization & documentation tool
 - [`seek-oss/playroom` ↗️](https://github.com/seek-oss/playroom) - Component live sandbox
+- [`conventional-changelog/standard-version` ↗️](https://github.com/conventional-changelog/standard-version) - A utility for versioning using semver and CHANGELOG generation powered by Conventional Commits.
+
+[storybook]: https://main--607731addb01d30021caeac2.chromatic.com/
+[playroom]: https://firehydrant.github.io/design-system/
+[release]: https://github.com/firehydrant/design-system/releases
+[slack]: https://firehydrant.slack.com/archives/C01GRKLDRB9
+[notion]: https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417
+[clubhouse]: https://app.clubhouse.io/firehydrant/project/18818/design-system
