@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.1.0](https://github.com/firehydrant/design-system/compare/v2.0.0...v2.1.0) (2021-06-16)
+
+
+### Features
+
+* **changelog:** Automatic changelog generation ([cd5be86](https://github.com/firehydrant/design-system/commit/cd5be862cc04d548541ea74e999bad9dbab69b76))
 
 ## 2.0.0 (2021-06-09)
 
