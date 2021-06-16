@@ -1,10 +1,8 @@
-# CHANGELOG
+# Changelog
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
-
-## [2.0.0] - 2021-06-09
+## 2.0.0 (2021-06-09)
 
 ### Changed
 
@@ -16,25 +14,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `isExternal` property on `Link` will now properly add a `rel` and `target` attribute to rendered `<a>`
 
-## [1.0.5] - 2021-06-01
+## 1.0.5 (2021-06-01)
 
 ### Fixed
 
 - Uses a span for the Text inside of the Link component
 
-## [1.0.4] - 2021-05-28
+## 1.0.4 (2021-05-28)
 
 ### Fixed
 
 - Removed React as a internal dependency
 
-## [1.0.3] - 2021-05-27
+## 1.0.3 (2021-05-27)
 
 ### Fixed
 
 - Table border in safari is now a border bottom
 
-## [1.0.2] - 2021-05-25
+## 1.0.2 (2021-05-25)
 
 ### Added
 
@@ -42,13 +40,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Table
   - Switch
 
-## [1.0.1] - 2021-05-18
-
-### Added
-
-- Updated changelog
-
-## [1.0.0] - 2021-05-17
+## 1.0.0 (2021-05-17)
 
 ### Added
 
@@ -66,7 +58,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - xl: 1100px
   - 2xl: 1400px
 
-## [0.1.0] - 2021-05-07
+## 0.1.0 (2021-05-07)
 
 ### Added
 
@@ -98,7 +90,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Renamed Icon _Mail_ to _Email_
 
-## [0.0.9] - 2021-05-03
+## 0.0.9 (2021-05-03)
 
 ### Added
 
@@ -109,7 +101,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - [FormHelperText](https://chakra-ui.com/docs/form/form-control)
   - [TextField](https://chakra-ui.com/docs/form/input)
 
-## [0.0.8] - 2021-04-13
+## 0.0.8 (2021-04-13)
 
 ### Added
 
