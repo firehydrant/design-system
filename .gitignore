@@ -9,3 +9,6 @@ coverage
 *.log
 .envrc
 storybook-static/
+
+# npm release cache
+~/.npm
