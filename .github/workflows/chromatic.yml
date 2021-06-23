@@ -8,7 +8,7 @@ on:
   push:
     branches-ignore:
       # Do not run on dependabot branches
-      - 'dependabot/*'
+      - 'dependabot/**'
 
 # List of jobs
 jobs:
