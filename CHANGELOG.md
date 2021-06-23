@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/firehydrant/design-system/compare/v2.1.0...v2.2.0) (2021-06-23)
+
+
+### Features
+
+* Enable dependabot on GitHub ([01ebf1d](https://github.com/firehydrant/design-system/commit/01ebf1dd9309b81eadb3a661245bca703d2354d8))
+
+
+### Bug Fixes
+
+* Remove postinstall script ([bd3aa1b](https://github.com/firehydrant/design-system/commit/bd3aa1bc8d9a19b94a360a311c55d2c758287d62))
+* **button:** Remove x-spacing from tertiary variant ([2f69004](https://github.com/firehydrant/design-system/commit/2f690049adecdc31edce6f92bc07b25c8824e66d)), closes [#19508](https://app.clubhouse.io/firehydrant/story/19508)
+
 ## [2.1.0](https://github.com/firehydrant/design-system/compare/v2.0.0...v2.1.0) (2021-06-16)
 
 
