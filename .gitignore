@@ -4,7 +4,6 @@ dist
 dist-ssr
 docs
 *.local
-.npmrc
 coverage
 *.log
 .envrc

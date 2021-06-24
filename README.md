@@ -11,7 +11,6 @@
 
 - [installation](#installation)
     - [GitHub token as environment variable](#github-token-as-environment-variable)
-    - [Include GitHub package registry](#include-github-package-registry)
     - [Add to project](#add-to-project)
 - [usage](#usage)
 - [contribute](#contribute)
@@ -41,20 +40,6 @@ Access to this registry requires authentication with GitHub tokens. These tokens
    ```
 
 3. Open a new terminal window (or `source` the edited `.*rc` file)
-
-### Include GitHub package registry
-
-1. Add .npmrc file to your project
-
-   ```sh
-   cd path/to/your/project && touch .npmrc
-   ```
-
-2. Paste the following into `.npmrc` (do not edit)
-   ```sh
-   //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
-   @firehydrant:registry=https://npm.pkg.github.com
-   ```
 
 ### Add to project
 
