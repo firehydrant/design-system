@@ -37,7 +37,17 @@
     "url": "https://github.com/firehydrant/design-system"
   },
   "standard-version": {
-    "issueUrlFormat": "https://app.clubhouse.io/firehydrant/story/{{id}}"
+    "issueUrlFormat": "https://github.com/firehydrant/design-system/pull/{{id}}",
+    "types": [
+      {
+        "type": "chore",
+        "section": "🧹 Chores"
+      },
+      {
+        "type": "bump",
+        "section": "👊 Version Bumps"
+      }
+    ]
   },
   "publishConfig": {
     "cache": "~/.npm",
