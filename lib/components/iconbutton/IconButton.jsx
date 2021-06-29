@@ -5,10 +5,12 @@ import { Icon } from '../icons';
 export function IconButton({ children, name, ...props }) {
   return (
     <ChakraIconButton
+      borderRadius="base"
       alignItems="center"
       m="mg0"
       icon={<Icon name={name} />}
-      {...props}>
+      {...props}
+    >
       {children}
     </ChakraIconButton>
   );
