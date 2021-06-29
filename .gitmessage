@@ -10,8 +10,8 @@
 #       (e.g. `feat(button): secondary outline button variant`)
 # 
 #   --------------------------------------------------------------------------
-#   type:   feat, fix, chore, docs, style, refactor, perf, test
-#           ('feat:' and 'fix:' appear in CHANGELOG)
+#   type:   feat, fix, chore, bump (docs, style, refactor, perf, test)
+#           (types in parens do not appear in CHANGELOG)
 #   scope:  a noun describing any section of the codebase (e.g. button, config) 
 #           surrounded by parenthesis
 #   title:  brief description; 50 characters or less
