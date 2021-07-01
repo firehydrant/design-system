@@ -53,7 +53,7 @@ Pull Requests should target `main` and be squash-merged.
 
 This project abides by the [Conventional Commit ↗](https://www.conventionalcommits.org/) standard. These commit messages are then used by [`conventional-changelog/standard-version` ↗️](https://github.com/conventional-changelog/standard-version) to generate a well-formed CHANGELOG and determine the appropriate [semver ↗️](https://semver.org/) version bump automatically on [`release`](#41-run-release).
 
-An `npm` postinstall script will automatically add a `.gitmessage` template to your `gitconfig --local` which will provide conventional commit documentation for every `git commit`.
+A custom `.gitmessage` template will be automatically added to your `gitconfig --local` which provides conventional commit documentation on every `commit`.
 
 _NOTE: single line commit messages (`git commit -m <message>`) will bypass this template_
 
