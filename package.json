@@ -31,7 +31,7 @@
     "@chakra-ui/react-env": "^1.0.4",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
-    "framer-motion": "^4.1.2"
+    "framer-motion": "^4.1.17"
   },
   "repository": {
     "url": "https://github.com/firehydrant/design-system"
