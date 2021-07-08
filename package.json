@@ -58,7 +58,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.14",
+    "@babel/core": "^7.14.6",
     "@ehutch79/vite-eslint": "^0.0.1",
     "@storybook/addon-actions": "^6.3.2",
     "@storybook/addon-essentials": "^6.3.1",
