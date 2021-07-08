@@ -2,10 +2,10 @@
 ![Latest release](https://img.shields.io/github/v/release/firehydrant/design-system)
 ![Chromatic workflow](https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg)
 ![Playroom workflow](https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END --><!-- omit in toc -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)<!-- ALL-CONTRIBUTORS-BADGE:END --><!-- omit in toc -->
 ===============================
 
-> **FireHydrant flavored** React component library, built using [Chakra UI ↗️](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
+> **FireHydrant flavored** React component library, built using [Chakra UI](https://chakra-ui.com/) ↗️ &amp; a [custom theme layer](./lib/theme/index.js).
 
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)][storybook]
 [![Playroom](https://img.shields.io/badge/playroom-live-614ab6)][playroom]
@@ -20,7 +20,7 @@
 
 ---
 
-**need info?** Slack us at [#team-design-system ↗️][slack] ⎮ [Notion ↗️][notion] team page ⎮ [Clubhouse ↗️][clubhouse] board
+**need info?** Slack us at [#team-design-system][slack] ↗️ ⎮ [Notion][notion] ↗️ team page ⎮ [Clubhouse][clubhouse] ↗️ board
 
 ---
 
@@ -70,7 +70,7 @@ import { ThemeProvider } from '@firehydrant/design-system';
 </ThemeProvider>;
 ```
 
-For a list of all components & properties, refer to [Storybook ↗️][storybook]
+For a list of all components & properties, refer to [Storybook][storybook] ↗️
 
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)][storybook]
 
