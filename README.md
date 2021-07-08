@@ -1,7 +1,4 @@
 🌈 FireHydrant Design System 🦄  
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 ![Latest release](https://img.shields.io/github/v/release/firehydrant/design-system)
 ![Chromatic workflow](https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg)
 ![Playroom workflow](https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -123,23 +120,3 @@ Thank you to the following projects, upon which this Design System is built:
 [slack]: https://firehydrant.slack.com/archives/C01GRKLDRB9
 [notion]: https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417
 [clubhouse]: https://app.clubhouse.io/firehydrant/project/18818/design-system
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="http://caseymhunt.com"><img src="https://avatars.githubusercontent.com/u/2065615?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Casey Hunt</b></sub></a><br /><a href="#maintenance-caseymhunt" title="Maintenance">🚧</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
