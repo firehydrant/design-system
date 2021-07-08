@@ -81,7 +81,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.2",
     "git-message": "^2.0.2",
-    "jest": "^26.6.3",
+    "jest": "^27.0.6",
     "playroom": "^0.25.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "standard-version": "^9.3.0",
