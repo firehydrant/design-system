@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/firehydrant/design-system/compare/v2.2.0...v2.3.0) (2021-07-09)
+
+
+### 🧹 Chores
+
+* Include .npmrc in project ([#49](https://github.com/firehydrant/design-system/pull/49)) ([fb1c636](https://github.com/firehydrant/design-system/commit/fb1c6360288925952bffd5a870d77af7f3e23781))
+* update chromatic action ([da063b4](https://github.com/firehydrant/design-system/commit/da063b4795f39880a0fc285c4b9d92b5bba69e92))
+
+
+### 👊 Version Bumps
+
+* Bump @babel/core from 7.14.0 to 7.14.6 ([#56](https://github.com/firehydrant/design-system/pull/56)) ([ff5411b](https://github.com/firehydrant/design-system/commit/ff5411b8afbf1bc1d532d9c82ba50c30df041658))
+* Bump @chakra-ui/react-env from 1.0.3 to 1.0.4 ([#38](https://github.com/firehydrant/design-system/pull/38)) ([f148f73](https://github.com/firehydrant/design-system/commit/f148f73c704e203ddd6f096959f0b32a398571f0))
+* Bump @chakra-ui/react-env from 1.0.4 to 1.0.5 ([#59](https://github.com/firehydrant/design-system/pull/59)) ([b9532b5](https://github.com/firehydrant/design-system/commit/b9532b587d2df0784b5d207d96685a270ed43e26))
+* Bump @emotion/react from 11.1.5 to 11.4.0 ([#55](https://github.com/firehydrant/design-system/pull/55)) ([069fcd8](https://github.com/firehydrant/design-system/commit/069fcd8b7b9e394f6e7d65a273833d660cd2979c))
+* Bump @storybook/addon-actions from 6.3.1 to 6.3.2 ([#53](https://github.com/firehydrant/design-system/pull/53)) ([9fd6791](https://github.com/firehydrant/design-system/commit/9fd6791878c0b963c5bd68910b8549eaaef44352))
+* Bump @storybook/addon-links from 6.2.9 to 6.3.0 ([#37](https://github.com/firehydrant/design-system/pull/37)) ([ac02982](https://github.com/firehydrant/design-system/commit/ac029822b65eb0aa84cf5357397aa4cb3b5da7d5))
+* Bump @storybook/react from 6.3.1 to 6.3.2 ([#52](https://github.com/firehydrant/design-system/pull/52)) ([66c2e24](https://github.com/firehydrant/design-system/commit/66c2e24aad10784cc78b1b5bad07433acf2afd7d))
+* Bump @testing-library/jest-dom from 5.12.0 to 5.14.1 ([#40](https://github.com/firehydrant/design-system/pull/40)) ([96877bd](https://github.com/firehydrant/design-system/commit/96877bde41bdc0494a95b9e94b40f0446060988b))
+* Bump @testing-library/react from 11.2.6 to 12.0.0 ([#57](https://github.com/firehydrant/design-system/pull/57)) ([398b2c4](https://github.com/firehydrant/design-system/commit/398b2c4f630750ee9b6165a8d92f00f3e32760c1))
+* Bump eslint-plugin-import from 2.22.1 to 2.23.4 ([#36](https://github.com/firehydrant/design-system/pull/36)) ([3799ef1](https://github.com/firehydrant/design-system/commit/3799ef1991a64f36c782108954a9a95da33a6815))
+* Bump eslint-plugin-react from 7.23.2 to 7.24.0 ([#39](https://github.com/firehydrant/design-system/pull/39)) ([14b77ef](https://github.com/firehydrant/design-system/commit/14b77efb9c0ff9b6666a65da418d26ad63d5adcb))
+* Bump eslint-plugin-testing-library from 3.10.2 to 4.9.0 ([#58](https://github.com/firehydrant/design-system/pull/58)) ([3f07ade](https://github.com/firehydrant/design-system/commit/3f07aded7c91855b55607aebe1a0054bf692c532))
+* Bump jest from 26.6.3 to 27.0.6 ([#54](https://github.com/firehydrant/design-system/pull/54)) ([719fc5f](https://github.com/firehydrant/design-system/commit/719fc5f7c6287bc9b3ee03a55e7caf267ff50fc8))
+* chore: Bump framer-motion from 4.1.11 to 4.1.17 ([#47](https://github.com/firehydrant/design-system/pull/47)) ([2c07084](https://github.com/firehydrant/design-system/commit/2c0708483b3510a67bb1bd271ba1c1497327967b))
+* chore: Bump playroom from 0.23.0 to 0.25.0 ([#45](https://github.com/firehydrant/design-system/pull/45)) ([fcd9b06](https://github.com/firehydrant/design-system/commit/fcd9b0630ff0d8940f60c9edadb0baa4d70d0d4a))
+* **storybook:** Upgrades Storybook package(s) to 6.3.1 ([#51](https://github.com/firehydrant/design-system/pull/51)) ([398180c](https://github.com/firehydrant/design-system/commit/398180c6ea60b8531ff00cacba7798b6d5fb06cb))
+
 ## [2.2.0](https://github.com/firehydrant/design-system/compare/v2.1.0...v2.2.0) (2021-06-23)
 
 
