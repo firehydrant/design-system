@@ -13,9 +13,19 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "jaxatto",
+      "name": "Jax Engel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6673768?v=4",
+      "profile": "http://jax.works",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
+  "badgeTemplate": "![<%= contributors.length %> Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-614ab6.svg)",
   "projectName": "design-system",
   "projectOwner": "firehydrant",
   "repoType": "github",
