@@ -13,6 +13,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "nearbycoder",
+      "name": "Josh Hamilton",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10525357?v=4",
+      "profile": "https://nearbycoder.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
