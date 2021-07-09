@@ -25,9 +25,9 @@ Design System is intended to be maintained collaboratively by every engineer and
 - [5. Deploy secondary apps](#5-deploy-secondary-apps)
   - [5.1. Storybook](#51-storybook)
   - [5.2. Playroom](#52-playroom)
-- [Maintenance](#maintenance)
-  - [Upgrading dependencies](#upgrading-dependencies)
-      - [Manual deploy to Chromatic](#manual-deploy-to-chromatic)
+- [6. Maintenance](#6-maintenance)
+  - [6.1. Upgrading dependencies](#61-upgrading-dependencies)
+      - [6.1.0.1. Manual deploy to Chromatic](#6101-manual-deploy-to-chromatic)
 
 ---
 
@@ -162,9 +162,9 @@ On push, every branch is configured to automatically build & deploy to [Chromati
 
 On push to `main`, Playroom is automatically built to `docs/`, pushed to branch: `gh-pages`, and deployed to GitHub Pages via ["Build & Deploy Playroom" GitHub Workflow](./.github/workflows/playroom.yml).
 
-# Maintenance
+# 6. Maintenance
 
-## Upgrading dependencies
+## 6.1. Upgrading dependencies
 
 Monitoring outdated dependencies is handled by [dependabot](https://github.com/firehydrant/design-system/network/updates) ↗️, which will automatically open PRs to upgrade packages; currently configured to a maximum of 5 at a given time.
 
@@ -174,7 +174,7 @@ Dependabot can no longer access project secrets, thus preventing the Chromatic a
 
 _Chromatic testing of dependency updates is advised but not required, to the discretion of the merging maintainer._
 
-#### Manual deploy to Chromatic
+#### 6.1.0.1. Manual deploy to Chromatic
 
 1. Checkout the dependabot branch you wish to test.
 
