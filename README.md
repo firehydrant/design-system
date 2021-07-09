@@ -2,7 +2,8 @@
 ![Latest release](https://img.shields.io/github/v/release/firehydrant/design-system)
 ![Chromatic workflow](https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg)
 ![Playroom workflow](https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END --><!-- omit in toc -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END --><!-- omit in toc -->
 ===============================
 
 > **FireHydrant flavored** React component library, built using [Chakra UI ↗️](https://chakra-ui.com/) &amp; a [custom theme layer](./lib/theme/index.js).
@@ -88,6 +89,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://caseymhunt.com"><img src="https://avatars.githubusercontent.com/u/2065615?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Casey Hunt</b></sub></a><br /><a href="#maintenance-caseymhunt" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://nearbycoder.com/"><img src="https://avatars.githubusercontent.com/u/10525357?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josh Hamilton</b></sub></a><br /><a href="https://github.com/firehydrant/design-system/commits?author=nearbycoder" title="Code">💻</a></td>
   </tr>
 </table>
 
