@@ -25,6 +25,7 @@
     }
   ],
   "contributorsPerLine": 7,
+  "badgeTemplate": "![<%= contributors.length %> Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-614ab6.svg)",
   "projectName": "design-system",
   "projectOwner": "firehydrant",
   "repoType": "github",
