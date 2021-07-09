@@ -78,7 +78,9 @@ For a list of all components & properties, refer to [Storybook][storybook] ↗�
 # contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-![3 Contributors](https://img.shields.io/badge/all_contributors-3-614ab6.svg)
+
+![4 Contributors](https://img.shields.io/badge/all_contributors-4-614ab6.svg)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 We welcome all additions and modifications, check out the [Contribution Guidelines](./CONTRIBUTING.md) to get started.
@@ -93,6 +95,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://caseymhunt.com"><img src="https://avatars.githubusercontent.com/u/2065615?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Casey Hunt</b></sub></a><br /><a href="#maintenance-caseymhunt" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://jax.works"><img src="https://avatars.githubusercontent.com/u/6673768?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jax Engel</b></sub></a><br /><a href="#design-jaxatto" title="Design">🎨</a></td>
     <td align="center"><a href="https://nearbycoder.com/"><img src="https://avatars.githubusercontent.com/u/10525357?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josh Hamilton</b></sub></a><br /><a href="https://github.com/firehydrant/design-system/commits?author=nearbycoder" title="Code">💻</a></td>
+    <td align="center"><a href="http://firehydrant.com"><img src="https://avatars.githubusercontent.com/u/521627?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Robert Ross</b></sub></a><br /><a href="https://github.com/firehydrant/design-system/commits?author=bobbytables" title="Documentation">📖</a></td>
   </tr>
 </table>
 
