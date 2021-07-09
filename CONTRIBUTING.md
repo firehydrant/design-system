@@ -25,6 +25,9 @@ Design System is intended to be maintained collaboratively by every engineer and
 - [5. Deploy secondary apps](#5-deploy-secondary-apps)
   - [5.1. Storybook](#51-storybook)
   - [5.2. Playroom](#52-playroom)
+- [Maintenance](#maintenance)
+  - [Upgrading dependencies](#upgrading-dependencies)
+      - [Manual deploy to Chromatic](#manual-deploy-to-chromatic)
 
 ---
 
@@ -158,6 +161,33 @@ On push, every branch is configured to automatically build & deploy to [Chromati
 ## 5.2. [Playroom][playroom]
 
 On push to `main`, Playroom is automatically built to `docs/`, pushed to branch: `gh-pages`, and deployed to GitHub Pages via ["Build & Deploy Playroom" GitHub Workflow](./.github/workflows/playroom.yml).
+
+# Maintenance
+
+## Upgrading dependencies
+
+Monitoring outdated dependencies is handled by [dependabot](https://github.com/firehydrant/design-system/network/updates) ↗️, which will automatically open PRs to upgrade packages; currently configured to a maximum of 5 at a given time.
+
+**Chromatic testing on a dependabot-triggered branch MUST be done manually.**
+
+Dependabot can no longer access project secrets, thus preventing the Chromatic action from running successfully on dependabot-triggered branches. ([source](https://github.com/dependabot/dependabot-core/issues/3253))
+
+_Chromatic testing of dependency updates is advised but not required, to the discretion of the merging maintainer._
+
+#### Manual deploy to Chromatic
+
+1. Checkout the dependabot branch you wish to test.
+
+   ```
+   git checkout dependabot/<branch-you-wish-to-test>
+   ```
+
+2. Create a build & push to Chromatic
+   ```
+   npx chromatic --project-token=<CHROMATIC_PROJECT_TOKEN>
+   ```
+
+Project tokens are found in Chromatic project settings under [Manage > Configure](https://www.chromatic.com/manage?appId=607731addb01d30021caeac2&view=configure) ↗️.
 
 ---
 
