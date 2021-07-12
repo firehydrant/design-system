@@ -1,0 +1,50 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "caseymhunt",
+      "name": "Casey Hunt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2065615?v=4",
+      "profile": "http://caseymhunt.com",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "jaxatto",
+      "name": "Jax Engel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6673768?v=4",
+      "profile": "http://jax.works",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "nearbycoder",
+      "name": "Josh Hamilton",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10525357?v=4",
+      "profile": "https://nearbycoder.com/",
+      "contributions": [
+        "code"
+      "login": "bobbytables",
+      "name": "Robert Ross",
+      "avatar_url": "https://avatars.githubusercontent.com/u/521627?v=4",
+      "profile": "http://firehydrant.com",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "badgeTemplate": "![<%= contributors.length %> Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-614ab6.svg)",
+  "projectName": "design-system",
+  "projectOwner": "firehydrant",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "none"
+}
