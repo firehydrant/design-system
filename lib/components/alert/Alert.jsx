@@ -1,21 +1,37 @@
 import React from 'react';
-import { Alert as ChakraAlert, AlertIcon as ChakraAlertIcon, CloseButton as ChakraCloseButton } from '@chakra-ui/react';
+import {Flex, Spacer, useStyleConfig } from '@chakra-ui/react';
+import { Icon, IconButton } from '../../main';
 
-export function Alert({ children, ...props }) {
-  return (
-    <ChakraAlert {...props}>
-      <ChakraAlertIcon></ChakraAlertIcon>
-      { children }
-    </ChakraAlert>
-  );
-}
+export function Alert({ children, dismissable, onDismiss, variant }) {
+  const styles = useStyleConfig('Alert', { variant });
 
-export function AlertWithClose({ children, ...props }) {
+  const iconColorScheme = {
+    'alert': 'red.70',
+    'info': 'grey.70',
+    'success': 'green.70',
+    'warning': 'brown.70',
+  };
+
   return (
-    <ChakraAlert {...props}>
-      <ChakraAlertIcon></ChakraAlertIcon>
-      { children }
-      <ChakraCloseButton></ChakraCloseButton>
-    </ChakraAlert>
+    <Flex borderWidth="1px" borderRadius="4px" __css={styles} variant={variant}>
+      <Flex>
+        <Flex align="flex-start" py="mg2">
+          <Icon name={variant} ml="1" mr="2" color={iconColorScheme[variant]} />
+          { children }
+        </Flex>
+        <Spacer py="mg1" />
+        { dismissable && (
+          <IconButton
+            aria-label="close"
+            name="close"
+            onClick={onDismiss}
+            height="40px"
+            width="44px"
+            ml="3"
+            variant="tertiary"
+          />
+        )}
+      </Flex>
+    </Flex>
   );
 }
