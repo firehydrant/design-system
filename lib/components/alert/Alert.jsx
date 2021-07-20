@@ -1,6 +1,6 @@
 import React from 'react';
 import {Flex, Spacer, useStyleConfig } from '@chakra-ui/react';
-import { Icon, IconButton } from '../../main';
+import { Icon, IconButton, Text } from '../../main';
 
 export function Alert({ children, dismissable, onDismiss, variant }) {
   const styles = useStyleConfig('Alert', { variant });
@@ -17,7 +17,7 @@ export function Alert({ children, dismissable, onDismiss, variant }) {
       <Flex>
         <Flex align="flex-start" py="mg2">
           <Icon name={variant} ml="1" mr="2" color={iconColorScheme[variant]} />
-          { children }
+          <Text color="grey.90" size="5">{ children }</Text>
         </Flex>
         <Spacer py="mg1" />
         { dismissable && (
