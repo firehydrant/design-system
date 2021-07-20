@@ -20,7 +20,7 @@ export function TagLabel({ children, ...props }) {
 
 export function TagRightIcon({ children, ...props }) {
   return (
-    <ChakraTagRightIcon boxSize="16px" mr="1" {...props}>
+    <ChakraTagRightIcon boxSize="16px" ml="1" {...props}>
       {children}
     </ChakraTagRightIcon>
   );
