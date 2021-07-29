@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/firehydrant/design-system/compare/v2.3.0...v3.0.0) (2021-07-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **tag:** any previous `variant` value is no longer valid. Tag
+now expects `variant='[subtle | outline]'` and
+`colorScheme='<foundation_color_family>'`.
+* **radio, checkbox:** `defaultIsChecked` is deprecated; use `defaultChecked`
+
+### 🛠 Fixed
+
+* **radio, checkbox:** Deprecate defaultIsChecked ([#75](https://github.com/firehydrant/design-system/pull/75)) ([f64c308](https://github.com/firehydrant/design-system/commit/f64c3089811b31e7952c35e1b7c4214b883bed75))
+* **tag:** Corrects margin for right-aligned icon ([#74](https://github.com/firehydrant/design-system/pull/74)) ([ec94f08](https://github.com/firehydrant/design-system/commit/ec94f086f480cd6f65ee593e78723e368f05edf2))
+
+
+### 👊 Version Bumps
+
+* **storybook:** bump Storybook to ^6.3.4 ([#72](https://github.com/firehydrant/design-system/pull/72)) ([82de99e](https://github.com/firehydrant/design-system/commit/82de99ed4edfc0b0fa3d2cf7113b7ecdb8bd4454))
+* Bump babel-jest from 26.6.3 to 27.0.6 ([#69](https://github.com/firehydrant/design-system/pull/69)) ([cba8b4a](https://github.com/firehydrant/design-system/commit/cba8b4accd950fd0cc8167e2dcd67670aa43080b))
+
+
+### ✨ New Features
+
+* **alert:** build alert component ([#73](https://github.com/firehydrant/design-system/pull/73)) ([58988d4](https://github.com/firehydrant/design-system/commit/58988d4ee9edf04e4e7b1d0fc101dbbe180c83de))
+* **Center:** adds Center (Square, Circle) ([#85](https://github.com/firehydrant/design-system/pull/85)) ([e58cc1f](https://github.com/firehydrant/design-system/commit/e58cc1f0dcb4dad072b6491a5feae080f54546a7))
+* **StackDivider:** adds StackDivider ([#86](https://github.com/firehydrant/design-system/pull/86)) ([48c5191](https://github.com/firehydrant/design-system/commit/48c519190619892d6797cbf2475a77a53bad1378))
+* **tag:** adds outline variant ([#83](https://github.com/firehydrant/design-system/pull/83)) ([4965fa9](https://github.com/firehydrant/design-system/commit/4965fa92ec0c05f56f41adee5a9858654ff68b69))
+* **Wrap:** adds Wrap layout component. ([#84](https://github.com/firehydrant/design-system/pull/84)) ([856402a](https://github.com/firehydrant/design-system/commit/856402a499bfccaec3ce6724f9226baf6145d1a2))
+
+
+### 🧹 Chores
+
+* add section titles to changelog (config) ([73f6116](https://github.com/firehydrant/design-system/commit/73f61161d2362da7a21624cf2787fa11feb74ebc))
+
 ## [2.3.0](https://github.com/firehydrant/design-system/compare/v2.2.0...v2.3.0) (2021-07-09)
 
 
