@@ -46,6 +46,14 @@
       {
         "type": "bump",
         "section": "👊 Version Bumps"
+      },
+      {
+        "type": "fix",
+        "section": "🛠 Fixed"
+      },
+      {
+        "type": "feat",
+        "section": "✨ New Features"
       }
     ]
   },
