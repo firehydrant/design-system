@@ -1,5 +1,8 @@
 import React from 'react';
 import { AccountIcon } from './AccountIcon';
+import { AlertIcon } from './AlertIcon';
+import { AnalyticsFilledIcon } from './AnalyticsFilledIcon';
+import { AnalyticsOutlineIcon } from './AnalyticsOutlineIcon';
 import { ArrowDownIcon } from './ArrowDownIcon';
 import { ArrowLeftIcon } from './ArrowLeftIcon';
 import { ArrowRightIcon } from './ArrowRightIcon';
@@ -11,24 +14,46 @@ import { ChevronRightIcon } from './ChevronRightIcon';
 import { ChevronUpIcon } from './ChevronUpIcon';
 import { CloseIcon } from './CloseIcon';
 import { DeleteIcon } from './DeleteIcon';
+import { DownloadIcon } from './DownloadIcon';
 import { EditIcon } from './EditIcon';
-import { AlertIcon } from './AlertIcon';
+import { EmailIcon } from './EmailIcon';
 import { FileIcon } from './FileIcon';
 import { FilterIcon } from './FilterIcon';
 import { ExternalLinkIcon } from './ExternalLinkIcon';
 import { HelpIcon } from './HelpIcon';
+import { HelpFilledIcon } from './HelpFilledIcon';
+import { HomeFilledIcon } from './HomeFilledIcon';
+import { HomeOutlineIcon } from './HomeOutlineIcon';
 import { ImportIcon } from './ImportIcon';
+import { IncidentResponseFilledIcon } from './IncidentResponseFilledIcon';
+import { IncidentResponseOutlineIcon } from './IncidentResponseOutlineIcon';
+import { IncidentsFilledIcon } from './IncidentsFilledIcon';
+import { IncidentsOutlineIcon } from './IncidentsOutlineIcon';
 import { InfoIcon } from './InfoIcon';
+import { InfrastructureFilledIcon } from './InfrastructureFilledIcon';
+import { InfrastructureOutlineIcon } from './InfrastructureOutlineIcon';
+import { IntegrationsFilledIcon } from './IntegrationsFilledIcon';
+import { IntegrationsOutlineIcon } from './IntegrationsOutlineIcon';
+import { LockIcon } from './LockIcon';
 import { MinusIcon } from './MinusIcon';
-import { EmailIcon } from './EmailIcon';
+import { OrganizationFilledIcon } from './OrganizationFilledIcon';
+import { OrganizationOutlineIcon } from './OrganizationOutlineIcon';
 import { PlusIcon } from './PlusIcon';
+import { RefreshIcon } from './RefreshIcon';
+import { RunbooksFilledIcon } from './RunbooksFilledIcon';
+import { RunbooksOutlineIcon } from './RunbooksOutlineIcon';
 import { SearchIcon } from './SearchIcon';
 import { SettingsIcon } from './SettingsIcon';
 import { StarFilledIcon } from './StarFilledIcon';
 import { StarOutlineIcon } from './StarOutlineIcon';
+import { StatusPagesFilledIcon } from './StatusPagesFilledIcon';
+import { StatusPagesOutlineIcon } from './StatusPagesOutlineIcon';
 import { SuccessIcon } from './SuccessIcon';
-import { RefreshIcon } from './RefreshIcon';
 import { TeamIcon } from './TeamIcon';
+import { TicketIcon } from './TicketIcon';
+import { UnlockIcon } from './UnlockIcon';
+import { UserFilledIcon } from './UserFilledIcon';
+import { UserOutlineIcon } from './UserOutlineIcon';
 import { WarningIcon } from './WarningIcon';
 
 export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
@@ -37,6 +62,10 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <AccountIcon {...props} />;
     case 'alert':
       return <AlertIcon {...props} />;
+    case 'analyticsFilled':
+      return <AnalyticsFilledIcon {...props} />;
+    case 'analyticsOutline':
+      return <AnalyticsOutlineIcon {...props} />;
     case 'arrowDown':
       return <ArrowDownIcon {...props} />;
     case 'arrowLeft':
@@ -59,8 +88,12 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <CloseIcon {...props} />;
     case 'delete':
       return <DeleteIcon {...props} />;
+    case 'download':
+      return <DownloadIcon {...props} />;
     case 'edit':
       return <EditIcon {...props} />;
+    case 'email':
+      return <EmailIcon {...props} />;
     case 'externalLink':
       return <ExternalLinkIcon {...props} />;
     case 'file':
@@ -69,30 +102,72 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <FilterIcon {...props} />;
     case 'help':
       return <HelpIcon {...props} />;
+    case 'helpFilled':
+      return <HelpFilledIcon {...props} />;
+    case 'homeFilled':
+      return <HomeFilledIcon {...props} />;
+    case 'homeOutline':
+      return <HomeOutlineIcon {...props} />;
     case 'import':
       return <ImportIcon {...props} />;
+    case 'incidentResponseFilled':
+      return <IncidentResponseFilledIcon {...props} />;
+    case 'incidentResponseOutline':
+      return <IncidentResponseOutlineIcon {...props} />;
+    case 'incidentsFilled':
+      return <IncidentsFilledIcon {...props} />;
+    case 'incidentsOutline':
+      return <IncidentsOutlineIcon {...props} />;
     case 'info':
       return <InfoIcon {...props} />;
-    case 'email':
-      return <EmailIcon {...props} />;
+    case 'infrastructureFilled':
+      return <InfrastructureFilledIcon {...props} />;
+    case 'infrastructureOutline':
+      return <InfrastructureOutlineIcon {...props} />;
+    case 'integrationsFilled':
+      return <IntegrationsFilledIcon {...props} />;
+    case 'integrationsOutline':
+      return <IntegrationsOutlineIcon {...props} />;
+    case 'lock':
+      return <LockIcon {...props} />;
     case 'minus':
       return <MinusIcon {...props} />;
+    case 'organizationFilled':
+      return <OrganizationFilledIcon {...props} />;
+    case 'organizationOutline':
+      return <OrganizationOutlineIcon {...props} />;
     case 'plus':
       return <PlusIcon {...props} />;
+    case 'refresh':
+      return <RefreshIcon {...props} />;
+    case 'runbooksFilled':
+      return <RunbooksFilledIcon {...props} />;
+    case 'runbooksOutline':
+      return <RunbooksOutlineIcon {...props} />;
     case 'settings':
       return <SettingsIcon {...props} />;
     case 'starFilled':
       return <StarFilledIcon {...props} />;
     case 'starOutline':
       return <StarOutlineIcon {...props} />;
+    case 'statusPagesFilled':
+      return <StatusPagesFilledIcon {...props} />;
+    case 'statusPagesOutline':
+      return <StatusPagesOutlineIcon {...props} />;
     case 'success':
       return <SuccessIcon {...props} />;
     case 'search':
       return <SearchIcon {...props} />;
-    case 'refresh':
-      return <RefreshIcon {...props} />;
     case 'team':
       return <TeamIcon {...props} />;
+    case 'ticket':
+      return <TicketIcon {...props} />;
+    case 'unlock':
+      return <UnlockIcon {...props} />;
+    case 'userFilled':
+      return <UserFilledIcon {...props} />;
+    case 'userOutline':
+      return <UserOutlineIcon {...props} />;
     case 'warning':
       return <WarningIcon {...props} />;
     default:
