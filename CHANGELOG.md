@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/firehydrant/design-system/compare/v3.0.0...v3.0.1) (2021-08-04)
+
+
+### 👊 Version Bumps
+
+* Bump @chakra-ui/react from 1.6.0 to 1.6.5 ([#77](https://github.com/firehydrant/design-system/pull/77)) ([92be94e](https://github.com/firehydrant/design-system/commit/92be94ef1f211453a5fbb8f7cf0840b1eb5fa2e3))
+
+
+### 🧹 Chores
+
+* **deps-dev:** bump eslint from 7.25.0 to 7.31.0 ([#92](https://github.com/firehydrant/design-system/pull/92)) ([ba19262](https://github.com/firehydrant/design-system/commit/ba19262f86e1cd8e74b14014abfad20714085515))
+
+
+### 🛠 Fixed
+
+* **alert:** corrects borders and margin on text ([#100](https://github.com/firehydrant/design-system/pull/100)) ([36a9bd7](https://github.com/firehydrant/design-system/commit/36a9bd7496df1ff485aa3293b3a31171d502c832))
+
 ## [3.0.0](https://github.com/firehydrant/design-system/compare/v2.3.0...v3.0.0) (2021-07-29)
 
 
