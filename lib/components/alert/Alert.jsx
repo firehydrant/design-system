@@ -13,7 +13,7 @@ export function Alert({ children, dismissable, onDismiss, variant }) {
   };
 
   return (
-    <Flex __css={styles} borderWidth="1px" borderRadius="4px" variant={variant}>
+    <Flex __css={styles} borderWidth="1px" borderStyle="solid" borderRadius="4px" variant={variant}>
       <Flex>
         <Flex align="flex-start" py="mg2">
           <Icon name={variant} ml="1" mr="2" color={iconColorScheme[variant]} />
