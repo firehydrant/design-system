@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/firehydrant/design-system/compare/v3.0.1...v3.0.2) (2021-08-04)
+
+
+### 🛠 Fixed
+
+* **alert:** add border style to alert ([#101](https://github.com/firehydrant/design-system/pull/101)) ([4b809b7](https://github.com/firehydrant/design-system/commit/4b809b77f1dd5e05b44c918790e99ee4424983a2))
+
 ### [3.0.1](https://github.com/firehydrant/design-system/compare/v3.0.0...v3.0.1) (2021-08-04)
 
 
