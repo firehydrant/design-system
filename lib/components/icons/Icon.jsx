@@ -7,6 +7,7 @@ import { ArrowDownIcon } from './ArrowDownIcon';
 import { ArrowLeftIcon } from './ArrowLeftIcon';
 import { ArrowRightIcon } from './ArrowRightIcon';
 import { ArrowUpIcon } from './ArrowUpIcon';
+import { AtomIcon } from './AtomIcon';
 import { CheckIcon } from './CheckIcon';
 import { ChevronDownIcon } from './ChevronDownIcon';
 import { ChevronLeftIcon } from './ChevronLeftIcon';
@@ -35,11 +36,13 @@ import { InfrastructureOutlineIcon } from './InfrastructureOutlineIcon';
 import { IntegrationsFilledIcon } from './IntegrationsFilledIcon';
 import { IntegrationsOutlineIcon } from './IntegrationsOutlineIcon';
 import { LockIcon } from './LockIcon';
+import { MenuIcon } from './MenuIcon';
 import { MinusIcon } from './MinusIcon';
 import { OrganizationFilledIcon } from './OrganizationFilledIcon';
 import { OrganizationOutlineIcon } from './OrganizationOutlineIcon';
 import { PlusIcon } from './PlusIcon';
 import { RefreshIcon } from './RefreshIcon';
+import { RocketIcon } from './RocketIcon';
 import { RunbooksFilledIcon } from './RunbooksFilledIcon';
 import { RunbooksOutlineIcon } from './RunbooksOutlineIcon';
 import { SearchIcon } from './SearchIcon';
@@ -68,6 +71,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <AnalyticsOutlineIcon {...props} />;
     case 'arrowDown':
       return <ArrowDownIcon {...props} />;
+    case 'atom':
+      return <AtomIcon {...props} />;
     case 'arrowLeft':
       return <ArrowLeftIcon {...props} />;
     case 'arrowRight':
@@ -130,6 +135,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <IntegrationsOutlineIcon {...props} />;
     case 'lock':
       return <LockIcon {...props} />;
+    case 'menu':
+      return <MenuIcon {...props} />;
     case 'minus':
       return <MinusIcon {...props} />;
     case 'organizationFilled':
@@ -140,6 +147,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <PlusIcon {...props} />;
     case 'refresh':
       return <RefreshIcon {...props} />;
+    case 'rocket':
+      return <RocketIcon {...props} />;
     case 'runbooksFilled':
       return <RunbooksFilledIcon {...props} />;
     case 'runbooksOutline':
