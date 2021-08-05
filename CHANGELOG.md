@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/firehydrant/design-system/compare/v3.0.2...v4.0.0) (2021-08-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **icon:** name="help" is no longer valid; use name="helpOutline"
+instead.
+
+### 🧹 Chores
+
+* **icon:** add new icons to infrastructure files ([e86e907](https://github.com/firehydrant/design-system/commit/e86e90737c1252521681ecaa274586d1d853fc1f))
+* **icon:** Cleanup of unused code in story ([574738a](https://github.com/firehydrant/design-system/commit/574738a7cbb72c03476d6a7ced364c6b7151a96e))
+
+
+### ✨ New Features
+
+* **icon:** adds Analytics Filled / Outline icons ([89751e2](https://github.com/firehydrant/design-system/commit/89751e232d861863897222edd5e12d4ee215561d))
+* **icon:** adds Atom, Menu, & Rocket icons ([1b1843d](https://github.com/firehydrant/design-system/commit/1b1843d05372824a527b0720cb3bf2545eef040a))
+* **icon:** adds Download icon ([b9dc0b5](https://github.com/firehydrant/design-system/commit/b9dc0b5a74daed175d983ae8a63086e4a54170e2))
+* **icon:** adds Help Filled icon ([ff5ed1f](https://github.com/firehydrant/design-system/commit/ff5ed1f45a1d264278595ee95d86c922f8b4c241))
+* **icon:** adds Home Filled / Outline icons ([9a67020](https://github.com/firehydrant/design-system/commit/9a670204e2013265f06fb424b4af4b2d80594fe6))
+* **icon:** adds Incident Response Filled / Outline icons ([951fa45](https://github.com/firehydrant/design-system/commit/951fa458f0a1a7c10f93cf109232b62fdad7b47d))
+* **icon:** adds Incidents Filled / Outline icons ([43f9475](https://github.com/firehydrant/design-system/commit/43f947547605de7bc1af3cc2d7b1de22f41651a3))
+* **icon:** adds Infrastructure Outline / Filled icons ([ab1219f](https://github.com/firehydrant/design-system/commit/ab1219fd018a8971cdc07ec9ee598556358fac7f))
+* **icon:** adds Integrations Filled / Outline icons ([b6cfe45](https://github.com/firehydrant/design-system/commit/b6cfe456be37767f9003eb4d1083f968d812f7a4))
+* **icon:** adds Lock icon ([07b2eb2](https://github.com/firehydrant/design-system/commit/07b2eb241f53927b066ac45f9d4d0e692f15948e))
+* **icon:** adds Organization Filled / Outline icons ([469e68c](https://github.com/firehydrant/design-system/commit/469e68c2206f062934460ffc2d962aa35258c6cf))
+* **icon:** adds Runbooks Filled / Outline icons ([68bf5a2](https://github.com/firehydrant/design-system/commit/68bf5a2389b29c4dd71799cee896a166863e94be))
+* **icon:** adds Status Pages Filled / Outline icons ([4a5c599](https://github.com/firehydrant/design-system/commit/4a5c599bdb94a57e803fe79ec3ee49324691d5b9))
+* **icon:** adds Ticket icon ([5f4c714](https://github.com/firehydrant/design-system/commit/5f4c714d62ed6ea164b2130a201dfdd204da7428))
+* **icon:** adds Unlock icon ([0656863](https://github.com/firehydrant/design-system/commit/0656863c4161d9a32a454af6d3204c45e16db7f4))
+* **icon:** adds User Filled / Outline icons ([718983e](https://github.com/firehydrant/design-system/commit/718983e9bdc1815e73c61a121e663e894c1e5697))
+* **icon:** new Storybook organization by group ([dce5a9f](https://github.com/firehydrant/design-system/commit/dce5a9f9b444357c3613c57436a37bf30180f261))
+* **icon:** renames Help to HelpOutline ([a151bd3](https://github.com/firehydrant/design-system/commit/a151bd38ca68a4287253f6f980abe8b8cddcbba0))
+
+
+### 🛠 Fixed
+
+* **FormErrorMessage:** adds correct error icon ([2b55a06](https://github.com/firehydrant/design-system/commit/2b55a06a0774de14f985b2b5aa8032bd9c0afcb5))
+* **icon:** Info is now default (omit name prop) ([a42e2e9](https://github.com/firehydrant/design-system/commit/a42e2e9207784c0408dd14203c5f827cc1906da1))
+
 ### [3.0.2](https://github.com/firehydrant/design-system/compare/v3.0.1...v3.0.2) (2021-08-04)
 
 
