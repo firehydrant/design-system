@@ -21,7 +21,7 @@ import { EmailIcon } from './EmailIcon';
 import { FileIcon } from './FileIcon';
 import { FilterIcon } from './FilterIcon';
 import { ExternalLinkIcon } from './ExternalLinkIcon';
-import { HelpIcon } from './HelpIcon';
+import { HelpOutlineIcon } from './HelpOutlineIcon';
 import { HelpFilledIcon } from './HelpFilledIcon';
 import { HomeFilledIcon } from './HomeFilledIcon';
 import { HomeOutlineIcon } from './HomeOutlineIcon';
@@ -105,8 +105,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <FileIcon {...props} />;
     case 'filter':
       return <FilterIcon {...props} />;
-    case 'help':
-      return <HelpIcon {...props} />;
+    case 'helpOutline':
+      return <HelpOutlineIcon {...props} />;
     case 'helpFilled':
       return <HelpFilledIcon {...props} />;
     case 'homeFilled':
