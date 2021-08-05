@@ -11,7 +11,7 @@ export function FormErrorMessage({ children, ...props }) {
       color="red.70"
       {...props}
     >
-      <Icon name="error" width="20px" height="20px" mr="1" />
+      <Icon name="alert" width="20px" height="20px" mr="1" />
       {children}
     </ChakraFormErrorMessage>
   );
