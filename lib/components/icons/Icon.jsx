@@ -180,6 +180,6 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
     case 'warning':
       return <WarningIcon {...props} />;
     default:
-      return null;
+      return <InfoIcon {...props} />;
   }
 };
