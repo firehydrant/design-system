@@ -7,7 +7,6 @@ import { DropdownIndicator } from './DropdownIndicator';
 import { ClearIndicator } from './ClearIndicator';
 
 const getFocusStyles = state => {
-  console.log('state', state);
   if (state.isFocused) {
     if (state.selectProps.isInvalid) {
       return '0px 0px 0px 1px #c6352d inset, #c6352d 0px 0px 0px 3px'
