@@ -127,6 +127,37 @@ const customStyles = {
       cursor: 'pointer',
     },
   }),
+  menu: (provided) => ({
+    ...provided,
+    backgroundColor: '#ffffff',
+    marginTop: '4px',
+    marginBottom: '0',
+    boxShadow: '4px 4px 0px 0px rgba(24, 32, 66, 0.16)',
+  }),
+  menuList: () => ({
+    padding: '0',
+    border: '1px solid #c6d0e2',
+    borderRadius: '4px',
+    '& :first-child': {
+      borderTopRightRadius: '4px',
+      borderTopLeftRadius: '4px',
+    },
+    '& :last-child': {
+      borderBottomRightRadius: '4px',
+      borderBottomLeftRadius: '4px',
+    },
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    padding: '10px 16px',
+    color: state.isFocused ? '#614ab6' : '#182042',
+    backgroundColor: state.isFocused ? '#f1edff' : 'transparent',
+    boxShadow: state.isFocused ? '0 0 0 2px #3b2492' : '0',
+    ':hover': {
+      color: '#614ab6',
+      backgroundColor: '#f1edff',
+    }
+  }),
 };
 
 export function Dropdown({ ...props }) {
