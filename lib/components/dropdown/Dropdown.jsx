@@ -71,10 +71,16 @@ const customStyles = {
   clearIndicator: (provided) => ({
     ...provided,
     color: '#c6d0e2',
+    ':hover': {
+      color: '#c6d0e2'
+    },
   }),
   dropdownIndicator: (provided, state) => ({
     ...provided,
     color: state.isDisabled ? '#c6d0e2' : '#182042',
+    ':hover': {
+      color: 'initial'
+    },
   }),
   placeholder: (provided) => ({
     ...provided,
