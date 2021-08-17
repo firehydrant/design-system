@@ -5,23 +5,34 @@ import AsyncCreatableSelect from 'react-select/async-creatable';
 import { useFormControlContext } from '@chakra-ui/react';
 import { DropdownIndicator } from './DropdownIndicator';
 import { ClearIndicator } from './ClearIndicator';
+import { MultiValueRemove } from './MultiValueRemove';
 
 const getFocusStyles = state => {
   if (state.isFocused) {
     if (state.selectProps.isInvalid) {
       return '0px 0px 0px 1px #c6352d inset, #c6352d 0px 0px 0px 3px'
     }
-    return '0px 0px 0px 1px #3b2492 inset, #3b2492 0px 0px 0px 3px';
+    return '0px 0px 0px 1px #3b2492 inset, #3b2492 0px 0px 0px 3px'
   }
 
   return 'initial';
-}
+};
+
+const getBorderStyles = state => {
+  if (state.isFocused) {
+    return '#3b2492'
+  } else if (state.selectProps.isInvalid) {
+    return '#c6352d'
+  }
+
+  return '#8a9bb7';
+};
 
 const customStyles = {
   control: (provided, state) => ({
     ...provided,
     padding: 0,
-    borderColor: state.selectProps.isInvalid ? '#c6352d' : '#8a9bb7',
+    borderColor: getBorderStyles(state),
     boxShadow: getFocusStyles(state),
     backgroundColor: state.isDisabled ? '#eef1f6' : '#ffffff',
     ':hover': {
@@ -30,10 +41,13 @@ const customStyles = {
     ':active': {
       borderColor: '#3b2492',
     },
+    ':focus': {
+      borderColor: '#3b2492',
+    },
   }),
   valueContainer: (provided, state) => ({
     ...provided,
-    padding: '8px 4px 8px 16px',
+    padding: state.selectProps.isMulti ? '6px 4px 6px 16px' : '8px 4px 8px 16px',
     minHeight: '40px',
     height: state.selectProps.isMulti ? 'auto' : '40px',
   }),
@@ -43,19 +57,24 @@ const customStyles = {
     lineHeight: '1.5',
     fontWeight: 'normal',
     color: '#182042',
-    margin: '0 2px',
+    margin: '0 2px 0 0',
   }),
   indicatorsContainer: (provided) => ({
     ...provided,
     padding: '0 8px 0 4px',
   }),
+  indicatorSeparator: (state) => ({
+    width: '1px',
+    height: '16px',
+    backgroundColor: state.isDisabled ? 'transparent' : '#c6d0e2',
+  }),
   clearIndicator: (provided) => ({
     ...provided,
     color: '#c6d0e2',
   }),
-  dropdownIndicator: (provided) => ({
+  dropdownIndicator: (provided, state) => ({
     ...provided,
-    color: '#182042',
+    color: state.isDisabled ? '#c6d0e2' : '#182042',
   }),
   placeholder: (provided) => ({
     ...provided,
@@ -63,6 +82,7 @@ const customStyles = {
     lineHeight: '1.5',
     fontWeight: 'normal',
     color: '#8a9bb7',
+    marginLeft: '0',
   }),
   singleValue: (provided) => ({
     ...provided,
@@ -73,10 +93,11 @@ const customStyles = {
   }),
   multiValue: (provided) => ({
     ...provided,
+    margin: '2px 2px 2px 0',
     maxWidth: '100%',
     backgroundColor: '#eef1f6',
-    // border: '1px solid #c6d0e2',
-    // borderRadius: '4px',
+    boxShadow: 'inset 0 0 0 1px #c6d0e2',
+    borderRadius: '4px',
     fontSize: '12px',
     lineHeight: '1.7',
     fontWeight: 'normal',
@@ -86,25 +107,18 @@ const customStyles = {
     textOverflow: 'initial',
     whiteSpace: 'initial',
     padding: '2px 2px 2px 6px',
-    border: '1px solid #c6d0e2',
-    borderRightColor: 'transparent',
-    borderRadius: '4px',
-    borderTopRightRadius: '0',
-    borderBottomRightRadius: '0',
   }),
   multiValueRemove: (provided) => ({
     ...provided,
     padding: '2px 6px 2px 2px',
-    border: '1px solid #c6d0e2',
-    borderLeftColor: 'transparent',
-    borderRadius: '4px',
-    borderTopLeftRadius: '0',
-    borderBottomLeftRadius: '0',
     ':hover': {
       backgroundColor: '#fceeed',
-      border: '1px solid #f5bfbc',
-      borderLeftColor: '#f5bfbc',
+      boxShadow: 'inset 0 0 0 1px #f5bfbc',
+      borderRadius: '4px',
+      borderTopLeftRadius: '0',
+      borderBottomLeftRadius: '0',
       color: '#c6352d',
+      cursor: 'pointer',
     },
   }),
 };
@@ -123,7 +137,7 @@ export function Dropdown({ ...props }) {
     <Select 
       {...props}
       {...fieldProps}
-      components={{ DropdownIndicator, ClearIndicator }}
+      components={{ DropdownIndicator, ClearIndicator, MultiValueRemove }}
       styles={customStyles}
     />
   );
@@ -143,7 +157,7 @@ export function AsyncDropdown({ ...props }) {
     <AsyncSelect
       {...props}
       {...fieldProps}
-      components={{ DropdownIndicator, ClearIndicator }}
+      components={{ DropdownIndicator, ClearIndicator, MultiValueRemove }}
       styles={customStyles}
     />
   );
@@ -163,7 +177,7 @@ export function AsyncCreatableDropdown({ ...props }) {
     <AsyncCreatableSelect
       {...props}
       {...fieldProps}
-      components={{ DropdownIndicator, ClearIndicator }}
+      components={{ DropdownIndicator, ClearIndicator, MultiValueRemove }}
       styles={customStyles}
     />
   );
