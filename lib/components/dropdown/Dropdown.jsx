@@ -70,7 +70,8 @@ const customStyles = {
     ...provided,
     padding: `0 ${space[2]} 0 ${space[1]}`,
   }),
-  indicatorSeparator: (state) => ({
+  indicatorSeparator: (provided, state) => ({
+    // state doesn't behave how we want it to without passing provided
     width: '1px',
     height: '16px',
     backgroundColor: state.isDisabled ? 'transparent' : colors.grey[30],
@@ -106,7 +107,7 @@ const customStyles = {
   }),
   multiValue: (provided) => ({
     ...provided,
-    margin: `${space['mg0']} ${space['mg0']} ${space['mg0']} 0`,
+    margin: `${space['mg0']} ${space[1]} ${space['mg0']} 0`,
     maxWidth: '100%',
     backgroundColor: colors.grey[10],
     boxShadow: `inset 0 0 0 1px ${colors.grey[30]}`,
@@ -126,7 +127,7 @@ const customStyles = {
     padding: `${space['mg0']} ${space['mg1']} ${space['mg0']} ${space['mg0']}`,
     ':hover': {
       backgroundColor: colors.red[10],
-      boxShadow: `inset 0 0 0 1px ${colors.red[10]}`,
+      boxShadow: `inset 0 0 0 1px ${colors.red[30]}`,
       borderRadius: radii['base'],
       borderTopLeftRadius: '0',
       borderBottomLeftRadius: '0',
