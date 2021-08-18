@@ -7,12 +7,17 @@ import { DropdownIndicator } from './DropdownIndicator';
 import { ClearIndicator } from './ClearIndicator';
 import { MultiValueRemove } from './MultiValueRemove';
 
+import { colors } from '../../theme/colors.theme';
+import { space } from '../../theme/space.theme';
+import { fontSizes, fontWeights, lineHeights } from '../../theme/font.theme';
+import { radii } from '../../theme/radii.theme';
+
 const getFocusStyles = state => {
   if (state.isFocused) {
     if (state.selectProps.isInvalid) {
-      return '0px 0px 0px 1px #c6352d inset, #c6352d 0px 0px 0px 3px'
+      return `0px 0px 0px 1px ${colors.red[70]} inset, ${colors.red[70]} 0px 0px 0px 3px`
     }
-    return '0px 0px 0px 1px #3b2492 inset, #3b2492 0px 0px 0px 3px'
+    return `0px 0px 0px 1px ${colors.purple[70]} inset, ${colors.purple[70]} 0px 0px 0px 3px`
   }
 
   return 'initial';
@@ -20,12 +25,12 @@ const getFocusStyles = state => {
 
 const getBorderStyles = state => {
   if (state.isFocused) {
-    return '#3b2492'
+    return colors.purple[70];
   } else if (state.selectProps.isInvalid) {
-    return '#c6352d'
+    return colors.red[70];
   }
 
-  return '#8a9bb7';
+  return colors.grey[50];
 };
 
 const customStyles = {
@@ -34,110 +39,112 @@ const customStyles = {
     padding: 0,
     borderColor: getBorderStyles(state),
     boxShadow: getFocusStyles(state),
-    backgroundColor: state.isDisabled ? '#eef1f6' : '#ffffff',
+    backgroundColor: state.isDisabled ? colors.grey[10] : colors.grey[0],
+    transitionDuration: '0.2s',
+    transitionProperty: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
     ':hover': {
-      borderColor: '#614ab6',
+      borderColor: colors.purple[50],
     },
     ':active': {
-      borderColor: '#3b2492',
+      borderColor: colors.purple[70],
     },
     ':focus': {
-      borderColor: '#3b2492',
+      borderColor: colors.purple[70],
     },
   }),
   valueContainer: (provided, state) => ({
     ...provided,
-    padding: state.selectProps.isMulti ? '6px 4px 6px 16px' : '8px 4px 8px 16px',
+    padding: state.selectProps.isMulti ? `${space['mg1']} ${space[1]} ${space['mg1']} ${space[3]}` : `${space[2]} ${space[1]} ${space[2]} ${space[3]}`,
     minHeight: '40px',
     height: state.selectProps.isMulti ? 'auto' : '40px',
   }),
   input: () => ({
     visibility: 'visible',
-    fontSize: '16px',
-    lineHeight: '1.5',
-    fontWeight: 'normal',
-    color: '#182042',
-    margin: '0 2px 0 0',
+    fontSize: fontSizes[5],
+    lineHeight: lineHeights[5],
+    fontWeight: fontWeights[5],
+    color: colors.grey[90],
+    margin: `0 ${space['mg0']} 0 0`,
   }),
   indicatorsContainer: (provided) => ({
     ...provided,
-    padding: '0 8px 0 4px',
+    padding: `0 ${space[2]} 0 ${space[1]}`,
   }),
   indicatorSeparator: (state) => ({
     width: '1px',
     height: '16px',
-    backgroundColor: state.isDisabled ? 'transparent' : '#c6d0e2',
+    backgroundColor: state.isDisabled ? 'transparent' : colors.grey[30],
   }),
   clearIndicator: (provided) => ({
     ...provided,
-    color: '#c6d0e2',
+    color: colors.grey[30],
     ':hover': {
-      color: '#c6d0e2'
+      color: colors.grey[30],
     },
   }),
   dropdownIndicator: (provided, state) => ({
     ...provided,
-    color: state.isDisabled ? '#c6d0e2' : '#182042',
+    color: state.isDisabled ? colors.grey[30] : colors.grey[90],
     ':hover': {
       color: 'initial'
     },
   }),
   placeholder: (provided) => ({
     ...provided,
-    fontSize: '16px',
-    lineHeight: '1.5',
-    fontWeight: 'normal',
-    color: '#8a9bb7',
+    fontSize: fontSizes[5],
+    lineHeight: lineHeights[5],
+    fontWeight: fontWeights[5],
+    color: colors.grey[50],
     marginLeft: '0',
   }),
   singleValue: (provided) => ({
     ...provided,
-    fontSize: '16px',
-    lineHeight: '1.5',
-    fontWeight: 'normal',
-    color: '#182042',
+    fontSize: fontSizes[5],
+    lineHeight: lineHeights[5],
+    fontWeight: fontWeights[5],
+    color: colors.grey[90],
   }),
   multiValue: (provided) => ({
     ...provided,
-    margin: '2px 2px 2px 0',
+    margin: `${space['mg0']} ${space['mg0']} ${space['mg0']} 0`,
     maxWidth: '100%',
-    backgroundColor: '#eef1f6',
-    boxShadow: 'inset 0 0 0 1px #c6d0e2',
-    borderRadius: '4px',
-    fontSize: '12px',
-    lineHeight: '1.7',
-    fontWeight: 'normal',
-    color: '#182042',
+    backgroundColor: colors.grey[10],
+    boxShadow: `inset 0 0 0 1px ${colors.grey[30]}`,
+    borderRadius: radii['base'],
+    fontSize: fontSizes[7],
+    lineHeight: lineHeights[7],
+    fontWeight: fontWeights[7],
+    color: colors.grey[90],
   }),
   multiValueLabel: () => ({
     textOverflow: 'initial',
     whiteSpace: 'initial',
-    padding: '2px 2px 2px 6px',
+    padding: `${space['mg0']} ${space['mg0']} ${space['mg0']} ${space['mg1']}`,
   }),
   multiValueRemove: (provided) => ({
     ...provided,
-    padding: '2px 6px 2px 2px',
+    padding: `${space['mg0']} ${space['mg1']} ${space['mg0']} ${space['mg0']}`,
     ':hover': {
-      backgroundColor: '#fceeed',
-      boxShadow: 'inset 0 0 0 1px #f5bfbc',
-      borderRadius: '4px',
+      backgroundColor: colors.red[10],
+      boxShadow: `inset 0 0 0 1px ${colors.red[10]}`,
+      borderRadius: radii['base'],
       borderTopLeftRadius: '0',
       borderBottomLeftRadius: '0',
-      color: '#c6352d',
+      color: colors.red[70],
       cursor: 'pointer',
     },
   }),
   menu: (provided) => ({
     ...provided,
-    backgroundColor: '#ffffff',
-    marginTop: '4px',
+    backgroundColor: colors.grey[0],
+    marginTop: space[1],
     marginBottom: '0',
     boxShadow: '4px 4px 0px 0px rgba(24, 32, 66, 0.16)',
   }),
   menuList: () => ({
     padding: '0',
-    border: '1px solid #c6d0e2',
-    borderRadius: '4px',
+    border: `1px solid ${colors.grey[30]}`,
+    borderRadius: radii['base'],
     '& :first-child': {
       borderTopRightRadius: '4px',
       borderTopLeftRadius: '4px',
@@ -149,13 +156,13 @@ const customStyles = {
   }),
   option: (provided, state) => ({
     ...provided,
-    padding: '10px 16px',
-    color: state.isFocused ? '#614ab6' : '#182042',
-    backgroundColor: state.isFocused ? '#f1edff' : 'transparent',
-    boxShadow: state.isFocused ? '0 0 0 2px #3b2492' : '0',
+    padding: `${space['mg2']} ${space[3]}`,
+    color: state.isFocused ? colors.purple[50] : colors.grey[90],
+    backgroundColor: state.isFocused ? colors.purple[10] : 'transparent',
+    boxShadow: state.isFocused ? `0 0 0 2px ${colors.purple[70]}` : '0',
     ':hover': {
-      color: '#614ab6',
-      backgroundColor: '#f1edff',
+      color: colors.purple[50],
+      backgroundColor: colors.purple[10],
     }
   }),
 };
