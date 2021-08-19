@@ -11,6 +11,7 @@ import { colors } from '../../theme/colors.theme';
 import { space } from '../../theme/space.theme';
 import { fontSizes, fontWeights, lineHeights } from '../../theme/font.theme';
 import { radii } from '../../theme/radii.theme';
+import { getFocusabledIn } from 'focus-lock';
 
 const getFocusStyles = state => {
   if (state.isFocused) {
@@ -36,6 +37,7 @@ const getBorderStyles = state => {
 const customStyles = {
   control: (provided, state) => ({
     ...provided,
+    cursor: 'pointer',
     padding: 0,
     borderColor: getBorderStyles(state),
     boxShadow: getFocusStyles(state),
@@ -160,7 +162,9 @@ const customStyles = {
     padding: `${space['mg2']} ${space[3]}`,
     color: state.isFocused ? colors.purple[50] : colors.grey[90],
     backgroundColor: state.isFocused ? colors.purple[10] : 'transparent',
-    boxShadow: state.isFocused ? `0 0 0 2px ${colors.purple[70]}` : '0',
+    ':focus': {
+      boxShadow: `0 0 0 2px ${colors.purple[70]}`,
+    },
     ':hover': {
       color: colors.purple[50],
       backgroundColor: colors.purple[10],
