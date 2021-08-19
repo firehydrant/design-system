@@ -140,6 +140,7 @@ const customStyles = {
   menu: (provided) => ({
     ...provided,
     backgroundColor: colors.grey[0],
+    cursor: 'pointer',
     marginTop: space[1],
     marginBottom: '0',
     boxShadow: '4px 4px 0px 0px rgba(24, 32, 66, 0.16)',
@@ -159,6 +160,7 @@ const customStyles = {
   }),
   option: (provided, state) => ({
     ...provided,
+    cursor: 'pointer',
     padding: `${space['mg2']} ${space[3]}`,
     color: state.isFocused ? colors.purple[50] : colors.grey[90],
     backgroundColor: state.isFocused ? colors.purple[10] : 'transparent',
