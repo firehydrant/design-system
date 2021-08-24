@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/firehydrant/design-system/compare/v4.0.0...v4.1.0) (2021-08-24)
+
+
+### ✨ New Features
+
+* **Dropdown:** builds Dropdown component ([#99](https://github.com/firehydrant/design-system/pull/99)) ([5da58b7](https://github.com/firehydrant/design-system/commit/5da58b7fbe483d9198d8db857a10cbcd52e60256))
+
 ## [4.0.0](https://github.com/firehydrant/design-system/compare/v3.0.2...v4.0.0) (2021-08-05)
 
 
