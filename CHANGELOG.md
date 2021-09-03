@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/firehydrant/design-system/compare/v4.1.0...v4.2.0) (2021-09-03)
+
+
+### ✨ New Features
+
+* **Transitions:** adds Transitions components ([#106](https://github.com/firehydrant/design-system/pull/106)) ([e007a7b](https://github.com/firehydrant/design-system/commit/e007a7b4c86862610b5f360d81b31537b52e78f4))
+
+
+### 🛠 Fixed
+
+* **IncidentsOutlineIcon:** correctly applies strokeWidth ([#107](https://github.com/firehydrant/design-system/pull/107)) ([0865f2f](https://github.com/firehydrant/design-system/commit/0865f2f8ffd13722df19ad23ae3a63477209af56))
+
 ## [4.1.0](https://github.com/firehydrant/design-system/compare/v4.0.0...v4.1.0) (2021-08-24)
 
 
