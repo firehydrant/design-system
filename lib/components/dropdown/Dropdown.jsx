@@ -145,7 +145,8 @@ const customStyles = {
     marginBottom: '0',
     boxShadow: '4px 4px 0px 0px rgba(24, 32, 66, 0.16)',
   }),
-  menuList: () => ({
+  menuList: (provided) => ({
+    ...provided,
     padding: '0',
     border: `1px solid ${colors.grey[30]}`,
     borderRadius: radii['base'],
