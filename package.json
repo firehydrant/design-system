@@ -1,6 +1,6 @@
 {
   "name": "@firehydrant/design-system",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "files": [
     "dist"
   ],
@@ -94,6 +94,6 @@
     "playroom": "^0.25.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "standard-version": "^9.3.0",
-    "vite": "^2.3.4"
+    "vite": "^2.5.4"
   }
 }
