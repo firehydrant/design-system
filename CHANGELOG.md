@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.1](https://github.com/firehydrant/design-system/compare/v4.2.0...v4.2.1) (2021-09-07)
+
+
+### 🛠 Fixed
+
+* **Dropdown:** pass provided styles to MenuList to set maxMenuHeight ([#112](https://github.com/firehydrant/design-system/pull/112)) ([51c09a5](https://github.com/firehydrant/design-system/commit/51c09a5b020189f21ed719e506aae355c9d88c95))
+
 ## [4.2.0](https://github.com/firehydrant/design-system/compare/v4.1.0...v4.2.0) (2021-09-03)
 
 
