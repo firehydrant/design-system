@@ -73,7 +73,7 @@
     "git-message": "^2.0.2",
     "playroom": "^0.25.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "standard-version": "^9.3.0",
+    "standard-version": "^9.3.1",
     "vite": "^2.5.6"
   }
 }
