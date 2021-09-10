@@ -1,13 +1,35 @@
-🌈 FireHydrant Design System 🦄  
-![Latest release](https://img.shields.io/github/v/release/firehydrant/design-system)
-![Chromatic workflow](https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg)
-![Playroom workflow](https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg)<!-- omit in toc -->
-===============================
+<h1 align="center">
+  <img src="https://static.firehydrant.io/marketing/FH_logomark_orangeRGB.png" width="124px"/><br/>
+ 🌈 FireHydrant Design System 🦄
+</h1>
 
-> **FireHydrant flavored** React component library, built using [Chakra UI](https://chakra-ui.com/) ↗️ &amp; a [custom theme layer](./lib/theme/index.js).
+<p align="center">
+    <em>FireHydrant flavored React component library, built using
+      <a href="https://chakra-ui.com/">Chakra UI</a>, and a 
+      <a href="https://github.com/firehydrant/design-system/blob/main/lib/theme/index.js">custom theme layer.</a>
+  </em>
+</p>
 
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)][storybook]
-[![Playroom](https://img.shields.io/badge/playroom-live-614ab6)][playroom]
+<p align="center">
+    <a href="https://main--607731addb01d30021caeac2.chromatic.com/">
+        <img src="https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg" alt="Storybook">
+    </a>
+    <a href="https://firehydrant.github.io/design-system/">
+        <img src="https://img.shields.io/badge/playroom-live-blueviolet" alt="playroom">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://firehydrant.io">
+        <img src="https://img.shields.io/github/v/release/firehydrant/design-system" alt="latest release">
+    </a>
+    <a href="https://firehydrant.io">
+        <img src="https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg" alt="chromatic passing">
+    </a>
+    <a href="https://firehydrant.io">
+        <img src="https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg" alt="playroom workflow">
+    </a>
+</p>
 
 - [installation](#installation)
     - [GitHub token as environment variable](#github-token-as-environment-variable)
@@ -16,10 +38,6 @@
 - [contributors](#contributors)
 - [changelog](#changelog)
 - [acknowledgements](#acknowledgements)
-
----
-
-**need info?** Slack us at [#team-design-system][slack] ↗️ ⎮ [Notion][notion] ↗️ team page ⎮ [Clubhouse][clubhouse] ↗️ board
 
 ---
 
