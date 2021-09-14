@@ -24,7 +24,7 @@
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
     "@chakra-ui/react-env": "^1.0.6",
-    "@emotion/react": "^11.4.0",
+    "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.1.5",
     "framer-motion": "^4.1.17",
     "react-select": "^4.3.1"
