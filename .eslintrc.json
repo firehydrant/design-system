@@ -1,10 +1,8 @@
 {
-  "extends": ["react-app", "react-app/jest"],
+  "extends": ["eslint:recommended", "react-app", "react-app/jest"],
   "overrides": [
     {
-      "files": [
-        "lib/**/*.stories.js"
-      ],
+      "files": ["lib/**/*.stories.js"],
       "rules": {
         "import/no-anonymous-default-export": "off"
       }
