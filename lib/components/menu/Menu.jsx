@@ -1,18 +1,23 @@
 import React from 'react';
 import {
+  Button as ChakraButton,
   Menu as ChakraMenu,
   MenuButton,
-  MenuList,
+  MenuList
 } from "@chakra-ui/react"
+import { Icon } from '../../main';
 
-export function Menu({ buttonComponent, children, maxWidth, ...props }) {
+export function Menu({ buttonText, buttonVariant, children, maxWidth, ...props }) {
   return (
     <ChakraMenu closeOnBlur preventOverflow { ...props }>
-      {/* NOTE: MenuButton will be moved into its own component upon beginning the Button Menu story. */}
-      <MenuButton>{buttonComponent}</MenuButton>
-      <MenuList maxWidth={maxWidth}>
-        {children}
-      </MenuList>
+      {({ isOpen }) => (
+        <>
+          <MenuButton as={ChakraButton} rightIcon={isOpen ? <Icon name="chevronUp" /> : <Icon name="chevronDown" />} variant={buttonVariant}>{buttonText}</MenuButton>
+          <MenuList maxWidth={maxWidth}>
+            {children}
+          </MenuList>
+        </>
+      )}
     </ChakraMenu>
   )
 }
