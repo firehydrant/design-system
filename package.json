@@ -85,6 +85,7 @@
     "eslint-plugin-testing-library": "^4.12.2",
     "git-message": "^2.0.2",
     "playroom": "^0.27.4",
+    "prettier": "2.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "standard-version": "^9.3.1",
     "vite": "^2.5.7"
