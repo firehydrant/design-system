@@ -14,12 +14,12 @@
 pre-commit:
   parallel: true
   commands:
+    prettier:
+      glob: '*.{js,jsx,json,md}'
+      run: npm run prettier -- -w {staged_files} && git add {staged_files}
     eslint:
       glob: '*.{js,jsx}'
       run: npm run lint {staged_files} && git add {staged_files}
-    prettier:
-      glob: '*.{js,jsx}'
-      run: npm run prettier -- -w {staged_files} && git add {staged_files}
 #     rubocop:
 #       tags: backend style
 #       glob: "*.rb"
