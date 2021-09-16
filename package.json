@@ -20,7 +20,7 @@
     "playroom:build": "NODE_ENV=production playroom build",
     "prerelease": "npm run build",
     "release": "standard-version",
-    "lint": "eslint ."
+    "lint": "eslint"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
@@ -63,6 +63,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.6",
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.15.4",
     "@babel/preset-env": "^7.15.6",
