@@ -32,8 +32,8 @@
 </p>
 
 - [installation](#installation)
-    - [GitHub token as environment variable](#github-token-as-environment-variable)
-    - [Add to project](#add-to-project)
+  - [GitHub token as environment variable](#github-token-as-environment-variable)
+  - [Add to project](#add-to-project)
 - [usage](#usage)
 - [contributors](#contributors)
 - [changelog](#changelog)
@@ -96,10 +96,14 @@ For a list of all components & properties, refer to [Storybook][storybook] ↗�
 # contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 ![6 Contributors](https://img.shields.io/badge/all_contributors-6-614ab6.svg)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-We welcome all additions and modifications, check out the [Contribution Guidelines](./CONTRIBUTING.md) to get started.
+> 💡 Want to contribute? Check out the [Contributing Guidelines](./CONTRIBUTING.md)
+
+Contributions of any kind are welcome!
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -122,7 +126,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
 
 # changelog
 

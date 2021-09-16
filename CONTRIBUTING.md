@@ -10,6 +10,7 @@ Design System is intended to be maintained collaboratively by every engineer and
 
 ---
 
+- [0. Development](#0-development)
 - [1. Branches](#1-branches)
 - [2. Pull Requests](#2-pull-requests)
 - [3. Conventional Commit](#3-conventional-commit)
@@ -27,9 +28,25 @@ Design System is intended to be maintained collaboratively by every engineer and
   - [5.2. Playroom](#52-playroom)
 - [6. Maintenance](#6-maintenance)
   - [6.1. Upgrading dependencies](#61-upgrading-dependencies)
-      - [6.1.0.1. Manual deploy to Chromatic](#6101-manual-deploy-to-chromatic)
+    - [6.1.0.1. Manual deploy to Chromatic](#6101-manual-deploy-to-chromatic)
 
 ---
+
+# 0. Development
+
+```sh
+# clone repo
+git clone git@github.com:firehydrant/design-system.git
+
+# install dependencies
+npm ci
+
+# install lefthook (git hooks manager)
+npx lefthook install
+
+# run storybook
+npm run storybook
+```
 
 # 1. Branches
 
