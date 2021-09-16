@@ -49,6 +49,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "hellobrian",
+      "name": "Brian Han",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4185382?v=4",
+      "profile": "https://www.brianhan.co/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
