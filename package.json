@@ -20,7 +20,8 @@
     "playroom:build": "NODE_ENV=production playroom build",
     "prerelease": "npm run build",
     "release": "standard-version",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prettier": "prettier"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",

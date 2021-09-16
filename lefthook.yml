@@ -19,7 +19,7 @@ pre-commit:
       run: npm run lint {staged_files} && git add {staged_files}
     prettier:
       glob: '*.{js,jsx}'
-      run: npx prettier -w {staged_files} && git add {staged_files}
+      run: npm run prettier -- -w {staged_files} && git add {staged_files}
 #     rubocop:
 #       tags: backend style
 #       glob: "*.rb"
