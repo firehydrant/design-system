@@ -7,7 +7,18 @@ import {
 } from "@chakra-ui/react"
 import { Icon } from '../../main';
 
-export function Menu({ buttonText, buttonVariant, children, maxWidth, ...props }) {
+export function Menu({ buttonComponent, children, maxWidth, ...props }) {
+  return (
+    <ChakraMenu closeOnBlur preventOverflow { ...props }>
+      <MenuButton>{buttonComponent}</MenuButton>
+      <MenuList maxWidth={maxWidth}>
+        {children}
+      </MenuList>
+    </ChakraMenu>
+  )
+}
+
+export function ButtonDropdown({ buttonText, buttonVariant, children, maxWidth, ...props }) {
   return (
     <ChakraMenu closeOnBlur preventOverflow { ...props }>
       {({ isOpen }) => (
