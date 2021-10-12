@@ -1,6 +1,6 @@
 {
   "name": "@firehydrant/design-system",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "files": [
     "dist"
   ],
@@ -69,7 +69,7 @@
     "@babel/eslint-parser": "^7.15.8",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
-    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-actions": "^6.3.11",
     "@storybook/addon-essentials": "^6.3.8",
     "@storybook/addon-links": "^6.3.8",
     "@storybook/react": "^6.3.8",
