@@ -2,179 +2,190 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [4.2.1](https://github.com/firehydrant/design-system/compare/v4.2.0...v4.2.1) (2021-09-07)
-
+## [4.3.0](https://github.com/firehydrant/design-system/compare/v4.2.1...v4.3.0) (2021-10-12)
 
 ### 🛠 Fixed
 
-* **Dropdown:** pass provided styles to MenuList to set maxMenuHeight ([#112](https://github.com/firehydrant/design-system/pull/112)) ([51c09a5](https://github.com/firehydrant/design-system/commit/51c09a5b020189f21ed719e506aae355c9d88c95))
+- **Button:** adds 8px x-padding to tertiary variant ([#108](https://github.com/firehydrant/design-system/pull/108)) ([6cb82a1](https://github.com/firehydrant/design-system/commit/6cb82a1ceb4e1de2afa8d0cfe4a10ec9931465c1))
+
+### ✨ New Features
+
+- **Button Dropdown:** adds button styling to Menu ([#126](https://github.com/firehydrant/design-system/pull/126)) ([cd4c614](https://github.com/firehydrant/design-system/commit/cd4c6143783bb72fa7784b867a9d2187729d5eaf))
+- **ButtonDanger:** adds Button Danger variant to Button ([#119](https://github.com/firehydrant/design-system/pull/119)) ([e4c2a82](https://github.com/firehydrant/design-system/commit/e4c2a829156370a0b014dcc3e7346c7801678a8b))
+- **Hooks:** import useful hooks to export ([#138](https://github.com/firehydrant/design-system/pull/138)) ([9334120](https://github.com/firehydrant/design-system/commit/9334120922bd8a318bbba03cf7b9b43ff2702238))
+- **Menu:** builds Menu component ([#105](https://github.com/firehydrant/design-system/pull/105)) ([ba9d777](https://github.com/firehydrant/design-system/commit/ba9d777b789520ef684f4d41837dbe8084311841))
+
+### 🧹 Chores
+
+- **deps:** bump @chakra-ui/react from 1.6.5 to 1.6.8 ([#134](https://github.com/firehydrant/design-system/pull/134)) ([7f489fe](https://github.com/firehydrant/design-system/commit/7f489fe2af420f83862b74c32c69a5a4b40fb923))
+- **deps:** bump @chakra-ui/react-env from 1.0.5 to 1.0.6 ([#117](https://github.com/firehydrant/design-system/pull/117)) ([4b4ff4d](https://github.com/firehydrant/design-system/commit/4b4ff4d90cddef74bb947908f1e9ec4a19e86491))
+- **deps:** bump @emotion/react from 11.4.0 to 11.4.1 ([#124](https://github.com/firehydrant/design-system/pull/124)) ([1a298a4](https://github.com/firehydrant/design-system/commit/1a298a460a7608aa135a5213007d9c46a00a5b8f))
+- **deps:** bump Storybook from 6.3.6 to 6.3.8 ([#125](https://github.com/firehydrant/design-system/pull/125)) ([a30c58f](https://github.com/firehydrant/design-system/commit/a30c58f54f490f2b60f05925b0c2d0df2572c8ef))
+- **deps-dev:** bump @babel/eslint-parser from 7.15.4 to 7.15.8 ([#141](https://github.com/firehydrant/design-system/pull/141)) ([982f7aa](https://github.com/firehydrant/design-system/commit/982f7aad1a3230cbc31813ed66d697278c321183))
+- **deps-dev:** bump @vitejs/plugin-react-refresh from 1.3.3 to 1.3.6 ([#96](https://github.com/firehydrant/design-system/pull/96)) ([d1be841](https://github.com/firehydrant/design-system/commit/d1be84198c148ced6922daee805e9dbc72c87607))
+- **deps-dev:** bump eslint-plugin-react from 7.25.1 to 7.26.1 ([#136](https://github.com/firehydrant/design-system/pull/136)) ([b135377](https://github.com/firehydrant/design-system/commit/b135377bfbf278e275cbf474498c6a39ff810169))
+- **deps-dev:** bump playroom from 0.25.0 to 0.27.4 ([#120](https://github.com/firehydrant/design-system/pull/120)) ([8098c42](https://github.com/firehydrant/design-system/commit/8098c42add1cca185956c601332ce135c8e79e85))
+- **deps-dev:** bump prettier from 2.4.0 to 2.4.1 ([#131](https://github.com/firehydrant/design-system/pull/131)) ([117864d](https://github.com/firehydrant/design-system/commit/117864dc6d89b00fd34e79539e72bc9f2201c545))
+- **deps-dev:** bump standard-version from 9.3.0 to 9.3.1 ([#93](https://github.com/firehydrant/design-system/pull/93)) ([837a872](https://github.com/firehydrant/design-system/commit/837a87209937c8441d1e21b5cee3ec2e741b2dc6))
+- **deps-dev:** bump vite from 2.3.4 to 2.5.6 ([#116](https://github.com/firehydrant/design-system/pull/116)) ([3c0ec2a](https://github.com/firehydrant/design-system/commit/3c0ec2a35e87a3f6f7d6c8d7a3e43e9d6afe364f))
+- **deps-dev:** bump vite from 2.5.6 to 2.5.7 ([#123](https://github.com/firehydrant/design-system/pull/123)) ([4f25d25](https://github.com/firehydrant/design-system/commit/4f25d25b9a9187603d5e521dd60f267682833071))
+- **deps-dev:** bump vite from 2.5.7 to 2.6.4 ([#140](https://github.com/firehydrant/design-system/pull/140)) ([99d2e0e](https://github.com/firehydrant/design-system/commit/99d2e0ea45fa37e598caf329764d5119487e4eac))
+- remove unused package dependencies ([#114](https://github.com/firehydrant/design-system/pull/114)) ([09d7dde](https://github.com/firehydrant/design-system/commit/09d7ddef02e87295146655126856bae843ca027a))
+- update eslint config and add pre commit hooks ([#127](https://github.com/firehydrant/design-system/pull/127)) ([2710fcd](https://github.com/firehydrant/design-system/commit/2710fcdeb0d079c4a5f4e79a009fad8c5bc4b581))
+
+### [4.2.1](https://github.com/firehydrant/design-system/compare/v4.2.0...v4.2.1) (2021-09-07)
+
+### 🛠 Fixed
+
+- **Dropdown:** pass provided styles to MenuList to set maxMenuHeight ([#112](https://github.com/firehydrant/design-system/pull/112)) ([51c09a5](https://github.com/firehydrant/design-system/commit/51c09a5b020189f21ed719e506aae355c9d88c95))
 
 ## [4.2.0](https://github.com/firehydrant/design-system/compare/v4.1.0...v4.2.0) (2021-09-03)
 
-
 ### ✨ New Features
 
-* **Transitions:** adds Transitions components ([#106](https://github.com/firehydrant/design-system/pull/106)) ([e007a7b](https://github.com/firehydrant/design-system/commit/e007a7b4c86862610b5f360d81b31537b52e78f4))
-
+- **Transitions:** adds Transitions components ([#106](https://github.com/firehydrant/design-system/pull/106)) ([e007a7b](https://github.com/firehydrant/design-system/commit/e007a7b4c86862610b5f360d81b31537b52e78f4))
 
 ### 🛠 Fixed
 
-* **IncidentsOutlineIcon:** correctly applies strokeWidth ([#107](https://github.com/firehydrant/design-system/pull/107)) ([0865f2f](https://github.com/firehydrant/design-system/commit/0865f2f8ffd13722df19ad23ae3a63477209af56))
+- **IncidentsOutlineIcon:** correctly applies strokeWidth ([#107](https://github.com/firehydrant/design-system/pull/107)) ([0865f2f](https://github.com/firehydrant/design-system/commit/0865f2f8ffd13722df19ad23ae3a63477209af56))
 
 ## [4.1.0](https://github.com/firehydrant/design-system/compare/v4.0.0...v4.1.0) (2021-08-24)
 
-
 ### ✨ New Features
 
-* **Dropdown:** builds Dropdown component ([#99](https://github.com/firehydrant/design-system/pull/99)) ([5da58b7](https://github.com/firehydrant/design-system/commit/5da58b7fbe483d9198d8db857a10cbcd52e60256))
+- **Dropdown:** builds Dropdown component ([#99](https://github.com/firehydrant/design-system/pull/99)) ([5da58b7](https://github.com/firehydrant/design-system/commit/5da58b7fbe483d9198d8db857a10cbcd52e60256))
 
 ## [4.0.0](https://github.com/firehydrant/design-system/compare/v3.0.2...v4.0.0) (2021-08-05)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **icon:** name="help" is no longer valid; use name="helpOutline"
-instead.
+- **icon:** name="help" is no longer valid; use name="helpOutline"
+  instead.
 
 ### 🧹 Chores
 
-* **icon:** add new icons to infrastructure files ([e86e907](https://github.com/firehydrant/design-system/commit/e86e90737c1252521681ecaa274586d1d853fc1f))
-* **icon:** Cleanup of unused code in story ([574738a](https://github.com/firehydrant/design-system/commit/574738a7cbb72c03476d6a7ced364c6b7151a96e))
-
+- **icon:** add new icons to infrastructure files ([e86e907](https://github.com/firehydrant/design-system/commit/e86e90737c1252521681ecaa274586d1d853fc1f))
+- **icon:** Cleanup of unused code in story ([574738a](https://github.com/firehydrant/design-system/commit/574738a7cbb72c03476d6a7ced364c6b7151a96e))
 
 ### ✨ New Features
 
-* **icon:** adds Analytics Filled / Outline icons ([89751e2](https://github.com/firehydrant/design-system/commit/89751e232d861863897222edd5e12d4ee215561d))
-* **icon:** adds Atom, Menu, & Rocket icons ([1b1843d](https://github.com/firehydrant/design-system/commit/1b1843d05372824a527b0720cb3bf2545eef040a))
-* **icon:** adds Download icon ([b9dc0b5](https://github.com/firehydrant/design-system/commit/b9dc0b5a74daed175d983ae8a63086e4a54170e2))
-* **icon:** adds Help Filled icon ([ff5ed1f](https://github.com/firehydrant/design-system/commit/ff5ed1f45a1d264278595ee95d86c922f8b4c241))
-* **icon:** adds Home Filled / Outline icons ([9a67020](https://github.com/firehydrant/design-system/commit/9a670204e2013265f06fb424b4af4b2d80594fe6))
-* **icon:** adds Incident Response Filled / Outline icons ([951fa45](https://github.com/firehydrant/design-system/commit/951fa458f0a1a7c10f93cf109232b62fdad7b47d))
-* **icon:** adds Incidents Filled / Outline icons ([43f9475](https://github.com/firehydrant/design-system/commit/43f947547605de7bc1af3cc2d7b1de22f41651a3))
-* **icon:** adds Infrastructure Outline / Filled icons ([ab1219f](https://github.com/firehydrant/design-system/commit/ab1219fd018a8971cdc07ec9ee598556358fac7f))
-* **icon:** adds Integrations Filled / Outline icons ([b6cfe45](https://github.com/firehydrant/design-system/commit/b6cfe456be37767f9003eb4d1083f968d812f7a4))
-* **icon:** adds Lock icon ([07b2eb2](https://github.com/firehydrant/design-system/commit/07b2eb241f53927b066ac45f9d4d0e692f15948e))
-* **icon:** adds Organization Filled / Outline icons ([469e68c](https://github.com/firehydrant/design-system/commit/469e68c2206f062934460ffc2d962aa35258c6cf))
-* **icon:** adds Runbooks Filled / Outline icons ([68bf5a2](https://github.com/firehydrant/design-system/commit/68bf5a2389b29c4dd71799cee896a166863e94be))
-* **icon:** adds Status Pages Filled / Outline icons ([4a5c599](https://github.com/firehydrant/design-system/commit/4a5c599bdb94a57e803fe79ec3ee49324691d5b9))
-* **icon:** adds Ticket icon ([5f4c714](https://github.com/firehydrant/design-system/commit/5f4c714d62ed6ea164b2130a201dfdd204da7428))
-* **icon:** adds Unlock icon ([0656863](https://github.com/firehydrant/design-system/commit/0656863c4161d9a32a454af6d3204c45e16db7f4))
-* **icon:** adds User Filled / Outline icons ([718983e](https://github.com/firehydrant/design-system/commit/718983e9bdc1815e73c61a121e663e894c1e5697))
-* **icon:** new Storybook organization by group ([dce5a9f](https://github.com/firehydrant/design-system/commit/dce5a9f9b444357c3613c57436a37bf30180f261))
-* **icon:** renames Help to HelpOutline ([a151bd3](https://github.com/firehydrant/design-system/commit/a151bd38ca68a4287253f6f980abe8b8cddcbba0))
-
+- **icon:** adds Analytics Filled / Outline icons ([89751e2](https://github.com/firehydrant/design-system/commit/89751e232d861863897222edd5e12d4ee215561d))
+- **icon:** adds Atom, Menu, & Rocket icons ([1b1843d](https://github.com/firehydrant/design-system/commit/1b1843d05372824a527b0720cb3bf2545eef040a))
+- **icon:** adds Download icon ([b9dc0b5](https://github.com/firehydrant/design-system/commit/b9dc0b5a74daed175d983ae8a63086e4a54170e2))
+- **icon:** adds Help Filled icon ([ff5ed1f](https://github.com/firehydrant/design-system/commit/ff5ed1f45a1d264278595ee95d86c922f8b4c241))
+- **icon:** adds Home Filled / Outline icons ([9a67020](https://github.com/firehydrant/design-system/commit/9a670204e2013265f06fb424b4af4b2d80594fe6))
+- **icon:** adds Incident Response Filled / Outline icons ([951fa45](https://github.com/firehydrant/design-system/commit/951fa458f0a1a7c10f93cf109232b62fdad7b47d))
+- **icon:** adds Incidents Filled / Outline icons ([43f9475](https://github.com/firehydrant/design-system/commit/43f947547605de7bc1af3cc2d7b1de22f41651a3))
+- **icon:** adds Infrastructure Outline / Filled icons ([ab1219f](https://github.com/firehydrant/design-system/commit/ab1219fd018a8971cdc07ec9ee598556358fac7f))
+- **icon:** adds Integrations Filled / Outline icons ([b6cfe45](https://github.com/firehydrant/design-system/commit/b6cfe456be37767f9003eb4d1083f968d812f7a4))
+- **icon:** adds Lock icon ([07b2eb2](https://github.com/firehydrant/design-system/commit/07b2eb241f53927b066ac45f9d4d0e692f15948e))
+- **icon:** adds Organization Filled / Outline icons ([469e68c](https://github.com/firehydrant/design-system/commit/469e68c2206f062934460ffc2d962aa35258c6cf))
+- **icon:** adds Runbooks Filled / Outline icons ([68bf5a2](https://github.com/firehydrant/design-system/commit/68bf5a2389b29c4dd71799cee896a166863e94be))
+- **icon:** adds Status Pages Filled / Outline icons ([4a5c599](https://github.com/firehydrant/design-system/commit/4a5c599bdb94a57e803fe79ec3ee49324691d5b9))
+- **icon:** adds Ticket icon ([5f4c714](https://github.com/firehydrant/design-system/commit/5f4c714d62ed6ea164b2130a201dfdd204da7428))
+- **icon:** adds Unlock icon ([0656863](https://github.com/firehydrant/design-system/commit/0656863c4161d9a32a454af6d3204c45e16db7f4))
+- **icon:** adds User Filled / Outline icons ([718983e](https://github.com/firehydrant/design-system/commit/718983e9bdc1815e73c61a121e663e894c1e5697))
+- **icon:** new Storybook organization by group ([dce5a9f](https://github.com/firehydrant/design-system/commit/dce5a9f9b444357c3613c57436a37bf30180f261))
+- **icon:** renames Help to HelpOutline ([a151bd3](https://github.com/firehydrant/design-system/commit/a151bd38ca68a4287253f6f980abe8b8cddcbba0))
 
 ### 🛠 Fixed
 
-* **FormErrorMessage:** adds correct error icon ([2b55a06](https://github.com/firehydrant/design-system/commit/2b55a06a0774de14f985b2b5aa8032bd9c0afcb5))
-* **icon:** Info is now default (omit name prop) ([a42e2e9](https://github.com/firehydrant/design-system/commit/a42e2e9207784c0408dd14203c5f827cc1906da1))
+- **FormErrorMessage:** adds correct error icon ([2b55a06](https://github.com/firehydrant/design-system/commit/2b55a06a0774de14f985b2b5aa8032bd9c0afcb5))
+- **icon:** Info is now default (omit name prop) ([a42e2e9](https://github.com/firehydrant/design-system/commit/a42e2e9207784c0408dd14203c5f827cc1906da1))
 
 ### [3.0.2](https://github.com/firehydrant/design-system/compare/v3.0.1...v3.0.2) (2021-08-04)
 
-
 ### 🛠 Fixed
 
-* **alert:** add border style to alert ([#101](https://github.com/firehydrant/design-system/pull/101)) ([4b809b7](https://github.com/firehydrant/design-system/commit/4b809b77f1dd5e05b44c918790e99ee4424983a2))
+- **alert:** add border style to alert ([#101](https://github.com/firehydrant/design-system/pull/101)) ([4b809b7](https://github.com/firehydrant/design-system/commit/4b809b77f1dd5e05b44c918790e99ee4424983a2))
 
 ### [3.0.1](https://github.com/firehydrant/design-system/compare/v3.0.0...v3.0.1) (2021-08-04)
 
-
 ### 👊 Version Bumps
 
-* Bump @chakra-ui/react from 1.6.0 to 1.6.5 ([#77](https://github.com/firehydrant/design-system/pull/77)) ([92be94e](https://github.com/firehydrant/design-system/commit/92be94ef1f211453a5fbb8f7cf0840b1eb5fa2e3))
-
+- Bump @chakra-ui/react from 1.6.0 to 1.6.5 ([#77](https://github.com/firehydrant/design-system/pull/77)) ([92be94e](https://github.com/firehydrant/design-system/commit/92be94ef1f211453a5fbb8f7cf0840b1eb5fa2e3))
 
 ### 🧹 Chores
 
-* **deps-dev:** bump eslint from 7.25.0 to 7.31.0 ([#92](https://github.com/firehydrant/design-system/pull/92)) ([ba19262](https://github.com/firehydrant/design-system/commit/ba19262f86e1cd8e74b14014abfad20714085515))
-
+- **deps-dev:** bump eslint from 7.25.0 to 7.31.0 ([#92](https://github.com/firehydrant/design-system/pull/92)) ([ba19262](https://github.com/firehydrant/design-system/commit/ba19262f86e1cd8e74b14014abfad20714085515))
 
 ### 🛠 Fixed
 
-* **alert:** corrects borders and margin on text ([#100](https://github.com/firehydrant/design-system/pull/100)) ([36a9bd7](https://github.com/firehydrant/design-system/commit/36a9bd7496df1ff485aa3293b3a31171d502c832))
+- **alert:** corrects borders and margin on text ([#100](https://github.com/firehydrant/design-system/pull/100)) ([36a9bd7](https://github.com/firehydrant/design-system/commit/36a9bd7496df1ff485aa3293b3a31171d502c832))
 
 ## [3.0.0](https://github.com/firehydrant/design-system/compare/v2.3.0...v3.0.0) (2021-07-29)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **tag:** any previous `variant` value is no longer valid. Tag
-now expects `variant='[subtle | outline]'` and
-`colorScheme='<foundation_color_family>'`.
-* **radio, checkbox:** `defaultIsChecked` is deprecated; use `defaultChecked`
+- **tag:** any previous `variant` value is no longer valid. Tag
+  now expects `variant='[subtle | outline]'` and
+  `colorScheme='<foundation_color_family>'`.
+- **radio, checkbox:** `defaultIsChecked` is deprecated; use `defaultChecked`
 
 ### 🛠 Fixed
 
-* **radio, checkbox:** Deprecate defaultIsChecked ([#75](https://github.com/firehydrant/design-system/pull/75)) ([f64c308](https://github.com/firehydrant/design-system/commit/f64c3089811b31e7952c35e1b7c4214b883bed75))
-* **tag:** Corrects margin for right-aligned icon ([#74](https://github.com/firehydrant/design-system/pull/74)) ([ec94f08](https://github.com/firehydrant/design-system/commit/ec94f086f480cd6f65ee593e78723e368f05edf2))
-
+- **radio, checkbox:** Deprecate defaultIsChecked ([#75](https://github.com/firehydrant/design-system/pull/75)) ([f64c308](https://github.com/firehydrant/design-system/commit/f64c3089811b31e7952c35e1b7c4214b883bed75))
+- **tag:** Corrects margin for right-aligned icon ([#74](https://github.com/firehydrant/design-system/pull/74)) ([ec94f08](https://github.com/firehydrant/design-system/commit/ec94f086f480cd6f65ee593e78723e368f05edf2))
 
 ### 👊 Version Bumps
 
-* **storybook:** bump Storybook to ^6.3.4 ([#72](https://github.com/firehydrant/design-system/pull/72)) ([82de99e](https://github.com/firehydrant/design-system/commit/82de99ed4edfc0b0fa3d2cf7113b7ecdb8bd4454))
-* Bump babel-jest from 26.6.3 to 27.0.6 ([#69](https://github.com/firehydrant/design-system/pull/69)) ([cba8b4a](https://github.com/firehydrant/design-system/commit/cba8b4accd950fd0cc8167e2dcd67670aa43080b))
-
+- **storybook:** bump Storybook to ^6.3.4 ([#72](https://github.com/firehydrant/design-system/pull/72)) ([82de99e](https://github.com/firehydrant/design-system/commit/82de99ed4edfc0b0fa3d2cf7113b7ecdb8bd4454))
+- Bump babel-jest from 26.6.3 to 27.0.6 ([#69](https://github.com/firehydrant/design-system/pull/69)) ([cba8b4a](https://github.com/firehydrant/design-system/commit/cba8b4accd950fd0cc8167e2dcd67670aa43080b))
 
 ### ✨ New Features
 
-* **alert:** build alert component ([#73](https://github.com/firehydrant/design-system/pull/73)) ([58988d4](https://github.com/firehydrant/design-system/commit/58988d4ee9edf04e4e7b1d0fc101dbbe180c83de))
-* **Center:** adds Center (Square, Circle) ([#85](https://github.com/firehydrant/design-system/pull/85)) ([e58cc1f](https://github.com/firehydrant/design-system/commit/e58cc1f0dcb4dad072b6491a5feae080f54546a7))
-* **StackDivider:** adds StackDivider ([#86](https://github.com/firehydrant/design-system/pull/86)) ([48c5191](https://github.com/firehydrant/design-system/commit/48c519190619892d6797cbf2475a77a53bad1378))
-* **tag:** adds outline variant ([#83](https://github.com/firehydrant/design-system/pull/83)) ([4965fa9](https://github.com/firehydrant/design-system/commit/4965fa92ec0c05f56f41adee5a9858654ff68b69))
-* **Wrap:** adds Wrap layout component. ([#84](https://github.com/firehydrant/design-system/pull/84)) ([856402a](https://github.com/firehydrant/design-system/commit/856402a499bfccaec3ce6724f9226baf6145d1a2))
-
+- **alert:** build alert component ([#73](https://github.com/firehydrant/design-system/pull/73)) ([58988d4](https://github.com/firehydrant/design-system/commit/58988d4ee9edf04e4e7b1d0fc101dbbe180c83de))
+- **Center:** adds Center (Square, Circle) ([#85](https://github.com/firehydrant/design-system/pull/85)) ([e58cc1f](https://github.com/firehydrant/design-system/commit/e58cc1f0dcb4dad072b6491a5feae080f54546a7))
+- **StackDivider:** adds StackDivider ([#86](https://github.com/firehydrant/design-system/pull/86)) ([48c5191](https://github.com/firehydrant/design-system/commit/48c519190619892d6797cbf2475a77a53bad1378))
+- **tag:** adds outline variant ([#83](https://github.com/firehydrant/design-system/pull/83)) ([4965fa9](https://github.com/firehydrant/design-system/commit/4965fa92ec0c05f56f41adee5a9858654ff68b69))
+- **Wrap:** adds Wrap layout component. ([#84](https://github.com/firehydrant/design-system/pull/84)) ([856402a](https://github.com/firehydrant/design-system/commit/856402a499bfccaec3ce6724f9226baf6145d1a2))
 
 ### 🧹 Chores
 
-* add section titles to changelog (config) ([73f6116](https://github.com/firehydrant/design-system/commit/73f61161d2362da7a21624cf2787fa11feb74ebc))
+- add section titles to changelog (config) ([73f6116](https://github.com/firehydrant/design-system/commit/73f61161d2362da7a21624cf2787fa11feb74ebc))
 
 ## [2.3.0](https://github.com/firehydrant/design-system/compare/v2.2.0...v2.3.0) (2021-07-09)
 
-
 ### 🧹 Chores
 
-* Include .npmrc in project ([#49](https://github.com/firehydrant/design-system/pull/49)) ([fb1c636](https://github.com/firehydrant/design-system/commit/fb1c6360288925952bffd5a870d77af7f3e23781))
-* update chromatic action ([da063b4](https://github.com/firehydrant/design-system/commit/da063b4795f39880a0fc285c4b9d92b5bba69e92))
-
+- Include .npmrc in project ([#49](https://github.com/firehydrant/design-system/pull/49)) ([fb1c636](https://github.com/firehydrant/design-system/commit/fb1c6360288925952bffd5a870d77af7f3e23781))
+- update chromatic action ([da063b4](https://github.com/firehydrant/design-system/commit/da063b4795f39880a0fc285c4b9d92b5bba69e92))
 
 ### 👊 Version Bumps
 
-* Bump @babel/core from 7.14.0 to 7.14.6 ([#56](https://github.com/firehydrant/design-system/pull/56)) ([ff5411b](https://github.com/firehydrant/design-system/commit/ff5411b8afbf1bc1d532d9c82ba50c30df041658))
-* Bump @chakra-ui/react-env from 1.0.3 to 1.0.4 ([#38](https://github.com/firehydrant/design-system/pull/38)) ([f148f73](https://github.com/firehydrant/design-system/commit/f148f73c704e203ddd6f096959f0b32a398571f0))
-* Bump @chakra-ui/react-env from 1.0.4 to 1.0.5 ([#59](https://github.com/firehydrant/design-system/pull/59)) ([b9532b5](https://github.com/firehydrant/design-system/commit/b9532b587d2df0784b5d207d96685a270ed43e26))
-* Bump @emotion/react from 11.1.5 to 11.4.0 ([#55](https://github.com/firehydrant/design-system/pull/55)) ([069fcd8](https://github.com/firehydrant/design-system/commit/069fcd8b7b9e394f6e7d65a273833d660cd2979c))
-* Bump @storybook/addon-actions from 6.3.1 to 6.3.2 ([#53](https://github.com/firehydrant/design-system/pull/53)) ([9fd6791](https://github.com/firehydrant/design-system/commit/9fd6791878c0b963c5bd68910b8549eaaef44352))
-* Bump @storybook/addon-links from 6.2.9 to 6.3.0 ([#37](https://github.com/firehydrant/design-system/pull/37)) ([ac02982](https://github.com/firehydrant/design-system/commit/ac029822b65eb0aa84cf5357397aa4cb3b5da7d5))
-* Bump @storybook/react from 6.3.1 to 6.3.2 ([#52](https://github.com/firehydrant/design-system/pull/52)) ([66c2e24](https://github.com/firehydrant/design-system/commit/66c2e24aad10784cc78b1b5bad07433acf2afd7d))
-* Bump @testing-library/jest-dom from 5.12.0 to 5.14.1 ([#40](https://github.com/firehydrant/design-system/pull/40)) ([96877bd](https://github.com/firehydrant/design-system/commit/96877bde41bdc0494a95b9e94b40f0446060988b))
-* Bump @testing-library/react from 11.2.6 to 12.0.0 ([#57](https://github.com/firehydrant/design-system/pull/57)) ([398b2c4](https://github.com/firehydrant/design-system/commit/398b2c4f630750ee9b6165a8d92f00f3e32760c1))
-* Bump eslint-plugin-import from 2.22.1 to 2.23.4 ([#36](https://github.com/firehydrant/design-system/pull/36)) ([3799ef1](https://github.com/firehydrant/design-system/commit/3799ef1991a64f36c782108954a9a95da33a6815))
-* Bump eslint-plugin-react from 7.23.2 to 7.24.0 ([#39](https://github.com/firehydrant/design-system/pull/39)) ([14b77ef](https://github.com/firehydrant/design-system/commit/14b77efb9c0ff9b6666a65da418d26ad63d5adcb))
-* Bump eslint-plugin-testing-library from 3.10.2 to 4.9.0 ([#58](https://github.com/firehydrant/design-system/pull/58)) ([3f07ade](https://github.com/firehydrant/design-system/commit/3f07aded7c91855b55607aebe1a0054bf692c532))
-* Bump jest from 26.6.3 to 27.0.6 ([#54](https://github.com/firehydrant/design-system/pull/54)) ([719fc5f](https://github.com/firehydrant/design-system/commit/719fc5f7c6287bc9b3ee03a55e7caf267ff50fc8))
-* chore: Bump framer-motion from 4.1.11 to 4.1.17 ([#47](https://github.com/firehydrant/design-system/pull/47)) ([2c07084](https://github.com/firehydrant/design-system/commit/2c0708483b3510a67bb1bd271ba1c1497327967b))
-* chore: Bump playroom from 0.23.0 to 0.25.0 ([#45](https://github.com/firehydrant/design-system/pull/45)) ([fcd9b06](https://github.com/firehydrant/design-system/commit/fcd9b0630ff0d8940f60c9edadb0baa4d70d0d4a))
-* **storybook:** Upgrades Storybook package(s) to 6.3.1 ([#51](https://github.com/firehydrant/design-system/pull/51)) ([398180c](https://github.com/firehydrant/design-system/commit/398180c6ea60b8531ff00cacba7798b6d5fb06cb))
+- Bump @babel/core from 7.14.0 to 7.14.6 ([#56](https://github.com/firehydrant/design-system/pull/56)) ([ff5411b](https://github.com/firehydrant/design-system/commit/ff5411b8afbf1bc1d532d9c82ba50c30df041658))
+- Bump @chakra-ui/react-env from 1.0.3 to 1.0.4 ([#38](https://github.com/firehydrant/design-system/pull/38)) ([f148f73](https://github.com/firehydrant/design-system/commit/f148f73c704e203ddd6f096959f0b32a398571f0))
+- Bump @chakra-ui/react-env from 1.0.4 to 1.0.5 ([#59](https://github.com/firehydrant/design-system/pull/59)) ([b9532b5](https://github.com/firehydrant/design-system/commit/b9532b587d2df0784b5d207d96685a270ed43e26))
+- Bump @emotion/react from 11.1.5 to 11.4.0 ([#55](https://github.com/firehydrant/design-system/pull/55)) ([069fcd8](https://github.com/firehydrant/design-system/commit/069fcd8b7b9e394f6e7d65a273833d660cd2979c))
+- Bump @storybook/addon-actions from 6.3.1 to 6.3.2 ([#53](https://github.com/firehydrant/design-system/pull/53)) ([9fd6791](https://github.com/firehydrant/design-system/commit/9fd6791878c0b963c5bd68910b8549eaaef44352))
+- Bump @storybook/addon-links from 6.2.9 to 6.3.0 ([#37](https://github.com/firehydrant/design-system/pull/37)) ([ac02982](https://github.com/firehydrant/design-system/commit/ac029822b65eb0aa84cf5357397aa4cb3b5da7d5))
+- Bump @storybook/react from 6.3.1 to 6.3.2 ([#52](https://github.com/firehydrant/design-system/pull/52)) ([66c2e24](https://github.com/firehydrant/design-system/commit/66c2e24aad10784cc78b1b5bad07433acf2afd7d))
+- Bump @testing-library/jest-dom from 5.12.0 to 5.14.1 ([#40](https://github.com/firehydrant/design-system/pull/40)) ([96877bd](https://github.com/firehydrant/design-system/commit/96877bde41bdc0494a95b9e94b40f0446060988b))
+- Bump @testing-library/react from 11.2.6 to 12.0.0 ([#57](https://github.com/firehydrant/design-system/pull/57)) ([398b2c4](https://github.com/firehydrant/design-system/commit/398b2c4f630750ee9b6165a8d92f00f3e32760c1))
+- Bump eslint-plugin-import from 2.22.1 to 2.23.4 ([#36](https://github.com/firehydrant/design-system/pull/36)) ([3799ef1](https://github.com/firehydrant/design-system/commit/3799ef1991a64f36c782108954a9a95da33a6815))
+- Bump eslint-plugin-react from 7.23.2 to 7.24.0 ([#39](https://github.com/firehydrant/design-system/pull/39)) ([14b77ef](https://github.com/firehydrant/design-system/commit/14b77efb9c0ff9b6666a65da418d26ad63d5adcb))
+- Bump eslint-plugin-testing-library from 3.10.2 to 4.9.0 ([#58](https://github.com/firehydrant/design-system/pull/58)) ([3f07ade](https://github.com/firehydrant/design-system/commit/3f07aded7c91855b55607aebe1a0054bf692c532))
+- Bump jest from 26.6.3 to 27.0.6 ([#54](https://github.com/firehydrant/design-system/pull/54)) ([719fc5f](https://github.com/firehydrant/design-system/commit/719fc5f7c6287bc9b3ee03a55e7caf267ff50fc8))
+- chore: Bump framer-motion from 4.1.11 to 4.1.17 ([#47](https://github.com/firehydrant/design-system/pull/47)) ([2c07084](https://github.com/firehydrant/design-system/commit/2c0708483b3510a67bb1bd271ba1c1497327967b))
+- chore: Bump playroom from 0.23.0 to 0.25.0 ([#45](https://github.com/firehydrant/design-system/pull/45)) ([fcd9b06](https://github.com/firehydrant/design-system/commit/fcd9b0630ff0d8940f60c9edadb0baa4d70d0d4a))
+- **storybook:** Upgrades Storybook package(s) to 6.3.1 ([#51](https://github.com/firehydrant/design-system/pull/51)) ([398180c](https://github.com/firehydrant/design-system/commit/398180c6ea60b8531ff00cacba7798b6d5fb06cb))
 
 ## [2.2.0](https://github.com/firehydrant/design-system/compare/v2.1.0...v2.2.0) (2021-06-23)
 
-
 ### Features
 
-* Enable dependabot on GitHub ([01ebf1d](https://github.com/firehydrant/design-system/commit/01ebf1dd9309b81eadb3a661245bca703d2354d8))
-
+- Enable dependabot on GitHub ([01ebf1d](https://github.com/firehydrant/design-system/commit/01ebf1dd9309b81eadb3a661245bca703d2354d8))
 
 ### Bug Fixes
 
-* Remove postinstall script ([bd3aa1b](https://github.com/firehydrant/design-system/commit/bd3aa1bc8d9a19b94a360a311c55d2c758287d62))
-* **button:** Remove x-spacing from tertiary variant ([2f69004](https://github.com/firehydrant/design-system/commit/2f690049adecdc31edce6f92bc07b25c8824e66d)), closes [#19508](https://app.clubhouse.io/firehydrant/story/19508)
+- Remove postinstall script ([bd3aa1b](https://github.com/firehydrant/design-system/commit/bd3aa1bc8d9a19b94a360a311c55d2c758287d62))
+- **button:** Remove x-spacing from tertiary variant ([2f69004](https://github.com/firehydrant/design-system/commit/2f690049adecdc31edce6f92bc07b25c8824e66d)), closes [#19508](https://app.clubhouse.io/firehydrant/story/19508)
 
 ## [2.1.0](https://github.com/firehydrant/design-system/compare/v2.0.0...v2.1.0) (2021-06-16)
 
-
 ### Features
 
-* **changelog:** Automatic changelog generation ([cd5be86](https://github.com/firehydrant/design-system/commit/cd5be862cc04d548541ea74e999bad9dbab69b76))
+- **changelog:** Automatic changelog generation ([cd5be86](https://github.com/firehydrant/design-system/commit/cd5be862cc04d548541ea74e999bad9dbab69b76))
 
 ## 2.0.0 (2021-06-09)
 
