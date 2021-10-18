@@ -6,16 +6,26 @@ import {
   SkeletonText as ChakraSkeletonText,
 } from '@chakra-ui/react';
 
-let sharedStyles = {
-  borderRadius: 'base',
+let sharedTypes = {
+  children: PropTypes.node,
+  height: PropTypes.string,
+  isLoaded: PropTypes.bool,
 };
 
 export function Skeleton({ children, ...rest }) {
-  return <ChakraSkeleton {...rest}>{children}</ChakraSkeleton>;
+  return (
+    <ChakraSkeleton borderRadius="base" {...rest}>
+      {children}
+    </ChakraSkeleton>
+  );
 }
 
 export function SkeletonHeading({ children, ...rest }) {
-  return <ChakraSkeleton {...rest}>{children}</ChakraSkeleton>;
+  return (
+    <ChakraSkeleton borderRadius="base" {...rest}>
+      {children}
+    </ChakraSkeleton>
+  );
 }
 
 export function SkeletonCircle({ children, ...rest }) {
@@ -23,20 +33,31 @@ export function SkeletonCircle({ children, ...rest }) {
 }
 
 export function SkeletonText({ children, ...rest }) {
-  return <ChakraSkeletonText {...rest}>{children}</ChakraSkeletonText>;
+  return (
+    <ChakraSkeletonText borderRadius="base" {...rest}>
+      {children}
+    </ChakraSkeletonText>
+  );
 }
 
-Skeleton.defaultProps = { sharedStyles, height: '18px' };
-SkeletonText.defaultProps = { sharedStyles, skeletonHeight: '18px' };
-SkeletonHeading.defaultProps = { sharedStyles, height: '24px', maxW: '45ch' };
+Skeleton.defaultProps = { height: '18px' };
+SkeletonText.defaultProps = { skeletonHeight: '18px' };
+SkeletonHeading.defaultProps = { height: '24px', maxW: '45ch' };
 SkeletonCircle.defaultProps = { size: '40px' };
 
 Skeleton.propTypes = {
-  children: PropTypes.node,
-  height: PropTypes.string,
-  isLoaded: PropTypes.bool,
+  ...sharedTypes,
 };
-
+SkeletonText.propTypes = {
+  ...sharedTypes,
+  skeletonHeight: PropTypes.string,
+  noOfLines: PropTypes.number,
+};
+SkeletonHeading.propTypes = {
+  ...sharedTypes,
+  maxW: PropTypes.string,
+};
 SkeletonCircle.propTypes = {
+  ...sharedTypes,
   size: PropTypes.string,
 };
