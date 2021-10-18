@@ -3,8 +3,9 @@ import {
   Breadcrumb as ChakraBreadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
+  BreadcrumbSeparator,
 } from "@chakra-ui/react";
-import { Icon, IconButton, Link } from '../../main';
+import { Icon, IconButton, IconButtonDropdown, Link, MenuItem } from '../../main';
 
 const BreadcrumbsListWithDropdown = ({crumbs}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -16,6 +17,11 @@ const BreadcrumbsListWithDropdown = ({crumbs}) => {
   const lastCrumb = crumbs.breadcrumbs[crumbs.ids[crumbs.ids.length - 1]];
 
   const dropdownItemIds = crumbs.ids.slice(1, -2);
+  const dropdownOptions = [];
+
+  dropdownItemIds.map(option => {
+    dropdownOptions.push({label: crumbs.breadcrumbs[option].text.replace('_', ' ')})
+  });
 
   return (
     <>
@@ -24,7 +30,11 @@ const BreadcrumbsListWithDropdown = ({crumbs}) => {
           {firstCrumb.text.replace('_', ' ')} 
         </BreadcrumbLink>
       </BreadcrumbItem>
-      <h1>gonna put dropdown here!</h1>
+      <IconButtonDropdown icon="menu" buttonVariant="tertiary">
+        {dropdownOptions.map(option => 
+          <MenuItem option={option} />
+        )}
+      </IconButtonDropdown>
       <BreadcrumbItem>
         <BreadcrumbLink href={penultimateCrumb.url}>
           {penultimateCrumb.text.replace('_', ' ')} 
@@ -39,7 +49,7 @@ const BreadcrumbsListWithDropdown = ({crumbs}) => {
   )
 }
 
-export function Breadcrumbs({ crumbs }) {
+export function Breadcrumb({ crumbs }) {
   const renderBreadcrumbsList = (crumbs) => {
     if (crumbs.ids) {
       if (crumbs.ids.length <= 3) {
@@ -62,7 +72,7 @@ export function Breadcrumbs({ crumbs }) {
   }
 
   return (
-    <ChakraBreadcrumb separator={<Icon name="chevronRight" />}>
+    <ChakraBreadcrumb separator={<Icon name="chevronRight" />} spacing="4px">
       {renderBreadcrumbsList(crumbs)}
     </ChakraBreadcrumb>
   )
