@@ -12,38 +12,46 @@ let sharedTypes = {
   isLoaded: PropTypes.bool,
 };
 
-export function Skeleton({ children, ...rest }) {
+export function Skeleton({ children, height = '18px', ...rest }) {
   return (
-    <ChakraSkeleton borderRadius="base" {...rest}>
+    <ChakraSkeleton height={height} borderRadius="base" {...rest}>
       {children}
     </ChakraSkeleton>
   );
 }
 
-export function SkeletonHeading({ children, ...rest }) {
+export function SkeletonHeading({
+  children,
+  height = '24px',
+  maxW = '45ch',
+  ...rest
+}) {
   return (
-    <ChakraSkeleton borderRadius="base" {...rest}>
+    <ChakraSkeleton height={height} maxW={maxW} borderRadius="base" {...rest}>
       {children}
     </ChakraSkeleton>
   );
 }
 
-export function SkeletonCircle({ children, ...rest }) {
-  return <ChakraSkeletonCircle {...rest}>{children}</ChakraSkeletonCircle>;
+export function SkeletonCircle({ children, size = '40px', ...rest }) {
+  return (
+    <ChakraSkeletonCircle size={size} {...rest}>
+      {children}
+    </ChakraSkeletonCircle>
+  );
 }
 
-export function SkeletonText({ children, ...rest }) {
+export function SkeletonText({ children, skeletonHeight = '18px', ...rest }) {
   return (
-    <ChakraSkeletonText borderRadius="base" {...rest}>
+    <ChakraSkeletonText
+      skeletonHeight={skeletonHeight}
+      borderRadius="base"
+      {...rest}
+    >
       {children}
     </ChakraSkeletonText>
   );
 }
-
-Skeleton.defaultProps = { height: '18px' };
-SkeletonText.defaultProps = { skeletonHeight: '18px' };
-SkeletonHeading.defaultProps = { height: '24px', maxW: '45ch' };
-SkeletonCircle.defaultProps = { size: '40px' };
 
 Skeleton.propTypes = {
   ...sharedTypes,
