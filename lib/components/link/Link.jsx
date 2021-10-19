@@ -1,26 +1,21 @@
 import React from 'react';
-import { Icon } from '../../main';
-import { LinkText } from './LinkText';
-import { Link as ChakraLink } from '@chakra-ui/react';
+import { Link as ChakraLink, useStyleConfig } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '../../main';
 
 export function Link({ children, isExternal, size, variant, ...props }) {
+  const styles = useStyleConfig('Link', { variant, size });
+
   return (
-    <ChakraLink fontSize={size} isExternal={isExternal} role="group" {...props}>
-      <LinkText size={size} variant={variant}>
-        {children}
-      </LinkText>
+    <ChakraLink
+      fontSize={size}
+      variant={variant}
+      isExternal={isExternal}
+      __css={styles}
+      {...props}
+    >
+      {children}
       {isExternal && (
-        <Icon
-          __css={{
-            color: variant === 'reverse' ? 'grey.0' : 'purple.70',
-            ml: '1',
-            width: '1.5em',
-            height: '1.5em',
-            minWidth: '20px',
-            minHeight: '20px',
-          }}
-          name="externalLink"
-        />
+        <ExternalLinkIcon height="1em" width="1em" mb="mg0" ml={1} />
       )}
     </ChakraLink>
   );
