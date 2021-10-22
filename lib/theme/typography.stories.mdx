@@ -1,0 +1,21 @@
+import { Meta, Typeset } from '@storybook/addon-docs';
+import { fontStack, fontSizes } from './font.theme';
+
+<Meta title="Typography" />
+
+# Typography
+
+**Font:** Open Sans
+
+**Weights:** normal, bold
+
+<Typeset
+  fontSizes={Object.values(fontSizes)}
+  fontFamily={fontStack}
+  fontWeight="normal"
+/>
+<Typeset
+  fontSizes={Object.values(fontSizes)}
+  fontFamily={fontStack}
+  fontWeight="bold"
+/>

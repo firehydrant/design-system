@@ -1,0 +1,57 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import { colors } from './colors.theme';
+
+<Meta title="Colors" />
+
+# Colors
+
+<br />
+
+## Monochrome
+
+<ColorPalette>
+  <ColorItem title="colors.grey" colors={Object.values(colors.grey)} />
+</ColorPalette>
+
+## Brand
+
+<ColorPalette>
+  <ColorItem
+    title="colors.purple"
+    subtitle="Primary brand color"
+    colors={Object.values(colors.purple)}
+  />
+  <ColorItem
+    title="colors.orange"
+    subtitle="Secondary brand color"
+    colors={Object.values(colors.orange)}
+  />
+</ColorPalette>
+
+## Status
+
+<ColorPalette>
+  <ColorItem
+    title="colors.red"
+    subtitle="Alert"
+    colors={Object.values(colors.red)}
+  />
+  <ColorItem
+    title="colors.yellow"
+    subtitle="Warning"
+    colors={Object.values(colors.yellow)}
+  />
+  <ColorItem
+    title="colors.green"
+    subtitle="Success"
+    colors={Object.values(colors.green)}
+  />
+</ColorPalette>
+
+## Accent
+
+<ColorPalette>
+  <ColorItem title="colors.blue" colors={Object.values(colors.blue)} />
+  <ColorItem title="colors.teal" colors={Object.values(colors.teal)} />
+  <ColorItem title="colors.brown" colors={Object.values(colors.brown)} />
+</ColorPalette>
