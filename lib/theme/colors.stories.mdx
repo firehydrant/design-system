@@ -1,5 +1,5 @@
 import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
-import { colors } from './colors.theme';
+import { colors, colorKeys } from './colors.theme';
 
 <Meta title="Colors" />
 
@@ -10,7 +10,7 @@ import { colors } from './colors.theme';
 ## Monochrome
 
 <ColorPalette>
-  <ColorItem title="colors.grey" colors={Object.values(colors.grey)} />
+  <ColorItem title="colors.grey" colors={colorKeys('grey')} />
 </ColorPalette>
 
 ## Brand
@@ -19,39 +19,35 @@ import { colors } from './colors.theme';
   <ColorItem
     title="colors.purple"
     subtitle="Primary brand color"
-    colors={Object.values(colors.purple)}
+    colors={colorKeys('purple')}
   />
   <ColorItem
     title="colors.orange"
     subtitle="Secondary brand color"
-    colors={Object.values(colors.orange)}
+    colors={colorKeys('orange')}
   />
 </ColorPalette>
 
 ## Status
 
 <ColorPalette>
-  <ColorItem
-    title="colors.red"
-    subtitle="Alert"
-    colors={Object.values(colors.red)}
-  />
+  <ColorItem title="colors.red" subtitle="Alert" colors={colorKeys('red')} />
   <ColorItem
     title="colors.yellow"
     subtitle="Warning"
-    colors={Object.values(colors.yellow)}
+    colors={colorKeys('yellow')}
   />
   <ColorItem
     title="colors.green"
     subtitle="Success"
-    colors={Object.values(colors.green)}
+    colors={colorKeys('green')}
   />
 </ColorPalette>
 
 ## Accent
 
 <ColorPalette>
-  <ColorItem title="colors.blue" colors={Object.values(colors.blue)} />
-  <ColorItem title="colors.teal" colors={Object.values(colors.teal)} />
-  <ColorItem title="colors.brown" colors={Object.values(colors.brown)} />
+  <ColorItem title="colors.blue" colors={colorKeys('blue')} />
+  <ColorItem title="colors.teal" colors={colorKeys('teal')} />
+  <ColorItem title="colors.brown" colors={colorKeys('brown')} />
 </ColorPalette>
