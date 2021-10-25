@@ -1,11 +1,24 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Breadcrumb as ChakraBreadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbSeparator,
-} from "@chakra-ui/react";
-import { Icon, IconButton, IconButtonDropdown, Link, MenuItem } from '../../main';
+  Link as ChakraLink,
+} from '@chakra-ui/react';
+import { Icon, IconButtonDropdown, MenuItem } from '../../main';
+
+const ItemLink = ({crumb, isCurrentPage}) => {
+  return (
+    <BreadcrumbLink
+      as={ChakraLink}
+      href={crumb.url}
+      isCurrentPage={isCurrentPage}
+      size={6}
+    >
+      {crumb.text.replace('_', ' ')}
+    </BreadcrumbLink>
+  )
+}
 
 const BreadcrumbsListWithDropdown = ({crumbs}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -26,9 +39,7 @@ const BreadcrumbsListWithDropdown = ({crumbs}) => {
   return (
     <>
       <BreadcrumbItem>
-        <BreadcrumbLink href={firstCrumb.url}>
-          {firstCrumb.text.replace('_', ' ')} 
-        </BreadcrumbLink>
+        <ItemLink crumb={firstCrumb} />
       </BreadcrumbItem>
       <IconButtonDropdown icon="menu" buttonVariant="tertiary">
         {dropdownOptions.map(option => 
@@ -36,14 +47,10 @@ const BreadcrumbsListWithDropdown = ({crumbs}) => {
         )}
       </IconButtonDropdown>
       <BreadcrumbItem>
-        <BreadcrumbLink href={penultimateCrumb.url}>
-          {penultimateCrumb.text.replace('_', ' ')} 
-        </BreadcrumbLink>
+        <ItemLink crumb={penultimateCrumb} />
       </BreadcrumbItem>
       <BreadcrumbItem>
-        <BreadcrumbLink href={lastCrumb.url} isCurrentPage>
-          {lastCrumb.text.replace('_', ' ')} 
-        </BreadcrumbLink>
+        <ItemLink crumb={lastCrumb} isCurrentPage />
       </BreadcrumbItem>
     </>
   )
@@ -57,9 +64,11 @@ export function Breadcrumb({ crumbs }) {
           <>
             {crumbs.ids.map((crumbId, index) => (
               <BreadcrumbItem>
-                <BreadcrumbLink key={crumbId} isCurrentPage={index === crumbs.ids.length - 1} href={crumbs.breadcrumbs[crumbId].url}>
-                  {crumbs.breadcrumbs[crumbId].text.replace('_', ' ')} 
-                </BreadcrumbLink>
+                <ItemLink
+                  crumb={crumbs.breadcrumbs[crumbId]}
+                  isCurrentPage={index === crumbs.ids.length - 1} href={crumbs.breadcrumbs[crumbId].url}
+                  key={crumbId}
+                />
               </BreadcrumbItem>
             ))}
           </>
