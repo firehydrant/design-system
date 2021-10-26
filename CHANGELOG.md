@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/firehydrant/design-system/compare/v4.3.0...v5.0.0) (2021-10-26)
+
+### ⚠ BREAKING CHANGES
+
+- **Link:** removes `LinkText` subcomponent from Link component
+
+### 🛠 Fixed
+
+- **Link:** removes group role from link component ([#153](https://github.com/firehydrant/design-system/pull/153)) ([5b2b8ac](https://github.com/firehydrant/design-system/commit/5b2b8acb66a279e26ebef603d1dd03394c810544))
+
 ## [4.3.0](https://github.com/firehydrant/design-system/compare/v4.2.1...v4.3.0) (2021-10-12)
 
 ### 🛠 Fixed
