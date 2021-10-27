@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { DocsContainer } from '@storybook/addon-docs';
 import { ThemeProvider } from '../lib/main';
 
 export const parameters = {
@@ -25,6 +25,13 @@ export const parameters = {
         value: '#182042',
       },
     ],
+  },
+  docs: {
+    container: ({ children, context }) => (
+      <DocsContainer context={context}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </DocsContainer>
+    ),
   },
 };
 

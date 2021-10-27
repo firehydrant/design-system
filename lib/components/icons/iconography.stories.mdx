@@ -1,16 +1,7 @@
-import { Meta, Story } from '@storybook/addon-docs';
+import { Meta, DocsContainer, Story } from '@storybook/addon-docs';
 import { Icon, Wrap, ThemeProvider } from '../../main';
 
-<Meta
-  title="Iconography"
-  decorators={[
-    (Story) => (
-      <ThemeProvider>
-        <Story />
-      </ThemeProvider>
-    ),
-  ]}
-/>
+<Meta title="Iconography" />
 
 # Iconography
 
@@ -22,97 +13,87 @@ import { Icon, Wrap, ThemeProvider } from '../../main';
 
 ## Arrows
 
-<ThemeProvider>
-  <Wrap spacing={2} p={2}>
-    <Icon name="arrowRight" />
-    <Icon name="arrowLeft" />
-    <Icon name="arrowUp" />
-    <Icon name="arrowDown" />
-  </Wrap>
-  <Wrap spacing={2} p={2}>
-    <Icon name="chevronRight" />
-    <Icon name="chevronLeft" />
-    <Icon name="chevronUp" />
-    <Icon name="chevronDown" />
-  </Wrap>
-</ThemeProvider>
+<Wrap spacing={2} p={2}>
+  <Icon name="arrowRight" />
+  <Icon name="arrowLeft" />
+  <Icon name="arrowUp" />
+  <Icon name="arrowDown" />
+</Wrap>
+<Wrap spacing={2} p={2}>
+  <Icon name="chevronRight" />
+  <Icon name="chevronLeft" />
+  <Icon name="chevronUp" />
+  <Icon name="chevronDown" />
+</Wrap>
 
 ## Status
 
-<ThemeProvider>
-  <Wrap spacing={2} p={2}>
-    <Icon name="success" />
-    <Icon name="alert" />
-    <Icon name="warning" />
-  </Wrap>
-</ThemeProvider>
+<Wrap spacing={2} p={2}>
+  <Icon name="success" />
+  <Icon name="alert" />
+  <Icon name="warning" />
+</Wrap>
 
 ## Action
 
-<ThemeProvider>
-  <Wrap spacing={2} p={2}>
-    <Icon name="close" />
-    <Icon name="check" />
-    <Icon name="plus" />
-    <Icon name="delete" />
-    <Icon name="edit" />
-    <Icon name="starOutline" />
-    <Icon name="starFilled" />
-    <Icon name="search" />
-    <Icon name="refresh" />
-    <Icon name="minus" />
-    <Icon name="import" />
-    <Icon name="download" />
-  </Wrap>
-</ThemeProvider>
+<Wrap spacing={2} p={2}>
+  <Icon name="close" />
+  <Icon name="check" />
+  <Icon name="plus" />
+  <Icon name="delete" />
+  <Icon name="edit" />
+  <Icon name="starOutline" />
+  <Icon name="starFilled" />
+  <Icon name="search" />
+  <Icon name="refresh" />
+  <Icon name="minus" />
+  <Icon name="import" />
+  <Icon name="download" />
+</Wrap>
 
 ## Products & Pages
 
-<ThemeProvider>
-  <Wrap spacing={2} p={2}>
-    <Icon name="homeFilled" />
-    <Icon name="incidentsFilled" />
-    <Icon name="incidentResponseFilled" />
-    <Icon name="runbooksFilled" />
-    <Icon name="infrastructureFilled" />
-    <Icon name="statusPagesFilled" />
-    <Icon name="analyticsFilled" />
-    <Icon name="integrationsFilled" />
-    <Icon name="helpFilled" />
-    <Icon name="organizationFilled" />
-    <Icon name="userFilled" />
-  </Wrap>
-  <Wrap spacing={2} p={2}>
-    <Icon name="homeOutline" />
-    <Icon name="incidentsOutline" />
-    <Icon name="incidentResponseOutline" />
-    <Icon name="runbooksOutline" />
-    <Icon name="infrastructureOutline" />
-    <Icon name="statusPagesOutline" />
-    <Icon name="analyticsOutline" />
-    <Icon name="integrationsOutline" />
-    <Icon name="helpOutline" />
-    <Icon name="organizationOutline" />
-    <Icon name="userOutline" />
-  </Wrap>
-</ThemeProvider>
+<Wrap spacing={2} p={2}>
+  <Icon name="homeFilled" />
+  <Icon name="incidentsFilled" />
+  <Icon name="incidentResponseFilled" />
+  <Icon name="runbooksFilled" />
+  <Icon name="infrastructureFilled" />
+  <Icon name="statusPagesFilled" />
+  <Icon name="analyticsFilled" />
+  <Icon name="integrationsFilled" />
+  <Icon name="helpFilled" />
+  <Icon name="organizationFilled" />
+  <Icon name="userFilled" />
+</Wrap>
+<Wrap spacing={2} p={2}>
+  <Icon name="homeOutline" />
+  <Icon name="incidentsOutline" />
+  <Icon name="incidentResponseOutline" />
+  <Icon name="runbooksOutline" />
+  <Icon name="infrastructureOutline" />
+  <Icon name="statusPagesOutline" />
+  <Icon name="analyticsOutline" />
+  <Icon name="integrationsOutline" />
+  <Icon name="helpOutline" />
+  <Icon name="organizationOutline" />
+  <Icon name="userOutline" />
+</Wrap>
 
 ## Other
 
-<ThemeProvider>
-  <Wrap spacing={2} p={2}>
-    <Icon name="account" />
-    <Icon name="atom" />
-    <Icon name="email" />
-    <Icon name="externalLink" />
-    <Icon name="filter" />
-    <Icon name="info" />
-    <Icon name="menu" />
-    <Icon name="rocket" />
-    <Icon name="settings" />
-    <Icon name="team" />
-    <Icon name="ticket" />
-    <Icon name="lock" />
-    <Icon name="unlock" />
-  </Wrap>
-</ThemeProvider>
+<Wrap spacing={2} p={2}>
+  <Icon name="account" />
+  <Icon name="atom" />
+  <Icon name="email" />
+  <Icon name="externalLink" />
+  <Icon name="filter" />
+  <Icon name="info" />
+  <Icon name="menu" />
+  <Icon name="rocket" />
+  <Icon name="settings" />
+  <Icon name="team" />
+  <Icon name="ticket" />
+  <Icon name="lock" />
+  <Icon name="unlock" />
+</Wrap>
