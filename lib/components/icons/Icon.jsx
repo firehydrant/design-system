@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { AccountIcon } from './AccountIcon';
 import { AlertIcon } from './AlertIcon';
 import { AnalyticsFilledIcon } from './AnalyticsFilledIcon';
@@ -59,7 +61,7 @@ import { UserFilledIcon } from './UserFilledIcon';
 import { UserOutlineIcon } from './UserOutlineIcon';
 import { WarningIcon } from './WarningIcon';
 
-export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
+export const Icon = ({ name, ...props }) => {
   switch (name) {
     case 'account':
       return <AccountIcon {...props} />;
@@ -182,4 +184,9 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
     default:
       return <InfoIcon {...props} />;
   }
+};
+
+Icon.propTypes = {
+  focusable: PropTypes.bool,
+  color: PropTypes.string,
 };
