@@ -249,6 +249,5 @@ export const Icon = ({ name, ...props }) => {
 };
 
 Icon.propTypes = {
-  focusable: PropTypes.bool,
   color: PropTypes.string,
 };
