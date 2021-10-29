@@ -1,6 +1,6 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import theme from '../lib/theme';
+import { DocsContainer } from '@storybook/addon-docs';
+import { ThemeProvider } from '../lib/main';
 
 export const parameters = {
   options: {
@@ -26,12 +26,19 @@ export const parameters = {
       },
     ],
   },
+  docs: {
+    container: ({ children, context }) => (
+      <DocsContainer context={context}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </DocsContainer>
+    ),
+  },
 };
 
 export const decorators = [
   (Story) => (
-    <ChakraProvider theme={theme}>
+    <ThemeProvider>
       <Story />
-    </ChakraProvider>
+    </ThemeProvider>
   ),
 ];

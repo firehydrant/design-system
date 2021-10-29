@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { AccountIcon } from './AccountIcon';
 import { AlertIcon } from './AlertIcon';
 import { AnalyticsFilledIcon } from './AnalyticsFilledIcon';
@@ -59,7 +61,69 @@ import { UserFilledIcon } from './UserFilledIcon';
 import { UserOutlineIcon } from './UserOutlineIcon';
 import { WarningIcon } from './WarningIcon';
 
-export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
+export const iconList = [
+  'account',
+  'alert',
+  'analyticsFilled',
+  'analyticsOutline',
+  'arrowDown',
+  'arrowLeft',
+  'arrowRight',
+  'arrowUp',
+  'atom',
+  'check',
+  'chevronDown',
+  'chevronLeft',
+  'chevronRight',
+  'chevronUp',
+  'close',
+  'delete',
+  'download',
+  'edit',
+  'email',
+  'externalLink',
+  'file',
+  'filter',
+  'helpFilled',
+  'helpOutline',
+  'homeFilled',
+  'homeOutline',
+  'import',
+  'incidentResponseFilled',
+  'incidentResponseOutline',
+  'incidentsFilled',
+  'incidentsOutline',
+  'info',
+  'infrastructureFilled',
+  'infrastructureOutline',
+  'integrationsFilled',
+  'integrationsOutline',
+  'lock',
+  'menu',
+  'minus',
+  'organizationFilled',
+  'organizationOutline',
+  'plus',
+  'refresh',
+  'rocket',
+  'runbooksFilled',
+  'runbooksOutline',
+  'search',
+  'settings',
+  'starFilled',
+  'starOutline',
+  'statusPagesFilled',
+  'statusPagesOutline',
+  'success',
+  'team',
+  'ticket',
+  'unlock',
+  'userFilled',
+  'userOutline',
+  'warning',
+];
+
+export const Icon = ({ name, ...props }) => {
   switch (name) {
     case 'account':
       return <AccountIcon {...props} />;
@@ -182,4 +246,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
     default:
       return <InfoIcon {...props} />;
   }
+};
+
+Icon.propTypes = {
+  color: PropTypes.string,
 };
