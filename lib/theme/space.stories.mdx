@@ -1,0 +1,24 @@
+import { Meta, Typeset } from '@storybook/addon-docs';
+import { SpacePalette, RadiiPalette } from './storybookBlocks';
+import { Box, Text, Alert } from '../main';
+import { space as spaces } from './space.theme';
+import { radii } from './radii.theme';
+
+<Meta title="Space &amp; Radii" />
+
+# Space & Radii
+
+Space & radii values available in Design System.
+
+## Space
+
+<SpacePalette spaces={spaces}>
+  <Alert variant="warning">
+    Notice: <code>mg</code> space values should be used for component
+    construction purposes only.
+  </Alert>
+</SpacePalette>
+
+## Radii
+
+<RadiiPalette radii={radii} />
