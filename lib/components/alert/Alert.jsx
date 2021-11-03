@@ -1,8 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Flex, Spacer, useStyleConfig } from '@chakra-ui/react';
 import { Icon, IconButton, Text } from '../../main';
 
-export function Alert({ children, dismissable, onDismiss, variant, ...rest }) {
+export function Alert({
+  children,
+  dismissable,
+  onDismiss,
+  variant = 'info',
+  ...rest
+}) {
   const styles = useStyleConfig('Alert', { variant });
 
   const iconColorScheme = {
@@ -44,3 +51,9 @@ export function Alert({ children, dismissable, onDismiss, variant, ...rest }) {
     </Flex>
   );
 }
+
+Alert.propTypes = {
+  children: PropTypes.node,
+  variant: PropTypes.oneOf(['alert', 'info', 'success', 'warning']),
+  dismissable: PropTypes.bool,
+};
