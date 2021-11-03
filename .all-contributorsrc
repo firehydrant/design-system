@@ -58,6 +58,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "helloTDF",
+      "name": "Tristan Free",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3101170?v=4",
+      "profile": "https://www.tristanfree.com",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
