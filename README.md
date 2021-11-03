@@ -20,14 +20,14 @@
 </p>
 
 <p align="center">
-    <a href="https://firehydrant.io">
+    <a href="https://github.com/firehydrant/design-system/releases">
         <img src="https://img.shields.io/github/v/release/firehydrant/design-system" alt="latest release">
     </a>
-    <a href="https://firehydrant.io">
-        <img src="https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg" alt="chromatic passing">
+    <a href="https://chromatic.com/library?appId=607731addb01d30021caeac2&branch=main">
+        <img src="https://github.com/firehydrant/design-system/actions/workflows/chromatic.yml/badge.svg" alt="chromatic">
     </a>
-    <a href="https://firehydrant.io">
-        <img src="https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg" alt="playroom workflow">
+    <a href="https://firehydrant.github.io/design-system/">
+        <img src="https://github.com/firehydrant/design-system/actions/workflows/playroom.yml/badge.svg" alt="playroom">
     </a>
 </p>
 
@@ -47,7 +47,7 @@ The package is registered on GitHub's package registry, added via `.npmrc`
 
 Access to this registry requires authentication with GitHub tokens. These tokens are private and should not be committed to any project, accessed instead via environment variable.
 
-### GitHub token as environment variable
+## GitHub token as environment variable
 
 1. Go to https://github.com/settings/tokens and create a token with at least `read:package` access
 
@@ -59,7 +59,7 @@ Access to this registry requires authentication with GitHub tokens. These tokens
 
 3. Open a new terminal window (or `source` the edited `.*rc` file)
 
-### Add to project
+## Add to project
 
 ```sh
 yarn add @firehydrant/design-system
@@ -147,6 +147,3 @@ Thank you to the following projects, upon which this Design System is built:
 [storybook]: https://main--607731addb01d30021caeac2.chromatic.com/
 [playroom]: https://firehydrant.github.io/design-system/
 [release]: https://github.com/firehydrant/design-system/releases
-[slack]: https://firehydrant.slack.com/archives/C01GRKLDRB9
-[notion]: https://www.notion.so/firehydrant/Design-System-c4e554d509414719908eedb9dcc0c417
-[clubhouse]: https://app.clubhouse.io/firehydrant/project/18818/design-system
