@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Spacer, useStyleConfig } from '@chakra-ui/react';
 import { Icon, IconButton, Text } from '../../main';
 
-export function Alert({ children, dismissable, onDismiss, variant }) {
+export function Alert({ children, dismissable, onDismiss, variant, ...rest }) {
   const styles = useStyleConfig('Alert', { variant });
 
   const iconColorScheme = {
@@ -19,6 +19,7 @@ export function Alert({ children, dismissable, onDismiss, variant }) {
       borderStyle="solid"
       borderRadius="4px"
       variant={variant}
+      {...rest}
     >
       <Flex>
         <Flex align="flex-start" py="mg2">
