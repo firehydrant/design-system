@@ -64,7 +64,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@arkweid/lefthook": "^0.7.6",
+    "@arkweid/lefthook": "^0.7.7",
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.15.8",
     "@babel/preset-env": "^7.15.6",
