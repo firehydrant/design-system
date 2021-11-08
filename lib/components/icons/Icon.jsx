@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { colorOptions } from '../../theme/colors.theme';
+
 import { AccountIcon } from './AccountIcon';
 import { AlertIcon } from './AlertIcon';
 import { AnalyticsFilledIcon } from './AnalyticsFilledIcon';
@@ -249,5 +251,6 @@ export const Icon = ({ name, ...props }) => {
 };
 
 Icon.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf(colorOptions),
+  name: PropTypes.oneOf(iconList),
 };
