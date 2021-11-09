@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { colorOptions } from '../../theme/colors.theme';
-
 import { AccountIcon } from './AccountIcon';
 import { AlertIcon } from './AlertIcon';
 import { AnalyticsFilledIcon } from './AnalyticsFilledIcon';
@@ -62,6 +60,8 @@ import { UnlockIcon } from './UnlockIcon';
 import { UserFilledIcon } from './UserFilledIcon';
 import { UserOutlineIcon } from './UserOutlineIcon';
 import { WarningIcon } from './WarningIcon';
+
+import { colorOptions } from '../../theme/colors.theme';
 
 export const iconList = [
   'account',
@@ -125,128 +125,128 @@ export const iconList = [
   'warning',
 ];
 
-export const Icon = ({ name, ...props }) => {
+export const Icon = ({ name, color = 'grey.90', ...props }) => {
   switch (name) {
     case 'account':
-      return <AccountIcon {...props} />;
+      return <AccountIcon color={color} {...props} />;
     case 'alert':
-      return <AlertIcon {...props} />;
+      return <AlertIcon color={color} {...props} />;
     case 'analyticsFilled':
-      return <AnalyticsFilledIcon {...props} />;
+      return <AnalyticsFilledIcon color={color} {...props} />;
     case 'analyticsOutline':
-      return <AnalyticsOutlineIcon {...props} />;
+      return <AnalyticsOutlineIcon color={color} {...props} />;
     case 'arrowDown':
-      return <ArrowDownIcon {...props} />;
+      return <ArrowDownIcon color={color} {...props} />;
     case 'atom':
-      return <AtomIcon {...props} />;
+      return <AtomIcon color={color} {...props} />;
     case 'arrowLeft':
-      return <ArrowLeftIcon {...props} />;
+      return <ArrowLeftIcon color={color} {...props} />;
     case 'arrowRight':
-      return <ArrowRightIcon {...props} />;
+      return <ArrowRightIcon color={color} {...props} />;
     case 'arrowUp':
-      return <ArrowUpIcon {...props} />;
+      return <ArrowUpIcon color={color} {...props} />;
     case 'check':
-      return <CheckIcon {...props} />;
+      return <CheckIcon color={color} {...props} />;
     case 'chevronDown':
-      return <ChevronDownIcon {...props} />;
+      return <ChevronDownIcon color={color} {...props} />;
     case 'chevronLeft':
-      return <ChevronLeftIcon {...props} />;
+      return <ChevronLeftIcon color={color} {...props} />;
     case 'chevronRight':
-      return <ChevronRightIcon {...props} />;
+      return <ChevronRightIcon color={color} {...props} />;
     case 'chevronUp':
-      return <ChevronUpIcon {...props} />;
+      return <ChevronUpIcon color={color} {...props} />;
     case 'close':
-      return <CloseIcon {...props} />;
+      return <CloseIcon color={color} {...props} />;
     case 'delete':
-      return <DeleteIcon {...props} />;
+      return <DeleteIcon color={color} {...props} />;
     case 'download':
-      return <DownloadIcon {...props} />;
+      return <DownloadIcon color={color} {...props} />;
     case 'edit':
-      return <EditIcon {...props} />;
+      return <EditIcon color={color} {...props} />;
     case 'email':
-      return <EmailIcon {...props} />;
+      return <EmailIcon color={color} {...props} />;
     case 'externalLink':
-      return <ExternalLinkIcon {...props} />;
+      return <ExternalLinkIcon color={color} {...props} />;
     case 'file':
-      return <FileIcon {...props} />;
+      return <FileIcon color={color} {...props} />;
     case 'filter':
-      return <FilterIcon {...props} />;
+      return <FilterIcon color={color} {...props} />;
     case 'helpOutline':
-      return <HelpOutlineIcon {...props} />;
+      return <HelpOutlineIcon color={color} {...props} />;
     case 'helpFilled':
-      return <HelpFilledIcon {...props} />;
+      return <HelpFilledIcon color={color} {...props} />;
     case 'homeFilled':
-      return <HomeFilledIcon {...props} />;
+      return <HomeFilledIcon color={color} {...props} />;
     case 'homeOutline':
-      return <HomeOutlineIcon {...props} />;
+      return <HomeOutlineIcon color={color} {...props} />;
     case 'import':
-      return <ImportIcon {...props} />;
+      return <ImportIcon color={color} {...props} />;
     case 'incidentResponseFilled':
-      return <IncidentResponseFilledIcon {...props} />;
+      return <IncidentResponseFilledIcon color={color} {...props} />;
     case 'incidentResponseOutline':
-      return <IncidentResponseOutlineIcon {...props} />;
+      return <IncidentResponseOutlineIcon color={color} {...props} />;
     case 'incidentsFilled':
-      return <IncidentsFilledIcon {...props} />;
+      return <IncidentsFilledIcon color={color} {...props} />;
     case 'incidentsOutline':
-      return <IncidentsOutlineIcon {...props} />;
+      return <IncidentsOutlineIcon color={color} {...props} />;
     case 'info':
-      return <InfoIcon {...props} />;
+      return <InfoIcon color={color} {...props} />;
     case 'infrastructureFilled':
-      return <InfrastructureFilledIcon {...props} />;
+      return <InfrastructureFilledIcon color={color} {...props} />;
     case 'infrastructureOutline':
-      return <InfrastructureOutlineIcon {...props} />;
+      return <InfrastructureOutlineIcon color={color} {...props} />;
     case 'integrationsFilled':
-      return <IntegrationsFilledIcon {...props} />;
+      return <IntegrationsFilledIcon color={color} {...props} />;
     case 'integrationsOutline':
-      return <IntegrationsOutlineIcon {...props} />;
+      return <IntegrationsOutlineIcon color={color} {...props} />;
     case 'lock':
-      return <LockIcon {...props} />;
+      return <LockIcon color={color} {...props} />;
     case 'menu':
-      return <MenuIcon {...props} />;
+      return <MenuIcon color={color} {...props} />;
     case 'minus':
-      return <MinusIcon {...props} />;
+      return <MinusIcon color={color} {...props} />;
     case 'organizationFilled':
-      return <OrganizationFilledIcon {...props} />;
+      return <OrganizationFilledIcon color={color} {...props} />;
     case 'organizationOutline':
-      return <OrganizationOutlineIcon {...props} />;
+      return <OrganizationOutlineIcon color={color} {...props} />;
     case 'plus':
-      return <PlusIcon {...props} />;
+      return <PlusIcon color={color} {...props} />;
     case 'refresh':
-      return <RefreshIcon {...props} />;
+      return <RefreshIcon color={color} {...props} />;
     case 'rocket':
-      return <RocketIcon {...props} />;
+      return <RocketIcon color={color} {...props} />;
     case 'runbooksFilled':
-      return <RunbooksFilledIcon {...props} />;
+      return <RunbooksFilledIcon color={color} {...props} />;
     case 'runbooksOutline':
-      return <RunbooksOutlineIcon {...props} />;
+      return <RunbooksOutlineIcon color={color} {...props} />;
     case 'settings':
-      return <SettingsIcon {...props} />;
+      return <SettingsIcon color={color} {...props} />;
     case 'starFilled':
-      return <StarFilledIcon {...props} />;
+      return <StarFilledIcon color={color} {...props} />;
     case 'starOutline':
-      return <StarOutlineIcon {...props} />;
+      return <StarOutlineIcon color={color} {...props} />;
     case 'statusPagesFilled':
-      return <StatusPagesFilledIcon {...props} />;
+      return <StatusPagesFilledIcon color={color} {...props} />;
     case 'statusPagesOutline':
-      return <StatusPagesOutlineIcon {...props} />;
+      return <StatusPagesOutlineIcon color={color} {...props} />;
     case 'success':
-      return <SuccessIcon {...props} />;
+      return <SuccessIcon color={color} {...props} />;
     case 'search':
-      return <SearchIcon {...props} />;
+      return <SearchIcon color={color} {...props} />;
     case 'team':
-      return <TeamIcon {...props} />;
+      return <TeamIcon color={color} {...props} />;
     case 'ticket':
-      return <TicketIcon {...props} />;
+      return <TicketIcon color={color} {...props} />;
     case 'unlock':
-      return <UnlockIcon {...props} />;
+      return <UnlockIcon color={color} {...props} />;
     case 'userFilled':
-      return <UserFilledIcon {...props} />;
+      return <UserFilledIcon color={color} {...props} />;
     case 'userOutline':
-      return <UserOutlineIcon {...props} />;
+      return <UserOutlineIcon color={color} {...props} />;
     case 'warning':
-      return <WarningIcon {...props} />;
+      return <WarningIcon color={color} {...props} />;
     default:
-      return <InfoIcon {...props} />;
+      return <InfoIcon color={color} {...props} />;
   }
 };
 
