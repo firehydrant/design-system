@@ -125,7 +125,7 @@ export const iconList = [
   'warning',
 ];
 
-export const Icon = ({ name, color = 'grey.90', ...props }) => {
+export const Icon = ({ name, color, ...props }) => {
   switch (name) {
     case 'account':
       return <AccountIcon color={color} {...props} />;
