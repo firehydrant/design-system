@@ -1,5 +1,7 @@
 import React from 'react';
 import { Icon } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
+import { colorOptions } from '../../theme/colors.theme';
 
 export const ChevronLeftIcon = (props) => (
   <Icon boxSize="24px" viewBox="0 0 24 24" {...props}>
@@ -9,3 +11,7 @@ export const ChevronLeftIcon = (props) => (
     />
   </Icon>
 );
+
+ChevronLeftIcon.propTypes = {
+  color: PropTypes.oneOf(colorOptions),
+};

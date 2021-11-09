@@ -1,5 +1,7 @@
 import React from 'react';
 import { Icon } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
+import { colorOptions } from '../../theme/colors.theme';
 
 export const InfrastructureFilledIcon = (props) => (
   <Icon boxSize="24px" viewBox="0 0 24 24" {...props}>
@@ -9,3 +11,7 @@ export const InfrastructureFilledIcon = (props) => (
     />
   </Icon>
 );
+
+InfrastructureFilledIcon.propTypes = {
+  color: PropTypes.oneOf(colorOptions),
+};

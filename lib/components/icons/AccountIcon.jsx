@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { colorOptions } from '../../theme/colors.theme';
 import { Icon } from '@chakra-ui/react';
 
 export const AccountIcon = (props) => (
@@ -9,3 +11,7 @@ export const AccountIcon = (props) => (
     />
   </Icon>
 );
+
+AccountIcon.propTypes = {
+  color: PropTypes.oneOf(colorOptions),
+};

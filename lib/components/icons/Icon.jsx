@@ -61,6 +61,8 @@ import { UserFilledIcon } from './UserFilledIcon';
 import { UserOutlineIcon } from './UserOutlineIcon';
 import { WarningIcon } from './WarningIcon';
 
+import { colorOptions } from '../../theme/colors.theme';
+
 export const iconList = [
   'account',
   'alert',
@@ -249,5 +251,6 @@ export const Icon = ({ name, ...props }) => {
 };
 
 Icon.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf(colorOptions),
+  name: PropTypes.oneOf(iconList),
 };

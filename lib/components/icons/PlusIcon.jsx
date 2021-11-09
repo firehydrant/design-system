@@ -1,5 +1,7 @@
 import React from 'react';
 import { Icon } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
+import { colorOptions } from '../../theme/colors.theme';
 
 export const PlusIcon = (props) => (
   <Icon boxSize="24px" viewBox="0 0 24 24" {...props}>
@@ -9,3 +11,7 @@ export const PlusIcon = (props) => (
     />
   </Icon>
 );
+
+PlusIcon.propTypes = {
+  color: PropTypes.oneOf(colorOptions),
+};
