@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/firehydrant/design-system/compare/v5.0.0...v5.1.0) (2021-11-09)
+
+### 🛠 Fixed
+
+- **Alert:** adds `...rest` to component props ([4085258](https://github.com/firehydrant/design-system/commit/408525846824377d6e15590313f8c93436f8e751))
+- **Alert:** adds prop types & story improvements ([fcdd34f](https://github.com/firehydrant/design-system/commit/fcdd34f39dfbd95038c3ef690de1146e1e823175))
+
+### ✨ New Features
+
+- **Grid:** adds Grid (and GridItem) component ([#158](https://github.com/firehydrant/design-system/pull/158)) ([26466b7](https://github.com/firehydrant/design-system/commit/26466b777fe6f720e7e67151a815ae8768d0a6b5))
+- **List:** adds List component(s) ([#171](https://github.com/firehydrant/design-system/pull/171)) ([f155cf3](https://github.com/firehydrant/design-system/commit/f155cf3694439d89dea422be80a5656c606a4f84))
+- **ThemeProvider:** adds support for `nonce` key ([#159](https://github.com/firehydrant/design-system/pull/159)) ([bb41e6e](https://github.com/firehydrant/design-system/commit/bb41e6ef59a1b57c59b9e6b8d38c279206d0da37))
+
+### 🧹 Chores
+
+- **deps:** bump @chakra-ui/react-env from 1.0.6 to 1.0.8 ([#161](https://github.com/firehydrant/design-system/pull/161)) ([9791cc7](https://github.com/firehydrant/design-system/commit/9791cc7c1de3ad648ca776391fa6b2a03537b28e))
+- **deps:** bump @emotion/react from 11.4.1 to 11.5.0 ([#165](https://github.com/firehydrant/design-system/pull/165)) ([c4d16ac](https://github.com/firehydrant/design-system/commit/c4d16aca09f8b03b9c27026043262b424ca5bc53))
+- **deps:** bump Storybook from 6.3.8 to 6.3.12 ([#160](https://github.com/firehydrant/design-system/pull/160)) ([c88fb6b](https://github.com/firehydrant/design-system/commit/c88fb6b0e2aeebc4c66b188adeb56ca9548903be))
+- **deps-dev:** bump @arkweid/lefthook from 0.7.6 to 0.7.7 ([#146](https://github.com/firehydrant/design-system/pull/146)) ([d5fa253](https://github.com/firehydrant/design-system/commit/d5fa253a055b196dc5a7b71f03f05dd715194036))
+- **deps-dev:** bump @babel/core from 7.15.5 to 7.16.0 ([#155](https://github.com/firehydrant/design-system/pull/155)) ([0b4d649](https://github.com/firehydrant/design-system/commit/0b4d649265a53315094303af4754eff1401bfac9))
+- **deps-dev:** bump @babel/eslint-parser from 7.15.8 to 7.16.0 ([#163](https://github.com/firehydrant/design-system/pull/163)) ([8dc76a8](https://github.com/firehydrant/design-system/commit/8dc76a84b24a7c643612b4074f1afc9858c24621))
+- **deps-dev:** bump @babel/preset-react from 7.14.5 to 7.16.0 ([#164](https://github.com/firehydrant/design-system/pull/164)) ([b73d521](https://github.com/firehydrant/design-system/commit/b73d521d17df9f28a8dc9c8b1e9e8c83bdd5c795))
+- **deps-dev:** bump eslint from 7.32.0 to 8.2.0 ([#166](https://github.com/firehydrant/design-system/pull/166)) ([ea9cad0](https://github.com/firehydrant/design-system/commit/ea9cad0395f6fdaa48cb8caaba2c9eaccdab2a15))
+- **deps-dev:** bump eslint-plugin-import from 2.24.2 to 2.25.2 ([#169](https://github.com/firehydrant/design-system/pull/169)) ([602517e](https://github.com/firehydrant/design-system/commit/602517ebbd37a39fa714fe7bf4beac2fe8b2c05f))
+- **deps-dev:** bump vite from 2.6.4 to 2.6.13 ([#168](https://github.com/firehydrant/design-system/pull/168)) ([1d1bbb5](https://github.com/firehydrant/design-system/commit/1d1bbb59600e6b0098258989c5b560c5c0310b53))
+- **docs:** adds spacing to alert on space story ([23d1b40](https://github.com/firehydrant/design-system/commit/23d1b40a935a3c38c0b4e082f1aac6187e01e2d0))
+- **Icon:** adds `color` prop type to component ([#167](https://github.com/firehydrant/design-system/pull/167)) ([c06ffdc](https://github.com/firehydrant/design-system/commit/c06ffdc1d7c6a6081fe9de0d5f9e13e75a938c9f))
+
 ## [5.0.0](https://github.com/firehydrant/design-system/compare/v4.3.0...v5.0.0) (2021-10-26)
 
 ### ⚠ BREAKING CHANGES
