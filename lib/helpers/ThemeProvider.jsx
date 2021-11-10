@@ -6,7 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../theme';
 
 function EmotionCacheProvider({ nonce, children }) {
-  const cache = createCache({ key: 'contentsecuritypolicy', nonce });
+  const cache = createCache({ key: 'csp', nonce });
   return <CacheProvider value={cache}>{children}</CacheProvider>;
 }
 
