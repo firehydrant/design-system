@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.1.1](https://github.com/firehydrant/design-system/compare/v5.1.0...v5.1.1) (2021-11-10)
+
+### 🛠 Fixed
+
+- **ThemeProvider:** shortens CSP class prefix ([870e82e](https://github.com/firehydrant/design-system/commit/870e82efda9e7652744bb289068a8842803b1c49))
+
 ## [5.1.0](https://github.com/firehydrant/design-system/compare/v5.0.0...v5.1.0) (2021-11-09)
 
 ### 🛠 Fixed
