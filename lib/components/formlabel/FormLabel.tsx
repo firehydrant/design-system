@@ -2,9 +2,14 @@ import React from 'react';
 import {
   FormLabel as ChakraFormLabel,
   useFormControlContext,
+  FormLabelProps as ChakraFormLabelProps,
 } from '@chakra-ui/react';
 
-export function FormLabel({ children, isOptional, ...props }) {
+interface FormLabelProps extends ChakraFormLabelProps {
+  isOptional?: Boolean;
+}
+
+export function FormLabel({ children, isOptional, ...props }: FormLabelProps) {
   const field = useFormControlContext();
 
   return (

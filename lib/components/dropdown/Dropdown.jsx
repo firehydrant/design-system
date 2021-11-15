@@ -11,20 +11,19 @@ import { colors } from '../../theme/colors.theme';
 import { space } from '../../theme/space.theme';
 import { fontSizes, fontWeights, lineHeights } from '../../theme/font.theme';
 import { radii } from '../../theme/radii.theme';
-import { getFocusabledIn } from 'focus-lock';
 
-const getFocusStyles = state => {
+const getFocusStyles = (state) => {
   if (state.isFocused) {
     if (state.selectProps.isInvalid) {
-      return `0px 0px 0px 1px ${colors.red[70]} inset, ${colors.red[70]} 0px 0px 0px 3px`
+      return `0px 0px 0px 1px ${colors.red[70]} inset, ${colors.red[70]} 0px 0px 0px 3px`;
     }
-    return `0px 0px 0px 1px ${colors.purple[70]} inset, ${colors.purple[70]} 0px 0px 0px 3px`
+    return `0px 0px 0px 1px ${colors.purple[70]} inset, ${colors.purple[70]} 0px 0px 0px 3px`;
   }
 
   return 'initial';
 };
 
-const getBorderStyles = state => {
+const getBorderStyles = (state) => {
   if (state.isFocused) {
     return colors.purple[70];
   } else if (state.selectProps.isInvalid) {
@@ -43,7 +42,8 @@ const customStyles = {
     boxShadow: getFocusStyles(state),
     backgroundColor: state.isDisabled ? colors.grey[10] : colors.grey[0],
     transitionDuration: '0.2s',
-    transitionProperty: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
+    transitionProperty:
+      'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
     ':hover': {
       borderColor: colors.purple[50],
     },
@@ -56,7 +56,9 @@ const customStyles = {
   }),
   valueContainer: (provided, state) => ({
     ...provided,
-    padding: state.selectProps.isMulti ? `${space['mg1']} ${space[1]} ${space['mg1']} ${space[3]}` : `${space[2]} ${space[1]} ${space[2]} ${space[3]}`,
+    padding: state.selectProps.isMulti
+      ? `${space['mg1']} ${space[1]} ${space['mg1']} ${space[3]}`
+      : `${space[2]} ${space[1]} ${space[2]} ${space[3]}`,
     minHeight: '40px',
     height: state.selectProps.isMulti ? 'auto' : '40px',
   }),
@@ -89,7 +91,7 @@ const customStyles = {
     ...provided,
     color: state.isDisabled ? colors.grey[30] : colors.grey[90],
     ':hover': {
-      color: 'initial'
+      color: 'initial',
     },
   }),
   placeholder: (provided) => ({
@@ -171,7 +173,7 @@ const customStyles = {
     ':hover': {
       color: colors.purple[50],
       backgroundColor: colors.purple[10],
-    }
+    },
   }),
 };
 
@@ -186,7 +188,7 @@ export function Dropdown({ ...props }) {
   }
 
   return (
-    <Select 
+    <Select
       {...props}
       {...fieldProps}
       components={{ DropdownIndicator, ClearIndicator, MultiValueRemove }}

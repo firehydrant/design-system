@@ -6,6 +6,7 @@
   ],
   "main": "./dist/design-system.umd.js",
   "module": "./dist/design-system.es.js",
+  "types": "./dist/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/design-system.es.js",
@@ -13,7 +14,7 @@
     }
   },
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "playroom:start": "NODE_ENV=development playroom start",
@@ -21,7 +22,8 @@
     "prerelease": "npm run build",
     "release": "standard-version",
     "lint": "eslint",
-    "prettier": "prettier"
+    "prettier": "prettier",
+    "types": "tsc"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
@@ -70,6 +72,7 @@
     "@babel/eslint-parser": "^7.16.0",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
@@ -89,6 +92,7 @@
     "prop-types": "^15.7.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "standard-version": "^9.3.1",
+    "typescript": "^4.4.4",
     "vite": "^2.6.13"
   }
 }

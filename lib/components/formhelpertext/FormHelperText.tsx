@@ -1,7 +1,10 @@
 import React from 'react';
-import { FormHelperText as ChakraFormHelperText } from '@chakra-ui/react';
+import {
+  FormHelperText as ChakraFormHelperText,
+  HelpTextProps,
+} from '@chakra-ui/react';
 
-export function FormHelperText({ children, ...props }) {
+export function FormHelperText(props: HelpTextProps) {
   return (
     <ChakraFormHelperText
       fontSize="7"
@@ -10,8 +13,6 @@ export function FormHelperText({ children, ...props }) {
       color="grey.70"
       display="inline-block"
       {...props}
-    >
-      {children}
-    </ChakraFormHelperText>
+    />
   );
 }
