@@ -4,6 +4,7 @@
   "include": ["lib/**/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
+    "baseUrl": "lib",
     // Tells TypeScript to read JS files, as
     // normally they are ignored as source files
     "allowJs": true,
@@ -20,7 +21,6 @@
     "module": "esnext",
     "lib": ["dom", "esnext"],
     "sourceMap": true,
-
     "skipLibCheck": true,
     "strict": true,
     "isolatedModules": true,
