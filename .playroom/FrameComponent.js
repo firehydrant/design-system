@@ -1,7 +1,6 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import theme from '../lib/theme';
+import { ThemeProvider } from '../lib/main';
 
 export default function FrameComponent({ children }) {
-  return <ChakraProvider theme={theme}>{children}</ChakraProvider>;
+  return <ThemeProvider>{children}</ThemeProvider>;
 }

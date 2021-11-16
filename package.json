@@ -23,7 +23,9 @@
     "release": "standard-version",
     "lint": "eslint",
     "prettier": "prettier",
-    "types": "tsc"
+    "types": "tsc",
+    "gen:theme-typings": "chakra-cli tokens ./lib/theme/index.js --out node_modules/@chakra-ui/system/node_modules/@chakra-ui/styled-system/dist/types/theming.types.d.ts",
+    "postinstall": "npm run gen:theme-typings"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
@@ -73,6 +75,8 @@
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
+    "@chakra-ui/cli": "^1.6.0",
+    "@chakra-ui/styled-system": "^1.14.1",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
