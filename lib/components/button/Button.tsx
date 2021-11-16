@@ -3,11 +3,13 @@ import {
   Button as ChakraButton,
   ButtonProps as ChakraButtonProps,
 } from '@chakra-ui/react';
-import { Button as ButtonStyles } from './button.theme';
+import { Button as ButtonTheme } from './button.theme';
 
-const ButtonVariants = Object.keys(ButtonStyles.variants);
+const buttonVariants = [...Object.keys(ButtonTheme.variants)] as Array<
+  keyof typeof ButtonTheme.variants
+>;
 
-type Variants = typeof ButtonVariants[number];
+type Variants = typeof buttonVariants[number];
 
 interface ButtonProps extends Omit<ChakraButtonProps, 'variant'> {
   variant: Variants;
