@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [reactRefresh()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.js'),
+      entry: path.resolve(__dirname, 'lib/main.ts'),
       name: 'DesignSystem',
     },
     rollupOptions: {
@@ -21,6 +21,7 @@ export default defineConfig({
         // for externalized deps
         globals: {
           react: 'React',
+          'react-dom': 'ReactDOM',
         },
       },
     },

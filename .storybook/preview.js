@@ -3,6 +3,7 @@ import { DocsContainer } from '@storybook/addon-docs';
 import { ThemeProvider } from '../lib/main';
 
 export const parameters = {
+  controls: { exclude: /^_/ },
   options: {
     storySort: {
       method: 'alphabetical',
