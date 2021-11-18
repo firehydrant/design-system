@@ -25,6 +25,13 @@ jobs:
         run: |
           npm ci
           npm run playroom:build
+          
+      - name: Brotli compress the html, css and js files in the "build" directory
+        id: brotli
+        uses: charlesworth/compress-action@1.0
+        with:
+          target-directory: 'docs'
+          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
