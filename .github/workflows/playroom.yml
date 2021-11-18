@@ -26,11 +26,6 @@ jobs:
           npm ci
           npm run playroom:build
           
-      - name: compress-action
-        uses: Charlesworth/compress-action@1.0.0
-        with:
-          target-directory: 'docs'
-          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
