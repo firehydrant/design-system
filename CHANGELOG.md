@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 - **Tooltip:** adds Tooltip component ([ae4ea5f](https://github.com/firehydrant/design-system/commit/ae4ea5f5dd8251d6ae708e2d3e472bd36fe0273d))
 
-### [5.1.1](https://github.com/firehydrant/design-system/compare/v5.1.0...v5.1.1) (2021-11-10)
+## [5.1.1](https://github.com/firehydrant/design-system/compare/v5.1.0...v5.1.1) (2021-11-10)
 
 ### 🛠 Fixed
 
