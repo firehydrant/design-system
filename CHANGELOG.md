@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.3.0](https://github.com/firehydrant/design-system/compare/v5.2.0...v5.3.0) (2022-01-05)
+
+### 🧹 Chores
+
+- **CHANGELOG:** correct heading level for 5.1.1 ([bd1a467](https://github.com/firehydrant/design-system/commit/bd1a46760092b8ad87c372da8a1374251b88f38a))
+- **deps-dev:** bump eslint-plugin-react-hooks from 4.2.0 to 4.3.0 ([#175](https://github.com/firehydrant/design-system/pull/175)) ([8c41e8f](https://github.com/firehydrant/design-system/commit/8c41e8f4475f479e43bf737ba84ee63ad5b294bb))
+
+### ✨ New Features
+
+- **accordion:** add exports of Accordion components from Chakra ([#191](https://github.com/firehydrant/design-system/pull/191)) ([0640f37](https://github.com/firehydrant/design-system/commit/0640f37ffa1bcd9fc3512cfbad45e5a50de49ef5))
+
 ## [5.2.0](https://github.com/firehydrant/design-system/compare/v5.1.1...v5.2.0) (2021-11-18)
 
 ### ✨ New Features
