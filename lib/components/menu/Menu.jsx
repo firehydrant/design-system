@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Button as ChakraButton,
+  IconButton as ChakraIconButton,
   Menu as ChakraMenu,
   MenuButton,
   MenuList
@@ -29,6 +30,17 @@ export function ButtonDropdown({ buttonText, buttonVariant, children, maxWidth, 
           </MenuList>
         </>
       )}
+    </ChakraMenu>
+  )
+}
+
+export function IconButtonDropdown({ children, buttonVariant, icon, maxWidth, ...props }) {
+  return (
+    <ChakraMenu closeOnBlur preventOverflow { ...props }>
+      <MenuButton as={ChakraIconButton} icon={<Icon name={icon} />} variant={buttonVariant} borderRadius="base" alignItems="center" m="mg0" />
+      <MenuList maxWidth={maxWidth}>
+        {children}
+      </MenuList>
     </ChakraMenu>
   )
 }
