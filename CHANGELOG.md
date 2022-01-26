@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.0](https://github.com/firehydrant/design-system/compare/v5.3.0...v5.4.0) (2022-01-26)
+
+### ✨ New Features
+
+- **Breadcrumb:** adds Breadcrumb ([#149](https://github.com/firehydrant/design-system/pull/149)) ([3276e43](https://github.com/firehydrant/design-system/commit/3276e431f918b46bd12e96c5ccff261d3b4f25a1))
+
 ## [5.3.0](https://github.com/firehydrant/design-system/compare/v5.2.0...v5.3.0) (2022-01-05)
 
 ### 🧹 Chores
