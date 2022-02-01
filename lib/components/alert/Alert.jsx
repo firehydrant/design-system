@@ -15,6 +15,7 @@ export function Alert({
   const iconColorScheme = {
     alert: 'red.70',
     info: 'grey.70',
+    notice: 'teal.70',
     success: 'green.70',
     warning: 'brown.70',
   };
@@ -30,7 +31,7 @@ export function Alert({
     >
       <Flex>
         <Flex align="flex-start" py="mg2">
-          <Icon name={variant} ml="1" mr="2" color={iconColorScheme[variant]} />
+          <Icon name={variant || 'info'} ml="1" mr="2" color={iconColorScheme[variant]} />
           <Text color="grey.90" size="5" mb="0">
             {children}
           </Text>
@@ -54,6 +55,6 @@ export function Alert({
 
 Alert.propTypes = {
   children: PropTypes.node,
-  variant: PropTypes.oneOf(['alert', 'info', 'success', 'warning']),
+  variant: PropTypes.oneOf(['alert', 'info', 'notice', 'success', 'warning']),
   dismissable: PropTypes.bool,
 };
