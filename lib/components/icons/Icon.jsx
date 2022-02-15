@@ -125,7 +125,8 @@ export const iconList = [
   'warning',
 ];
 
-export const Icon = ({ name, ...props }) => {
+// eslint-disable-next-line no-unused-vars
+export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
   switch (name) {
     case 'account':
       return <AccountIcon {...props} />;
