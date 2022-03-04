@@ -20,11 +20,11 @@ import { DeleteIcon } from './DeleteIcon';
 import { DownloadIcon } from './DownloadIcon';
 import { EditIcon } from './EditIcon';
 import { EmailIcon } from './EmailIcon';
+import { ExternalLinkIcon } from './ExternalLinkIcon';
 import { FileIcon } from './FileIcon';
 import { FilterIcon } from './FilterIcon';
-import { ExternalLinkIcon } from './ExternalLinkIcon';
-import { HelpOutlineIcon } from './HelpOutlineIcon';
 import { HelpFilledIcon } from './HelpFilledIcon';
+import { HelpOutlineIcon } from './HelpOutlineIcon';
 import { HomeFilledIcon } from './HomeFilledIcon';
 import { HomeOutlineIcon } from './HomeOutlineIcon';
 import { ImportIcon } from './ImportIcon';
@@ -44,6 +44,7 @@ import { OrganizationFilledIcon } from './OrganizationFilledIcon';
 import { OrganizationOutlineIcon } from './OrganizationOutlineIcon';
 import { PlusIcon } from './PlusIcon';
 import { RefreshIcon } from './RefreshIcon';
+import { RetrospectivesIcon } from './RetrospectivesIcon';
 import { RocketIcon } from './RocketIcon';
 import { RunbooksFilledIcon } from './RunbooksFilledIcon';
 import { RunbooksOutlineIcon } from './RunbooksOutlineIcon';
@@ -107,6 +108,7 @@ export const iconList = [
   'organizationOutline',
   'plus',
   'refresh',
+  'retrospectives',
   'rocket',
   'runbooksFilled',
   'runbooksOutline',
@@ -214,6 +216,8 @@ export const Icon = ({ name, isIndeterminate, isChecked, ...props }) => {
       return <PlusIcon {...props} />;
     case 'refresh':
       return <RefreshIcon {...props} />;
+    case 'retrospectives':
+      return <RetrospectivesIcon {...props} />;
     case 'rocket':
       return <RocketIcon {...props} />;
     case 'runbooksFilled':
