@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.7.0](https://github.com/firehydrant/design-system/compare/v5.6.0...v5.7.0) (2022-03-07)
+
+### ✨ New Features
+
+- **icons:** add RetrospectivesIcon ([#210](https://github.com/firehydrant/design-system/pull/210)) ([4a520e1](https://github.com/firehydrant/design-system/commit/4a520e1e9405e80c43687e419abb1b7b02456c31))
+
 ## [5.5.0](https://github.com/firehydrant/design-system/compare/v5.4.0...v5.5.0) (2022-02-01)
 
 ## [5.4.0](https://github.com/firehydrant/design-system/compare/v5.3.0...v5.4.0) (2022-01-26)
