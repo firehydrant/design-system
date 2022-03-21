@@ -3,13 +3,6 @@
 # Workflow name
 name: 'Chromatic'
 
-# Event for the workflow
-on: 
-  push:
-    branches-ignore:
-      # Do not run on dependabot branches
-      - 'dependabot/**'
-
 # List of jobs
 jobs:
   chromatic-deployment:
