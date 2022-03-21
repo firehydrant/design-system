@@ -3,6 +3,10 @@
 # Workflow name
 name: 'Chromatic'
 
+# Event for the workflow
+on:
+  push:
+
 # List of jobs
 jobs:
   chromatic-deployment:
