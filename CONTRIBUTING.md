@@ -38,6 +38,9 @@ Design System is intended to be maintained collaboratively by every engineer and
 # clone repo
 git clone git@github.com:firehydrant/design-system.git
 
+# check node version
+You must use at least node 16.
+
 # install dependencies
 npm ci
 
