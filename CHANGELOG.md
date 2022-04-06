@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.9.1](https://github.com/firehydrant/design-system/compare/v5.7.1...v5.9.1) (2022-04-06)
+
 ### [5.7.1](https://github.com/firehydrant/design-system/compare/v5.7.0...v5.7.1) (2022-03-07)
 
 ## [5.7.0](https://github.com/firehydrant/design-system/compare/v5.6.0...v5.7.0) (2022-03-07)
