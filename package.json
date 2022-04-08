@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
-    "@chakra-ui/react-env": "^1.0.8",
+    "@chakra-ui/react-env": "^1.1.6",
     "@emotion/cache": "^11.5.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.1.5",
