@@ -1,6 +1,6 @@
 {
   "name": "@firehydrant/design-system",
-  "version": "5.9.1",
+  "version": "5.9.2",
   "files": [
     "dist"
   ],
@@ -27,7 +27,7 @@
     "@chakra-ui/react": "^1.6.5",
     "@chakra-ui/react-env": "^1.0.8",
     "@emotion/cache": "^11.5.0",
-    "@emotion/react": "^11.5.0",
+    "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.1.5",
     "framer-motion": "^4.1.17",
     "react-select": "^4.3.1",
@@ -86,7 +86,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "git-message": "^2.0.2",
     "playroom": "^0.27.4",
-    "prettier": "2.4.1",
+    "prettier": "2.6.2",
     "prop-types": "^15.7.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "standard-version": "^9.3.1",
