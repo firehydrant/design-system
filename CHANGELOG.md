@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.9.4](https://github.com/firehydrant/design-system/compare/v5.7.1...v5.9.4) (2022-04-08)
+
+### 🧹 Chores
+
+- **deps:** bump @chakra-ui/react-env from 1.0.8 to 1.1.6 ([#223](https://github.com/firehydrant/design-system/pull/223)) ([4585663](https://github.com/firehydrant/design-system/commit/4585663ae5aad9da6a1f20169c586a93b9c5255d))
+- **deps:** bump @emotion/react from 11.5.0 to 11.9.0 ([#219](https://github.com/firehydrant/design-system/pull/219)) ([07a5135](https://github.com/firehydrant/design-system/commit/07a513589d946387e4a389b1c31df0e735e83b77))
+- **deps-dev:** bump eslint from 8.2.0 to 8.12.0 ([#224](https://github.com/firehydrant/design-system/pull/224)) ([f6e6c08](https://github.com/firehydrant/design-system/commit/f6e6c087bc94888305214dd44837c74208f2a82b))
+- **deps-dev:** bump prettier from 2.4.1 to 2.6.2 ([#221](https://github.com/firehydrant/design-system/pull/221)) ([a6cc945](https://github.com/firehydrant/design-system/commit/a6cc94549631e12f432599fe6cb709929da27ae8))
+- **deps-dev:** bump vite from 2.6.13 to 2.9.1 ([#217](https://github.com/firehydrant/design-system/pull/217)) ([ed56fea](https://github.com/firehydrant/design-system/commit/ed56fea3b01ca35449665380f29ea67dbf534fe7))
+- **release:** 5.9.1 ([18cfead](https://github.com/firehydrant/design-system/commit/18cfeadb91afbbb3f686bf3c50ea83d707f8950d))
+- **release:** 5.9.2 ([57ae2ac](https://github.com/firehydrant/design-system/commit/57ae2ac37b234acd0688d2c4b59d024b41d17318))
+- update package-json.lock ([497647a](https://github.com/firehydrant/design-system/commit/497647a361128c6d72a5d0ba1f762603ace72178))
+
 ### [5.9.2](https://github.com/firehydrant/design-system/compare/v5.9.1...v5.9.2) (2022-04-06)
 
 ### 🧹 Chores
