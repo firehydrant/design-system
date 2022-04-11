@@ -30,7 +30,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.1.5",
     "framer-motion": "^4.1.17",
-    "react-select": "^5.2.2",
+    "react-select": "^5.3.0",
     "react-select-async-paginate": "^0.6.1"
   },
   "repository": {
