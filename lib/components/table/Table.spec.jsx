@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
 import { Thead, Tbody, Tr, Th, Table } from './index';
 
 describe('Table', () => {
