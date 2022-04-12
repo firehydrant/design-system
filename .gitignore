@@ -8,6 +8,7 @@ coverage
 *.log
 .envrc
 storybook-static/
+.vscode
 
 # npm release cache
 ~/.npm
