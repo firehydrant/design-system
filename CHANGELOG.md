@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.11.0](https://github.com/firehydrant/design-system/compare/v5.9.2...v5.11.0) (2022-04-15)
+
+### 🧹 Chores
+
+- **deps-dev:** bump @babel/eslint-parser from 7.16.0 to 7.17.0 ([#227](https://github.com/firehydrant/design-system/pull/227)) ([b18e21c](https://github.com/firehydrant/design-system/commit/b18e21cf7e077a36da38461cff0849acb6d12c92))
+- **deps-dev:** bump @babel/preset-env from 7.15.6 to 7.16.11 ([#196](https://github.com/firehydrant/design-system/pull/196)) ([c6b8918](https://github.com/firehydrant/design-system/commit/c6b8918d64170ea6d72c6b8a9d086930a99bd21e))
+- **deps-dev:** bump @storybook/addon-actions from 6.3.12 to 6.4.21 ([#228](https://github.com/firehydrant/design-system/pull/228)) ([71f1a23](https://github.com/firehydrant/design-system/commit/71f1a23f9e02047c0a7390ad745a50717b420843))
+- **deps-dev:** bump eslint from 8.12.0 to 8.13.0 ([#226](https://github.com/firehydrant/design-system/pull/226)) ([6061b79](https://github.com/firehydrant/design-system/commit/6061b79871bad4dac2640c169da3bd6d41b978e1))
+- **deps-dev:** bump eslint from 8.2.0 to 8.12.0 ([#224](https://github.com/firehydrant/design-system/pull/224)) ([f6e6c08](https://github.com/firehydrant/design-system/commit/f6e6c087bc94888305214dd44837c74208f2a82b))
+- **deps-dev:** bump eslint-config-prettier from 8.3.0 to 8.5.0 ([#230](https://github.com/firehydrant/design-system/pull/230)) ([9803ca6](https://github.com/firehydrant/design-system/commit/9803ca63376ae71b916904d56bb34a859f9bf1da))
+- **deps-dev:** bump prettier from 2.4.1 to 2.6.2 ([#221](https://github.com/firehydrant/design-system/pull/221)) ([a6cc945](https://github.com/firehydrant/design-system/commit/a6cc94549631e12f432599fe6cb709929da27ae8))
+- **deps-dev:** bump vite from 2.6.13 to 2.9.1 ([#217](https://github.com/firehydrant/design-system/pull/217)) ([ed56fea](https://github.com/firehydrant/design-system/commit/ed56fea3b01ca35449665380f29ea67dbf534fe7))
+- **deps:** bump @chakra-ui/react from 1.6.5 to 1.8.8 ([#222](https://github.com/firehydrant/design-system/pull/222)) ([fbd4130](https://github.com/firehydrant/design-system/commit/fbd41301d98df7091f3f82e5e344929da08942c4))
+- **deps:** bump @chakra-ui/react-env from 1.0.8 to 1.1.6 ([#223](https://github.com/firehydrant/design-system/pull/223)) ([4585663](https://github.com/firehydrant/design-system/commit/4585663ae5aad9da6a1f20169c586a93b9c5255d))
+- **deps:** bump @emotion/react from 11.5.0 to 11.9.0 ([#219](https://github.com/firehydrant/design-system/pull/219)) ([07a5135](https://github.com/firehydrant/design-system/commit/07a513589d946387e4a389b1c31df0e735e83b77))
+- **deps:** bump react-select from 4.3.1 to 5.2.2 ([#193](https://github.com/firehydrant/design-system/pull/193)) ([920ebbd](https://github.com/firehydrant/design-system/commit/920ebbd8692a6e4955bc11405d934c1acf42f696))
+- **deps:** bump react-select from 5.2.2 to 5.3.0 ([#229](https://github.com/firehydrant/design-system/pull/229)) ([e2f5810](https://github.com/firehydrant/design-system/commit/e2f5810e11cfea054af3f1d444c8f247d60f39a8))
+
+### 🛠 Fixed
+
+- **storybook:** reinstall webpack5 packages for storybook ([#233](https://github.com/firehydrant/design-system/pull/233)) ([cd438bf](https://github.com/firehydrant/design-system/commit/cd438bfec506d090ec9754697af67b01f0084c55))
+
+### ✨ New Features
+
+- **skeleton:** adding in skeleton, skeletonText, and skeletonCircle from chakra ([62882b9](https://github.com/firehydrant/design-system/commit/62882b99833b39752da40efcdd3758295635798b))
+- **spinner|skeleton:** Adding in the spinner and skeleton from chakra ([92ebcfc](https://github.com/firehydrant/design-system/commit/92ebcfc6df54a449f7e99aba6f23215654269670))
+- **spinner|skeleton:** Adding in the spinner and skeleton from chakra ([51947b6](https://github.com/firehydrant/design-system/commit/51947b62a997232db3dff6a5541dbebb6653aea3))
+
 ### [5.9.2](https://github.com/firehydrant/design-system/compare/v5.9.1...v5.9.2) (2022-04-06)
 
 ### 🧹 Chores
