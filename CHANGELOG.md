@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.11.1](https://github.com/firehydrant/design-system/compare/v5.11.0...v5.11.1) (2022-04-15)
+
 ## [5.11.0](https://github.com/firehydrant/design-system/compare/v5.9.2...v5.11.0) (2022-04-15)
 
 ### 🧹 Chores
