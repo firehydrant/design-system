@@ -76,7 +76,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.0",
     "@storybook/addon-actions": "^6.4.21",
-    "@storybook/addon-docs": "^6.4.21",
+    "@storybook/addon-docs": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.21",
     "@storybook/addon-links": "^6.4.21",
     "@storybook/builder-webpack5": "^6.4.21",
