@@ -106,6 +106,7 @@ const customStyles = {
   }),
   singleValue: (provided) => ({
     ...provided,
+    position: 'absolute',
     fontSize: fontSizes[5],
     lineHeight: lineHeights[5],
     fontWeight: fontWeights[5],
