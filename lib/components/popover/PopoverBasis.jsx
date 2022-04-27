@@ -57,7 +57,17 @@ export function PopoverBasis({
                   </PopoverHeader>
                 )}
                 {hasClose && (
-                  <PopoverCloseButton sx={{ position: 'relative', top: '0' }} />
+                  <PopoverCloseButton
+                    height={2}
+                    p={0}
+                    justify="right"
+                    sx={{
+                      width: 'unset',
+                      right: '0',
+                      position: 'relative',
+                      top: '0',
+                    }}
+                  />
                 )}
               </Flex>
               <PopoverBody pt={headerText ? 2 : 0}>{body}</PopoverBody>
