@@ -99,6 +99,7 @@ PopoverBasis.propTypes = {
 };
 
 PopoverBasis.defaultProps = {
+  headerText: null,
   hasClose: true,
   smallPopover: false,
 };

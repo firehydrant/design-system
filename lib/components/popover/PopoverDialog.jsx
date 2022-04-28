@@ -12,8 +12,11 @@ export function PopoverDialog({ ...props }) {
       popoverTrigger={
         <PopoverTrigger>
           <Box width={5}>
-            {' '}
-            <HelpFilledIcon data-testid="help-icon" color="grey.50" />
+            <HelpFilledIcon
+              data-testid="help-icon"
+              color="grey.50"
+              aria-label="Additional help"
+            />
           </Box>
         </PopoverTrigger>
       }
@@ -32,6 +35,7 @@ PopoverDialog.propTypes = {
 };
 
 PopoverDialog.defaultProps = {
+  headerText: null,
   hasClose: true,
   smallPopover: false,
 };

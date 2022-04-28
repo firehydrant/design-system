@@ -24,6 +24,7 @@ PopoverInput.propTypes = {
 };
 
 PopoverInput.defaultProps = {
+  headerText: null,
   hasClose: true,
   smallPopover: false,
 };
