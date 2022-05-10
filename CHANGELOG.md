@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.11.6](https://github.com/firehydrant/design-system/compare/v5.11.4...v5.11.6) (2022-05-09)
+
+### 🛠 Fixed
+
+- **popover:** export components ([#252](https://github.com/firehydrant/design-system/pull/252)) ([1709ddc](https://github.com/firehydrant/design-system/commit/1709ddc15f041813e0bd1630aac5110d6eb8a115))
+
+### 🧹 Chores
+
+- **release:** 5.11.5 ([aa15daf](https://github.com/firehydrant/design-system/commit/aa15daf976d57d85a5e2ce6b4b279aab0d5cde22))
+
+### [5.11.5](https://github.com/firehydrant/design-system/compare/v5.11.4...v5.11.5) (2022-05-09)
+
+### 🛠 Fixed
+
+- **popover:** export components ([#252](https://github.com/firehydrant/design-system/pull/252)) ([1709ddc](https://github.com/firehydrant/design-system/commit/1709ddc15f041813e0bd1630aac5110d6eb8a115))
+
 ### [5.11.4](https://github.com/firehydrant/design-system/compare/v5.11.2...v5.11.4) (2022-04-29)
 
 ### 🧹 Chores
