@@ -9,8 +9,9 @@ import {
   Menu as ChakraMenu,
   MenuButton,
   MenuList,
+  MenuItem,
 } from '@chakra-ui/react';
-import { Icon, Link as DSLink, MenuItem } from '../../main';
+import { Icon, Link as DSLink } from '../../main';
 
 const ItemLink = ({ crumb, isCurrentPage }) => {
   const styles = useStyleConfig('Link');
@@ -72,17 +73,18 @@ const BreadcrumbsListWithDropdown = ({ crumbs }) => {
         <ItemLink crumb={firstCrumb} />
       </BreadcrumbItem>
       <ChakraMenu closeOnBlur preventOverflow>
-        <MenuButton
-          as={ChakraIconButton}
-          icon={<Icon name="menu" />}
-          variant="tertiary"
-          borderRadius="base"
-          alignItems="center"
-          m="mg0"
-        />
+        <MenuButton>
+          <ChakraIconButton
+            icon={<Icon name="menu" />}
+            variant="tertiary"
+            borderRadius="base"
+            alignItems="center"
+            m="mg0"
+          />
+        </MenuButton>
         <MenuList>
           {dropdownOptions.map((option, index) => (
-            <MenuItem option={option} key={index} />
+            <MenuItem key={index}>{option?.label}</MenuItem>
           ))}
         </MenuList>
       </ChakraMenu>
