@@ -32,6 +32,11 @@ Link.propTypes = {
   children: PropTypes.node,
   isExternal: PropTypes.bool,
   size: PropTypes.oneOf([5, 6, 7]),
-  variant: PropTypes.oneOf(['gradient', 'primary', 'reverse']),
+  variant: PropTypes.oneOf([
+    'gradientBold',
+    'gradientLight',
+    'primary',
+    'reverse',
+  ]),
   href: PropTypes.string,
 };
