@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.0](https://github.com/firehydrant/design-system/compare/v6.0.0...v6.2.0) (2022-05-23)
+
+### ✨ New Features
+
+- **input:** InputRightElement ([3b5ce10](https://github.com/firehydrant/design-system/commit/3b5ce10b60c0d3f2467eaa42d2ce3bf0335ff2c7))
+- **rightElement:** Adding in chakra input right element ([4d5e75a](https://github.com/firehydrant/design-system/commit/4d5e75a3eeacb58c020829c9b2860f710adc07fd))
+
 ## [6.0.0](https://github.com/firehydrant/design-system/compare/v2.3.0...v6.0.0) (2022-05-12)
 
 ### ⚠ BREAKING CHANGES
