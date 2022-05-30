@@ -32,7 +32,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.1.5",
     "c8": "^7.11.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^6.3.4",
     "jsdom": "^19.0.0",
     "react-select": "^5.3.0",
     "react-select-async-paginate": "^0.6.1"
