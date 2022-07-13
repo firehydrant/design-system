@@ -93,7 +93,7 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "git-message": "^2.0.2",
-    "playroom": "^0.27.4",
+    "playroom": "^0.28.0",
     "prettier": "2.6.2",
     "prop-types": "^15.7.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
